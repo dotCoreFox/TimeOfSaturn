@@ -216,7 +216,8 @@ def sono_detail(row):
             row["time"] = clock(value(item))
             break
     paragraphs = [value(item) for item in page.select("article.article > p") if value(item)]
-    for paragraph in paragraphs[:3]:
+    is_tribute = re.search(r"\b(tribute|pocta|filmova hudba|filmove hudby)\b", normalized(row["title"]))
+    for paragraph in paragraphs[:3] if not is_tribute else []:
         text = normalized(paragraph)
         foreign = re.search(r"\b(zahranicn|japonsk|britsk|londynsk|americk|kanadsk|francouzsk|nemeck|svedsk|polsk|australsk)\w*", text)
         notable = re.search(r"\b(vehlasn|svetove znam|svetove proslul|mezinarodne uznavan|nejvyraznejs|grammy|headliner)\w*", text)
