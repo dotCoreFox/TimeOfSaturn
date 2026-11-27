@@ -6,7 +6,7 @@ import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urljoin, urlsplit, urlunsplit
+from urllib.parse import urlencode, urljoin, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
@@ -471,6 +471,46 @@ def shibari_detail(row):
     return row
 
 
+def olomouc_cards(source, page):
+    body = page.select_one("body[data-page-id]")
+    if not body:
+        raise ValueError("Kalendář města Olomouc nebyl nalezen")
+    url = urljoin(source["url"], "/wp-admin/admin-ajax.php")
+    payload = urlencode({
+        "action": "load_more", "currentPagination": 40,
+        "pageID": body["data-page-id"], "taxID": body.get("data-tax-id", ""),
+        "taxTitle": body.get("data-tax-title", ""), "selectedDate": "", "selectedTop": "",
+    }).encode()
+    request = Request(url, data=payload, headers={"User-Agent": "TimeOfSaturn/0.2 public events"})
+    with urlopen(request, timeout=20) as response:
+        listing = json.load(response)
+    if listing.get("result") != "success":
+        raise ValueError("Kalendář města Olomouc nevrátil seznam akcí")
+    cards = BeautifulSoup(listing["data"], "html.parser").select("a.gen-action-item-inner[href]")
+    if not cards:
+        raise ValueError("Ve výpisu akcí nebyly nalezeny žádné položky")
+    types = {
+        "Koncerty, kluby": "Hudba", "Kino / film": "Kino", "Divadlo, balet": "Divadlo",
+        "Výstavy, galerie": "Výstavy", "Sport": "Sport", "Bruslení": "Sport",
+        "Vzdělávání": "Kurzy a dovednosti", "Besedy": "Debaty a přednášky",
+        "Přednášky, školení": "Debaty a přednášky",
+    }
+    for card in cards:
+        title = value(card.select_one("h4"))
+        when = value(card.select_one(".gen-date p"))
+        span = dates(when)
+        url = absolute(source["url"], card["href"])
+        if not title or not span or urlsplit(url).hostname != "tourism.olomouc.eu":
+            continue
+        if re.search(r"\b(strelba|strelnice|streleck\w*|palne zbrane)\b", normalized(title)):
+            continue
+        category = value(card.select_one(".gen-categories-list"))
+        row = event(source, title, span, url, time=clock(when.split(" - ", 1)[0]),
+                    description=f"Program města Olomouc · {category}" if category else "")
+        row["type"] = types.get(category, "Ostatní")
+        yield row
+
+
 def programme(source, start):
     page = fetch(source["url"])
     end = start + timedelta(days=source["days"] - 1)
@@ -487,6 +527,8 @@ def programme(source, start):
             rows = [item for result in pool.map(lambda row: brno_detail(source, row), rows) for item in result]
     elif adapter == "nicom":
         rows = nicom(source, page)
+    elif adapter == "olomouc":
+        rows = olomouc_cards(source, page)
     elif adapter == "sono":
         rows = sono(source, page)
     elif adapter == "shibari":

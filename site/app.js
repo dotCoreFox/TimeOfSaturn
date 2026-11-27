@@ -7,6 +7,7 @@ const todayParts = new Intl.DateTimeFormat('en', {
 const today = ['year', 'month', 'day'].map(part => todayParts.find(item => item.type === part).value).join('-')
 const [year, month] = today.split('-').map(Number)
 let displayed = new Date(Date.UTC(year, month - 1, 1))
+let weekStart = mondayOf(today)
 let snapshot = {}
 let events = new Map()
 let programmeEvents = []
@@ -18,7 +19,9 @@ const sourceNames = new Map([
   ['ndb', 'Národní divadlo Brno'], ['kino-art', 'Kino Art'],
   ['gothic-brno', 'Gothic akce Brno'], ['exhibitions', 'Ruční výběr výstav']
 ])
-const regionDays = {brno:7, cz:30, near:365, world:365}
+const regionDays = {brno:7, praha:30, olomouc:30, cz:30, near:365, world:365}
+const regionCities = {brno:'Brno', praha:'Praha', olomouc:'Olomouc'}
+const matchesRegion = (event, region) => regionCities[region] ? event.city === regionCities[region] : event.scope === region
 const regionNames = {cz:'Česko', near:'Okolní země', world:'Svět'}
 let theatre = []
 let kino = {}
@@ -49,9 +52,24 @@ const matchKey = text => fold(text).replace(/[^a-z0-9]+/g, ' ').trim()
 const venueKey = venue => matchKey(venue?.split(/,|\s[–—-]\s/)[0])
 const topicNames = {
   kurzy:'Kurzy a dovednosti', prakticke:'Praktické dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
-  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Kink a shibari', ocr:'Překážkové a trailové závody', strelnice:'Střelnice'
+  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Kink a shibari', ocr:'Překážkové a trailové závody', strelnice:'Střelnice', sport:'Sport'
 }
 const typeTopics = Object.fromEntries(Object.entries(topicNames).map(([key, name]) => [name, key]))
+
+const categoryGroups = {
+  uceni:{label:'Učení a dovednosti', short:'Učení', icon:'mozek', tags:['kurzy', 'prakticke'], days:90},
+  debaty:{label:'Debaty a setkání', short:'Debaty', icon:'debaty', tags:['projekty', 'debaty']},
+  hudba:{label:'Hudba', short:'Hudba', icon:'hudba', tags:['hudba', 'hoste']},
+  scena:{label:'Kino a divadlo', short:'Kino a scéna', icon:'divadlo', tags:['kino', 'divadlo']},
+  vystavy:{label:'Výstavy a světlo', short:'Výstavy', icon:'vystavy', tags:['vystavy', 'svetlo']},
+  kink:{label:'Kink a shibari', short:'Shibari', icon:'kink', tags:['kink'], days:30},
+  sport:{label:'Sport a závody', short:'Sport', icon:'ocr', tags:['ocr', 'sport'], days:365},
+  strelnice:{label:'Střelnice', short:'Střelnice', icon:'strelnice', tags:['strelnice']}
+}
+const groupForTopic = Object.fromEntries(Object.entries(categoryGroups).flatMap(([key, group]) =>
+  group.tags.map(tag => [tag, key])))
+const selectedTopics = new Set()
+const brainTags = new Set(categoryGroups.uceni.tags)
 
 function icon(name) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
@@ -65,7 +83,10 @@ function icon(name) {
 }
 
 const eventCategory = event => typeTopics[event.type] || event.topics.find(topic => topicNames[topic]) || 'all'
-const eventIcon = event => icon(eventCategory(event))
+const eventIcon = event => {
+  const type = eventCategory(event)
+  return icon(brainTags.has(type) ? 'mozek' : type === 'projekty' ? 'debaty' : type === 'sport' ? 'ocr' : type)
+}
 
 function enrich(event) {
   const text = fold([event.title, event.description].filter(Boolean).join(' '))
@@ -147,10 +168,9 @@ function groupOccurrences(rows) {
 
 function matchesFilters(event, filters) {
   const region = filters.get('region')
-  const topic = filters.get('topic')
   const source = filters.get('source')
-  if (region === 'brno' ? event.city !== 'Brno' : event.scope !== region) return false
-  if (topic && !event.topics.includes(topic)) return false
+  if (!matchesRegion(event, region)) return false
+  if (selectedTopics.size && !event.topics.some(topic => selectedTopics.has(groupForTopic[topic]))) return false
   if (filters.has('profile') && !event.featured) return false
   if (filters.has('starred') && !event.starred) return false
   if (source && !(event.sourceIds || [event.sourceId]).includes(source)) return false
@@ -163,6 +183,11 @@ function addDays(day, days) {
   const result = new Date(day + 'T12:00:00Z')
   result.setUTCDate(result.getUTCDate() + days)
   return result.toISOString().slice(0, 10)
+}
+
+function mondayOf(day) {
+  const weekday = new Date(day + 'T12:00:00Z').getUTCDay()
+  return addDays(day, -((weekday + 6) % 7))
 }
 
 function titledEvent(node, event) {
@@ -318,37 +343,38 @@ function longEventButton(event, range) {
 
 const compareTimes = (a, b) => (a.time || '99').localeCompare(b.time || '99') || a.title.localeCompare(b.title, locale)
 
-function dayEventButton(event, compact = false) {
+function dayEventButton(event, compact = false, time = event.time) {
   const button = element('button', '', compact ? 'event' : 'day-panel-event')
   button.type = 'button'
   const status = event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''
   if (event.cancelled) button.classList.add('cancelled')
   if (event.missing) button.classList.add('missing')
   button.setAttribute('aria-label', [event.title, event.type, event.starred ? 'S hvězdičkou' : '',
-    event.time, status].filter(Boolean).join(', '))
-  button.title = [event.time, event.title, status].filter(Boolean).join(' · ')
+    time, status].filter(Boolean).join(', '))
+  button.title = [time, event.title, status].filter(Boolean).join(' · ')
   const name = titledEvent(element('span', '', 'calendar-event-title'), event)
-  button.append(eventIcon(event), element(event.time ? 'time' : 'span', event.time || '–', 'event-time'), name)
+  button.append(eventIcon(event), element(time ? 'time' : 'span', time || '–', 'event-time'), name)
   button.onclick = () => details(event, button)
   return button
 }
 
 function dayPanel(date, rows, trigger) {
   closeDetails()
-  selectedDay = {trigger}
+  selectedDay = {trigger, date}
   trigger.setAttribute('aria-current', 'true')
   const title = get('day-panel-title')
   title.textContent = dayLabel(date)
   const groups = new Map()
   for (const event of rows) {
-    const category = eventCategory(event)
+    const category = groupForTopic[eventCategory(event)] || 'all'
     if (!groups.has(category)) groups.set(category, [])
     groups.get(category).push(event)
   }
   const sections = [...groups].map(([category, events]) => {
     const section = element('section', '', 'day-group')
     const heading = element('h3')
-    heading.append(icon(category), document.createTextNode(topicNames[category] || 'Ostatní'))
+    const group = categoryGroups[category]
+    heading.append(icon(group?.icon || 'all'), document.createTextNode(group?.label || 'Ostatní'))
     section.append(heading, ...events.map(event => dayEventButton(event)))
     return section
   })
@@ -419,6 +445,41 @@ function drawCalendar() {
   }
 }
 
+const weekdayLabel = new Intl.DateTimeFormat(locale, {weekday:'long', timeZone:zone})
+function drawWeek() {
+  const weekEnd = addDays(weekStart, 6)
+  get('week-title').textContent = dayLabel(weekStart) + ' – ' + dayLabel(weekEnd)
+  const filters = new FormData(get('filters'))
+  const matching = [...programmeEvents, ...exhibitions].filter(event =>
+    overlaps(event, weekStart, weekEnd) && matchesFilters(event, filters))
+  const singleDays = matching.filter(event => !isLongEvent(event))
+  const days = Array.from({length:7}, (_, offset) => {
+    const date = addDays(weekStart, offset)
+    const day = element('section', '', 'week-day' + (date === today ? ' week-today' : ''))
+    const heading = element('h3')
+    const label = weekdayLabel.format(new Date(date + 'T12:00:00Z'))
+    const jump = element('button', label + ' ' + Number(date.slice(-2)) + '.' + Number(date.slice(5, 7)) + '.', 'week-date')
+    const startsToday = event => event.date === date && event.time
+    const events = singleDays.filter(event => overlaps(event, date, date)).sort((a, b) =>
+      (startsToday(a) || '99').localeCompare(startsToday(b) || '99') || a.title.localeCompare(b.title, locale))
+    jump.type = 'button'
+    jump.onclick = () => dayPanel(date, events, jump)
+    heading.append(jump, element('span', String(events.length), 'week-count'))
+    day.append(heading)
+    if (!events.length) day.append(element('p', 'Bez akcí', 'week-empty'))
+    for (const event of events) {
+      const button = dayEventButton(event, false, startsToday(event) || '')
+      if (event.venue || event.city) button.append(element('span', event.venue || event.city, 'week-venue'))
+      day.append(button)
+    }
+    return day
+  })
+  get('week-days').replaceChildren(...days)
+  const ongoing = matching.filter(isLongEvent).sort(compareLongEvents)
+  get('week-long-events').replaceChildren(...ongoing.map(event => longEventButton(event)))
+  get('week-ongoing').hidden = !ongoing.length
+}
+
 const watchEvents = () => Object.values(watch).flatMap(source => source.events || [])
 
 function updateEvents() {
@@ -429,7 +490,7 @@ function updateEvents() {
   const grouped = groupOccurrences(all.map(event => enrich(overrides.has(event.id) ? {...event, cancelled:true, missing:false} : event)))
   programmeEvents = grouped.unique
   events = grouped.aliases
-  showNextStarredMonth()
+  showNextStarredPeriod()
   drawSources()
   renderView()
 }
@@ -513,16 +574,26 @@ navigate()
 function renderView() {
   if (currentView === 'agenda') drawAgenda()
   else if (currentView === 'calendar') drawCalendar()
+  else if (currentView === 'week') drawWeek()
   else drawFeed()
 }
 
 function setView(view) {
+  if (view === 'week' && currentView === 'calendar') {
+    const monthStart = displayed.toISOString().slice(0, 10)
+    weekStart = mondayOf(selectedDay?.date || (monthStart.slice(0, 7) === today.slice(0, 7) ? today : monthStart))
+  }
+  if (view === 'calendar' && currentView === 'week') {
+    const date = selectedDay?.date || addDays(weekStart, 3)
+    displayed = new Date(date.slice(0, 7) + '-01T00:00:00Z')
+  }
   closeDetails()
   currentView = view
-  showNextStarredMonth()
+  showNextStarredPeriod()
   get('agenda').hidden = view !== 'agenda'
   get('period-label').hidden = view !== 'agenda'
   get('month-view').hidden = view !== 'calendar'
+  get('week-view').hidden = view !== 'week'
   get('updates').hidden = view !== 'news'
   document.querySelectorAll('[data-view]').forEach(button => {
     button.setAttribute('aria-pressed', String(button.dataset.view === view))
@@ -543,6 +614,14 @@ get('today').onclick = () => {
   displayed = new Date(Date.UTC(year, month - 1, 1))
   drawCalendar()
 }
+function setWeek(date) {
+  closeDetails()
+  weekStart = mondayOf(date)
+  drawWeek()
+}
+get('week-previous').onclick = () => setWeek(addDays(weekStart, -7))
+get('week-next').onclick = () => setWeek(addDays(weekStart, 7))
+get('week-today').onclick = () => setWeek(today)
 get('close-details').onclick = backToDay
 get('close-day').onclick = () => closeDetails(true)
 get('panel-empty').prepend(icon('inspect'))
@@ -563,58 +642,72 @@ get('more-news').onclick = () => {
   drawFeed()
 }
 const form = get('filters')
-const topicSelect = form.elements.topic
-const compactTopics = {
-  '':'Vše', kurzy:'Kurzy', prakticke:'Praxe', projekty:'Tvorba', debaty:'Debaty', hudba:'Hudba',
-  hoste:'Hosté', kino:'Kino', svetlo:'Světlo', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Shibari',
-  ocr:'Závody', strelnice:'Střelnice'
-}
-const topicButtons = [...topicSelect.options].map(option => {
+const topicButtons = Object.entries(categoryGroups).map(([key, category]) => {
   const button = element('button', '', 'topic-button')
   button.type = 'button'
-  button.dataset.topic = option.value
-  button.setAttribute('aria-label', option.label)
-  button.title = option.label
+  button.dataset.topic = key
+  button.setAttribute('aria-label', category.label)
+  button.title = category.label
   const symbol = element('span', '', 'topic-symbol')
-  symbol.append(icon(option.value || 'all'))
-  const shortLabel = element('span', compactTopics[option.value] || option.label, 'topic-label-short')
+  symbol.append(icon(category.icon))
+  const shortLabel = element('span', category.short, 'topic-label-short')
   shortLabel.setAttribute('aria-hidden', 'true')
-  button.append(symbol, element('span', option.label, 'topic-label'), shortLabel)
+  button.append(symbol, element('span', category.label, 'topic-label'), shortLabel)
   button.onclick = () => {
-    topicSelect.value = option.value
-    topicSelect.dispatchEvent(new Event('input', {bubbles:true}))
+    if (selectedTopics.has(key)) selectedTopics.delete(key)
+    else selectedTopics.add(key)
+    get('source-filter').value = ''
+    updateFilterPeriod()
+    showNextStarredPeriod()
+    filterChanged()
   }
   return button
 })
 get('topic-buttons').replaceChildren(...topicButtons)
-get('topic-select').hidden = true
 for (const label of get('regions').querySelectorAll('label')) {
   const region = label.querySelector('input').value
-  label.prepend(icon(region === 'brno' ? 'pin' : region))
+  label.prepend(icon(regionCities[region] ? 'pin' : region))
 }
 
 function syncTopicButtons() {
   for (const button of topicButtons) {
-    button.setAttribute('aria-pressed', String(button.dataset.topic === topicSelect.value))
+    button.setAttribute('aria-pressed', String(selectedTopics.has(button.dataset.topic)))
   }
+  get('clear-topics').disabled = !selectedTopics.size
 }
 syncTopicButtons()
+get('clear-topics').onclick = () => {
+  selectedTopics.clear()
+  showNextStarredPeriod()
+  filterChanged()
+  topicButtons[0].focus()
+}
+function updateFilterPeriod() {
+  const period = get('period')
+  const minimum = Math.max(form.elements.starred.checked ? 30 : 0,
+    ...[...selectedTopics].map(key => categoryGroups[key].days || 0))
+  if (Number(period.value) < minimum) period.value = String(minimum)
+}
 function filterChanged() {
   syncTopicButtons()
   closeDetails()
   newsLimit = 24
   renderView()
 }
-function showNextStarredMonth() {
-  if (currentView !== 'calendar' || !form.elements.starred.checked) return
+function showNextStarredPeriod() {
+  if (!form.elements.starred.checked || !['calendar', 'week'].includes(currentView)) return
   const filters = new FormData(form)
   const matches = [...programmeEvents, ...exhibitions].filter(event =>
     (event.endDate || event.date) >= today && matchesFilters(event, filters))
-  const first = displayed.toISOString().slice(0, 10)
-  const last = new Date(Date.UTC(displayed.getUTCFullYear(), displayed.getUTCMonth() + 1, 0)).toISOString().slice(0, 10)
+  const week = currentView === 'week'
+  const first = week ? weekStart : displayed.toISOString().slice(0, 10)
+  const last = week ? addDays(weekStart, 6) :
+    new Date(Date.UTC(displayed.getUTCFullYear(), displayed.getUTCMonth() + 1, 0)).toISOString().slice(0, 10)
   if (matches.some(event => overlaps(event, first, last))) return
   const next = matches.map(event => event.date < today ? today : event.date).sort()[0]
-  if (next) displayed = new Date(next.slice(0, 7) + '-01T00:00:00Z')
+  if (!next) return
+  if (week) weekStart = mondayOf(next)
+  else displayed = new Date(next.slice(0, 7) + '-01T00:00:00Z')
 }
 
 form.addEventListener('input', event => {
@@ -623,19 +716,16 @@ form.addEventListener('input', event => {
     get('source-filter').value = ''
     drawSourceOptions()
   }
-  const period = get('period')
-  const minimum = {ocr:365, prakticke:90, kink:30}[form.elements.topic.value]
-    || (form.elements.starred.checked ? 30 : 0)
-  if (['region', 'topic', 'starred'].includes(event.target.name) && Number(period.value) < minimum) {
-    period.value = String(minimum)
+  if (['region', 'starred'].includes(event.target.name)) {
+    updateFilterPeriod()
+    showNextStarredPeriod()
   }
-  if (['starred', 'region'].includes(event.target.name)) showNextStarredMonth()
   filterChanged()
 })
 form.onsubmit = event => event.preventDefault()
 get('clear-filters').onclick = () => {
   form.elements.search.value = ''
-  form.elements.topic.value = ''
+  selectedTopics.clear()
   form.elements.source.value = ''
   form.elements.profile.checked = false
   form.elements.starred.checked = false
@@ -645,7 +735,7 @@ get('clear-filters').onclick = () => {
 function drawSourceOptions() {
   const filter = get('source-filter')
   const region = new FormData(form).get('region')
-  const matching = [...programmeEvents, ...exhibitions].filter(event => region === 'brno' ? event.city === 'Brno' : event.scope === region)
+  const matching = [...programmeEvents, ...exhibitions].filter(event => matchesRegion(event, region))
   const ids = new Set(matching.flatMap(event => event.sourceIds || [event.sourceId]))
   const selected = filter.value
   const options = [...ids].filter(id => sourceNames.has(id)).sort((a, b) => sourceNames.get(a).localeCompare(sourceNames.get(b), locale))

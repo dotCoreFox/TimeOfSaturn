@@ -373,6 +373,17 @@
         "kurzy"
       ],
       "description": "Výběr prezenčních kurzů v Brně a Praze. Improvizace, komunikace, tvůrčí dílny a technické dovednosti z prvních pěti stran kalendáře."
+    },
+    {
+      "id": "olomouc-tourism",
+      "name": "Olomouc Tourism",
+      "url": "https://tourism.olomouc.eu/akce/",
+      "city": "Olomouc",
+      "country": "CZ",
+      "scope": "cz",
+      "days": 60,
+      "adapter": "olomouc",
+      "description": "Městský kalendář Olomouce s koncerty, výstavami, debatami, kinem a místními akcemi."
     }
   ],
   "queries": [

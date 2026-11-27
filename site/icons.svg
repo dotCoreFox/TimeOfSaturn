@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round">
+  <symbol id="mozek" viewBox="0 0 24 24"><path d="M12 5a3 3 0 0 0-5 0 3 3 0 0 0-3 4 4 4 0 0 0 0 6 3 3 0 0 0 3 4 3 3 0 0 0 5 0 3 3 0 0 0 5 0 3 3 0 0 0 3-4 4 4 0 0 0 0-6 3 3 0 0 0-3-4 3 3 0 0 0-5 0Zm0 0v14M4 9l3 1 1 3m-4 2 3-1m13-5-3 1-1 3m4 2-3-1M7 5l1 2m9-2-1 2"/></symbol>
   <symbol id="hudba" viewBox="0 0 24 24"><path d="M9 18V5l11-2v12M9 9l11-2"/><ellipse cx="6" cy="18" rx="3" ry="2.5"/><ellipse cx="17" cy="15" rx="3" ry="2.5"/></symbol>
   <symbol id="strelnice" viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 4-3 7-8 9-5-2-8-5-8-9V6l8-3Z"/><path d="M12 8v8m-3-4h6"/></symbol>
   <symbol id="kurzy" viewBox="0 0 24 24"><path d="M12 6C9 4 6 4 3 5v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1Zm0 0v14"/></symbol>
