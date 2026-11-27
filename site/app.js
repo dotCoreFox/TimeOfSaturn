@@ -64,10 +64,8 @@ function icon(name) {
   return svg
 }
 
-function eventIcon(event) {
-  const category = typeTopics[event.type] || event.topics.find(topic => topicNames[topic]) || 'all'
-  return icon(category)
-}
+const eventCategory = event => typeTopics[event.type] || event.topics.find(topic => topicNames[topic]) || 'all'
+const eventIcon = event => icon(eventCategory(event))
 
 function enrich(event) {
   const text = fold([event.title, event.description].filter(Boolean).join(' '))
@@ -222,7 +220,7 @@ function drawAgenda() {
 
 function showInspection(view) {
   get('panel-empty').hidden = Boolean(view)
-  get('day-panel').hidden = view !== 'day-panel'
+  get('day-panel').hidden = !selectedDay
   get('details').hidden = view !== 'details'
   document.querySelector('.inspection').classList.toggle('has-selection', Boolean(view))
 }
@@ -230,7 +228,7 @@ function showInspection(view) {
 function focusInspection(heading) {
   heading.focus({preventScroll:true})
   if (!matchMedia('(min-width: 62rem)').matches) {
-    document.querySelector('.inspection').scrollIntoView({block:'nearest'})
+    heading.scrollIntoView({block:'nearest'})
   }
 }
 
@@ -260,13 +258,12 @@ function details(event, trigger) {
     return item
   })
   get('event-links').replaceChildren(...links)
-  get('back-to-day').hidden = !selectedDay
   showInspection('details')
   focusInspection(title)
 }
 
 function closeDetails(restoreFocus = false) {
-  const trigger = detailTrigger || selectedDay?.trigger
+  const trigger = selectedDay?.trigger || detailTrigger
   detailTrigger?.removeAttribute('aria-current')
   selectedDay?.trigger.removeAttribute('aria-current')
   detailTrigger = null
@@ -342,7 +339,20 @@ function dayPanel(date, rows, trigger) {
   trigger.setAttribute('aria-current', 'true')
   const title = get('day-panel-title')
   title.textContent = dayLabel(date)
-  get('day-panel-list').replaceChildren(...(rows.length ? rows.map(event => dayEventButton(event))
+  const groups = new Map()
+  for (const event of rows) {
+    const category = eventCategory(event)
+    if (!groups.has(category)) groups.set(category, [])
+    groups.get(category).push(event)
+  }
+  const sections = [...groups].map(([category, events]) => {
+    const section = element('section', '', 'day-group')
+    const heading = element('h3')
+    heading.append(icon(category), document.createTextNode(topicNames[category] || 'Ostatní'))
+    section.append(heading, ...events.map(event => dayEventButton(event)))
+    return section
+  })
+  get('day-panel-list').replaceChildren(...(sections.length ? sections
     : [element('p', 'Pro tento den nejsou žádné akce ve zvolených filtrech.', 'muted')]))
   showInspection('day-panel')
   focusInspection(title)
@@ -419,6 +429,7 @@ function updateEvents() {
   const grouped = groupOccurrences(all.map(event => enrich(overrides.has(event.id) ? {...event, cancelled:true, missing:false} : event)))
   programmeEvents = grouped.unique
   events = grouped.aliases
+  showNextStarredMonth()
   drawSources()
   renderView()
 }
@@ -457,14 +468,14 @@ function drawFeed() {
   const seen = new Set()
   const rows = [...(snapshot.feed || []), ...externalFeed()].sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).filter(row => {
     const event = events.get(row.event)
-    if (!event) return !row.event
+    if (!event) return !row.event && !filters.has('starred')
     if (!matchesFilters(event, filters)) return false
     const key = [event.id, row.kind, row.kind === 'new' ? '' : row.at].join('|')
     if (seen.has(key)) return false
     seen.add(key)
     return true
   })
-  if (!snapshot.error && snapshot.lastAttempt && Date.now() - Date.parse(snapshot.lastAttempt) > 27 * 3600000) {
+  if (!filters.has('starred') && !snapshot.error && snapshot.lastAttempt && Date.now() - Date.parse(snapshot.lastAttempt) > 27 * 3600000) {
     news.append(element('li', 'Denní aktualizace programu má zpoždění. Zobrazuji poslední dostupná data.', 'alert'))
   }
   for (const row of rows.slice(0, newsLimit)) {
@@ -508,6 +519,7 @@ function renderView() {
 function setView(view) {
   closeDetails()
   currentView = view
+  showNextStarredMonth()
   get('agenda').hidden = view !== 'agenda'
   get('period-label').hidden = view !== 'agenda'
   get('month-view').hidden = view !== 'calendar'
@@ -532,7 +544,6 @@ get('today').onclick = () => {
   drawCalendar()
 }
 get('close-details').onclick = backToDay
-get('back-to-day').onclick = backToDay
 get('close-day').onclick = () => closeDetails(true)
 get('panel-empty').prepend(icon('inspect'))
 document.addEventListener('keydown', event => {
@@ -553,13 +564,22 @@ get('more-news').onclick = () => {
 }
 const form = get('filters')
 const topicSelect = form.elements.topic
+const compactTopics = {
+  '':'Vše', kurzy:'Kurzy', prakticke:'Praxe', projekty:'Tvorba', debaty:'Debaty', hudba:'Hudba',
+  hoste:'Hosté', kino:'Kino', svetlo:'Světlo', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Shibari',
+  ocr:'Závody', strelnice:'Střelnice'
+}
 const topicButtons = [...topicSelect.options].map(option => {
   const button = element('button', '', 'topic-button')
   button.type = 'button'
   button.dataset.topic = option.value
   button.setAttribute('aria-label', option.label)
   button.title = option.label
-  button.append(icon(option.value || 'all'), element('span', option.label))
+  const symbol = element('span', '', 'topic-symbol')
+  symbol.append(icon(option.value || 'all'))
+  const shortLabel = element('span', compactTopics[option.value] || option.label, 'topic-label-short')
+  shortLabel.setAttribute('aria-hidden', 'true')
+  button.append(symbol, element('span', option.label, 'topic-label'), shortLabel)
   button.onclick = () => {
     topicSelect.value = option.value
     topicSelect.dispatchEvent(new Event('input', {bubbles:true}))
@@ -585,6 +605,18 @@ function filterChanged() {
   newsLimit = 24
   renderView()
 }
+function showNextStarredMonth() {
+  if (currentView !== 'calendar' || !form.elements.starred.checked) return
+  const filters = new FormData(form)
+  const matches = [...programmeEvents, ...exhibitions].filter(event =>
+    (event.endDate || event.date) >= today && matchesFilters(event, filters))
+  const first = displayed.toISOString().slice(0, 10)
+  const last = new Date(Date.UTC(displayed.getUTCFullYear(), displayed.getUTCMonth() + 1, 0)).toISOString().slice(0, 10)
+  if (matches.some(event => overlaps(event, first, last))) return
+  const next = matches.map(event => event.date < today ? today : event.date).sort()[0]
+  if (next) displayed = new Date(next.slice(0, 7) + '-01T00:00:00Z')
+}
+
 form.addEventListener('input', event => {
   if (event.target.name === 'region') {
     get('period').value = regionDays[event.target.value]
@@ -597,6 +629,7 @@ form.addEventListener('input', event => {
   if (['region', 'topic', 'starred'].includes(event.target.name) && Number(period.value) < minimum) {
     period.value = String(minimum)
   }
+  if (['starred', 'region'].includes(event.target.name)) showNextStarredMonth()
   filterChanged()
 })
 form.onsubmit = event => event.preventDefault()
