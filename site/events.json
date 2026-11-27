@@ -41,8 +41,8 @@
       "url": "https://www.ndbrno.cz/program/dsb-proces-pelicot/",
       "cancelled": false,
       "ticket": "4714008",
-      "missing": false,
-      "show": "dsb+ proces pelicot"
+      "show": "dsb+ proces pelicot",
+      "missing": false
     },
     {
       "id": "1166353d9451add9e7b0",
@@ -54,8 +54,8 @@
       "url": "https://www.ndbrno.cz/program/program-9-2/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel"
+      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel",
+      "missing": false
     },
     {
       "id": "12825f6bcd900af7ce08",
@@ -67,8 +67,8 @@
       "url": "https://www.ndbrno.cz/program/ze-zivota-hmyzu-4/",
       "cancelled": false,
       "ticket": "4423799",
-      "missing": false,
-      "show": "ze života hmyzu"
+      "show": "ze života hmyzu",
+      "missing": false
     },
     {
       "id": "f5c8595c3d84cdab8ed2",
@@ -80,8 +80,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-3/",
       "cancelled": false,
       "ticket": "4214598",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "c1a97cb8665c160d1432",
@@ -93,8 +93,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-2/",
       "cancelled": false,
       "ticket": "4214599",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "78cf1c8602e9b9294595",
@@ -106,8 +106,8 @@
       "url": "https://www.ndbrno.cz/program/marysa-3/",
       "cancelled": false,
       "ticket": "4423801",
-      "missing": false,
-      "show": "maryša"
+      "show": "maryša",
+      "missing": false
     },
     {
       "id": "1f0ec51fbc59b42210c7",
@@ -119,8 +119,8 @@
       "url": "https://www.ndbrno.cz/program/obraz-3/",
       "cancelled": false,
       "ticket": "4423804",
-      "missing": false,
-      "show": "obraz"
+      "show": "obraz",
+      "missing": false
     },
     {
       "id": "e3d978b7b74041645e46",
@@ -132,8 +132,8 @@
       "url": "https://www.ndbrno.cz/program/edison-4/",
       "cancelled": false,
       "ticket": "4423805",
-      "missing": false,
-      "show": "edison!"
+      "show": "edison!",
+      "missing": false
     },
     {
       "id": "acc9155acc29281fd7e4",
@@ -145,8 +145,8 @@
       "url": "https://www.ndbrno.cz/program/rozsviceni-vanocniho-stromu-ndb/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "rozsvícení vánočního stromu"
+      "show": "rozsvícení vánočního stromu",
+      "missing": false
     },
     {
       "id": "76c1235cd898bc3f6ac1",
@@ -158,8 +158,8 @@
       "url": "https://www.ndbrno.cz/program/adam-plachetka/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "adam plachetka & melody makers"
+      "show": "adam plachetka & melody makers",
+      "missing": false
     },
     {
       "id": "5a604248a87a7c535008",
@@ -171,8 +171,8 @@
       "url": "https://www.ndbrno.cz/program/vanocni-galakoncert/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "pronájem: 4 tenoři a filharmonie bohuslava martinů"
+      "show": "pronájem: 4 tenoři a filharmonie bohuslava martinů",
+      "missing": false
     },
     {
       "id": "90b7e377661e302d14bd",
@@ -184,8 +184,8 @@
       "url": "https://www.ndbrno.cz/program/edison/",
       "cancelled": false,
       "ticket": "4633807",
-      "missing": false,
-      "show": "edison!"
+      "show": "edison!",
+      "missing": false
     },
     {
       "id": "d5a71b22177c82de70f2",
@@ -197,8 +197,8 @@
       "url": "https://www.ndbrno.cz/program/prodana-nevesta/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "prodaná nevěsta"
+      "show": "prodaná nevěsta",
+      "missing": false
     },
     {
       "id": "1ac8dc3dc795be1ab70d",
@@ -210,8 +210,8 @@
       "url": "https://www.ndbrno.cz/program/hana/",
       "cancelled": false,
       "ticket": "4633805",
-      "missing": false,
-      "show": "hana"
+      "show": "hana",
+      "missing": false
     },
     {
       "id": "e1747bbb98591fafb892",
@@ -223,8 +223,8 @@
       "url": "https://www.ndbrno.cz/program/program-9-7/",
       "cancelled": false,
       "ticket": "4240432",
-      "missing": false,
-      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel"
+      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel",
+      "missing": false
     },
     {
       "id": "1a0ce622bf862186c38a",
@@ -236,8 +236,8 @@
       "url": "https://www.ndbrno.cz/program/prodana-nevesta-2/",
       "cancelled": false,
       "ticket": "4214886",
-      "missing": false,
-      "show": "prodaná nevěsta"
+      "show": "prodaná nevěsta",
+      "missing": false
     },
     {
       "id": "d529018dff9641a3aca8",
@@ -249,8 +249,8 @@
       "url": "https://www.ndbrno.cz/program/lidovky-4/",
       "cancelled": false,
       "ticket": "4633808",
-      "missing": false,
-      "show": "lidovky jdou do řiti"
+      "show": "lidovky jdou do řiti",
+      "missing": false
     },
     {
       "id": "87c51db13fbe78f1eb55",
@@ -262,8 +262,8 @@
       "url": "https://www.ndbrno.cz/program/pokouseni-4/",
       "cancelled": false,
       "ticket": "4439465",
-      "missing": false,
-      "show": "pokoušení"
+      "show": "pokoušení",
+      "missing": false
     },
     {
       "id": "263eb79e859ec82781c4",
@@ -275,8 +275,8 @@
       "url": "https://www.ndbrno.cz/program/jak-se-dela-opera-a-balet-3/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "jak se dělá opera? x jak se dělá balet? workshop pro školy"
+      "show": "jak se dělá opera? x jak se dělá balet? workshop pro školy",
+      "missing": false
     },
     {
       "id": "79cf1d57589ff641ad82",
@@ -288,8 +288,8 @@
       "url": "https://www.ndbrno.cz/program/bratri-ebenove/",
       "cancelled": false,
       "ticket": "4255879",
-      "missing": false,
-      "show": "bratři ebenové"
+      "show": "bratři ebenové",
+      "missing": false
     },
     {
       "id": "a08fa14c6840b38b49bd",
@@ -301,8 +301,8 @@
       "url": "https://www.ndbrno.cz/program/carmen-4/",
       "cancelled": false,
       "ticket": "4214887",
-      "missing": false,
-      "show": "carmen"
+      "show": "carmen",
+      "missing": false
     },
     {
       "id": "6644f1f7551810070a32",
@@ -314,8 +314,8 @@
       "url": "https://www.ndbrno.cz/program/faidra-4/",
       "cancelled": false,
       "ticket": "4634061",
-      "missing": false,
-      "show": "faidra (zatmění)"
+      "show": "faidra (zatmění)",
+      "missing": false
     },
     {
       "id": "38c55a7e42a2a26e36af",
@@ -327,8 +327,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-5/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "1c15162945d5a16d4ccb",
@@ -340,8 +340,8 @@
       "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu/",
       "cancelled": false,
       "ticket": "4223553",
-      "missing": false,
-      "show": "hurvínek prodává nevěstu"
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
     },
     {
       "id": "95a553b0062036f65fcf",
@@ -353,8 +353,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-4/",
       "cancelled": false,
       "ticket": "4223547",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "db8eff4b14f19286f29c",
@@ -366,8 +366,8 @@
       "url": "https://www.ndbrno.cz/program/patriarcha-7/",
       "cancelled": false,
       "ticket": "4634063",
-      "missing": false,
-      "show": "patriarcha"
+      "show": "patriarcha",
+      "missing": false
     },
     {
       "id": "887dcadbc0332d8ba8e6",
@@ -379,8 +379,8 @@
       "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-2/",
       "cancelled": false,
       "ticket": "4223586",
-      "missing": false,
-      "show": "hurvínek prodává nevěstu"
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
     },
     {
       "id": "bf2da0d671f57c6df4e0",
@@ -392,8 +392,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-7/",
       "cancelled": false,
       "ticket": "4223554",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "5df40e42f184dff9ccf2",
@@ -405,8 +405,8 @@
       "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-3/",
       "cancelled": false,
       "ticket": "4223587",
-      "missing": false,
-      "show": "hurvínek prodává nevěstu"
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
     },
     {
       "id": "651906dd9ccd8dc58047",
@@ -418,8 +418,8 @@
       "url": "https://www.ndbrno.cz/program/lhar/",
       "cancelled": false,
       "ticket": "4209483",
-      "missing": false,
-      "show": "lhář"
+      "show": "lhář",
+      "missing": false
     },
     {
       "id": "a4cdcd718ba407ca245c",
@@ -431,8 +431,8 @@
       "url": "https://www.ndbrno.cz/program/louskacek-6/",
       "cancelled": false,
       "ticket": "4223583",
-      "missing": false,
-      "show": "louskáček"
+      "show": "louskáček",
+      "missing": false
     },
     {
       "id": "ec1eef3f408ca5a54bd6",
@@ -444,8 +444,8 @@
       "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-4/",
       "cancelled": false,
       "ticket": "4223589",
-      "missing": false,
-      "show": "hurvínek prodává nevěstu"
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
     },
     {
       "id": "0e255b6e2ba1ad750921",
@@ -457,8 +457,8 @@
       "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-5/",
       "cancelled": false,
       "ticket": "4223590",
-      "missing": false,
-      "show": "hurvínek prodává nevěstu"
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
     },
     {
       "id": "ea74c264ffbbf4cab1b8",
@@ -470,8 +470,8 @@
       "url": "https://www.ndbrno.cz/program/sluha-dvou-panu-2/",
       "cancelled": false,
       "ticket": "4634066",
-      "missing": false,
-      "show": "sluha dvou pánů"
+      "show": "sluha dvou pánů",
+      "missing": false
     },
     {
       "id": "7c3ec61acde774f20612",
@@ -483,8 +483,8 @@
       "url": "https://www.ndbrno.cz/program/kubula-2/",
       "cancelled": false,
       "ticket": "4634076",
-      "missing": false,
-      "show": "kubula a kuba kubikula"
+      "show": "kubula a kuba kubikula",
+      "missing": false
     },
     {
       "id": "3e36b98b70b7c1537211",
@@ -496,8 +496,8 @@
       "url": "https://www.ndbrno.cz/program/marketa-irglova/",
       "cancelled": false,
       "ticket": "4629889",
-      "missing": false,
-      "show": "markéta irglová se smyčcovým kvintetem jihočeské filharmonie"
+      "show": "markéta irglová se smyčcovým kvintetem jihočeské filharmonie",
+      "missing": false
     },
     {
       "id": "67c8b9a4da0a75a099b0",
@@ -509,8 +509,8 @@
       "url": "https://www.ndbrno.cz/program/mucha-2/",
       "cancelled": false,
       "ticket": "4634079",
-      "missing": false,
-      "show": "mucha, mucha, mucha"
+      "show": "mucha, mucha, mucha",
+      "missing": false
     },
     {
       "id": "cf87c8705d6fae6106f5",
@@ -522,8 +522,8 @@
       "url": "https://www.ndbrno.cz/program/sen-carovne-noci-2/",
       "cancelled": false,
       "ticket": "4634100",
-      "missing": false,
-      "show": "sen čarovné noci"
+      "show": "sen čarovné noci",
+      "missing": false
     },
     {
       "id": "634c3c67757e50d30dde",
@@ -535,8 +535,8 @@
       "url": "https://www.ndbrno.cz/program/krok-za-oponu/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "krok za oponu: figarova svatba"
+      "show": "krok za oponu: figarova svatba",
+      "missing": false
     },
     {
       "id": "c4d0a553fe3211f58057",
@@ -548,8 +548,8 @@
       "url": "https://www.ndbrno.cz/program/figarova-svatba/",
       "cancelled": false,
       "ticket": "4223591",
-      "missing": false,
-      "show": "figarova svatba"
+      "show": "figarova svatba",
+      "missing": false
     },
     {
       "id": "2280fb4efd8a9f6d466f",
@@ -561,8 +561,8 @@
       "url": "https://www.ndbrno.cz/program/visaci-zamek/",
       "cancelled": false,
       "ticket": "4255880",
-      "missing": false,
-      "show": "visací zámek"
+      "show": "visací zámek",
+      "missing": false
     },
     {
       "id": "14dafe6fbe376605ba39",
@@ -574,8 +574,8 @@
       "url": "https://www.ndbrno.cz/program/obraz-4/",
       "cancelled": false,
       "ticket": "",
-      "missing": false,
-      "show": "obraz"
+      "show": "obraz",
+      "missing": false
     }
   ],
   "feed": [
@@ -790,8 +790,8 @@
       "at": "2026-11-27T19:04:02+01:00"
     }
   ],
-  "lastSuccess": "2026-11-27T19:04:02+01:00",
-  "lastAttempt": "2026-11-27T19:04:02+01:00",
+  "lastSuccess": "2026-11-27T19:09:54+01:00",
+  "lastAttempt": "2026-11-27T19:09:54+01:00",
   "error": false,
   "fromDate": "2026-11-27",
   "throughDate": "2026-12-10"
