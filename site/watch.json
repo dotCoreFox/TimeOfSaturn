@@ -2342,8 +2342,8 @@
         }
       ],
       "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
-      "error": false
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "error": true
     },
     "jic": {
       "events": [
@@ -2457,8 +2457,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "kumst": {
@@ -2609,8 +2609,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "nicom": {
@@ -2736,8 +2736,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "sono": {
@@ -2747,15 +2747,17 @@
           "sourceId": "sono",
           "title": "YAMATO - Hito no Chikara (The Power of Human Strength)",
           "date": "2026-11-27",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
-          "topics": [],
+          "topics": [
+            "hoste"
+          ],
           "url": "https://www.sono.cz/event/yamato-hito-no-chikara-the-power-of-human-strength/",
-          "description": "",
+          "description": "Věhlasný soubor japonských bubeníků YAMATO přijíždí se zbrusu novou show v listopadu 2026.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2763,15 +2765,17 @@
           "sourceId": "sono",
           "title": "ALFA MIST",
           "date": "2026-11-29",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
-          "topics": [],
+          "topics": [
+            "hoste"
+          ],
           "url": "https://www.sono.cz/event/alfa-mist/",
-          "description": "",
+          "description": "Londýnský producent, klavírista a skladatel Alfa Mist patří k nejvýraznějším osobnostem současné britské nu-jazzové scény a jeho tvorba je dokonalým ztělesněním toho, jak se…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2779,7 +2783,7 @@
           "sourceId": "sono",
           "title": "Malý princ",
           "date": "2026-12-01",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2787,7 +2791,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/maly-princ-2/",
-          "description": "",
+          "description": "Naše ztvárnění není klasickým vyprávěním příběhu Malého prince; je to originální spojení hudby a slova, které divákovi umožní oddat se své fantazii a pohladí ho na duši. V…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2795,7 +2799,7 @@
           "sourceId": "sono",
           "title": "Pocta Radimu Hladíkovi: MÁ HRA –⁠⁠⁠⁠⁠⁠ Tour 2026",
           "date": "2026-12-02",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2803,7 +2807,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/pocta-radimu-hladikovi-ma-hra-%e2%81%a0%e2%81%a0%e2%81%a0%e2%81%a0%e2%81%a0%e2%81%a0-tour-2026/",
-          "description": "",
+          "description": "K nedožitým 80. narozeninám legendárního skladatele a kytaristy Radima Hladíka ožije v příštím roce jedinečný jazzrockový projekt Nová syntéza, který odkazuje ke dvěma kultovním…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2811,7 +2815,7 @@
           "sourceId": "sono",
           "title": "Dad Harmony",
           "date": "2026-12-05",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2819,7 +2823,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/dad-harmony/",
-          "description": "",
+          "description": "Dad Harmony poprvé v České republice! Světově populární vokální senzace míří do Prahy, Brna, Ostravy, Hradce Králové a Zlína.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2827,7 +2831,7 @@
           "sourceId": "sono",
           "title": "ONDŘEJ BRZOBOHATÝ - LE MAGNIFIQUE 2 / ODPOLEDNÍ",
           "date": "2026-12-06",
-          "time": "",
+          "time": "15:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2835,7 +2839,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/ondrej-brzobohaty-le-magnifique-2-2/",
-          "description": "",
+          "description": "Po úspěšné premiéře v roce 2025 a stále vyprodaných představeních v Hudebním divadle Karlín v Praze přinášíme do Brna to nejlepší z francouzské filmové hudby již podruhé!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2843,7 +2847,7 @@
           "sourceId": "sono",
           "title": "ONDŘEJ BRZOBOHATÝ - LE MAGNIFIQUE 2 / VEČERNÍ",
           "date": "2026-12-06",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2851,7 +2855,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/ondrej-brzobohaty-le-magnifique-2/",
-          "description": "",
+          "description": "Po úspěšné premiéře v roce 2025 a stále vyprodaných představeních v Hudebním divadle Karlín v Praze přinášíme do Brna to nejlepší z francouzské filmové hudby již podruhé!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2859,7 +2863,7 @@
           "sourceId": "sono",
           "title": "Monika Absolonová – Až do nebes tour 2026",
           "date": "2026-12-07",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2867,7 +2871,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/monika-absolonova-az-do-nebes-tour-2026/",
-          "description": "",
+          "description": "Večer plný skvělé hudby, Moničiny bezprostřednosti a nezapomenutelných okamžiků s hvězdou české hudební scény! Za doprovodu Vlastního bandu a vokalistů na koncertě plném emocí a…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2875,7 +2879,7 @@
           "sourceId": "sono",
           "title": "QUEENSHOW Brno",
           "date": "2026-12-08",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2891,7 +2895,7 @@
           "sourceId": "sono",
           "title": "TŘI SESTRY FANÁNEK 60 TOUR",
           "date": "2026-12-09",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2899,7 +2903,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/tri-sestry-fananek-60-tour/",
-          "description": "",
+          "description": "Tři sestry vyráží na podzimní tour! Legendární česká kapela v roce 2026 slaví neuvěřitelných 41 let na scéně a Fanánek slaví 60. narozeniny. Přiveze s sebou pořádnou nálož svých…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2907,7 +2911,7 @@
           "sourceId": "sono",
           "title": "Divokej Bill",
           "date": "2026-12-11",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2915,7 +2919,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/divokej-bill-2/",
-          "description": "",
+          "description": "Po letní jízdě s turné OSM DIVOKEJCH 2026 čeká kapelu Divokej Bill změna tempa. Na podzim se znovu vydají na akustické turné a během listopadu a prosince odehrají koncerty v…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2923,7 +2927,7 @@
           "sourceId": "sono",
           "title": "Swingové Vánoce: Jan Smigmator & Big Band",
           "date": "2026-12-13",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2931,7 +2935,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/swingove-vanoce-jan-smigmator-big-band/",
-          "description": "",
+          "description": "Český swingový král míří opět do brněnského Sono Centra.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2939,7 +2943,7 @@
           "sourceId": "sono",
           "title": "RICHARD MÜLLER - VÁNOCE 2026",
           "date": "2026-12-14",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2947,7 +2951,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/richard-muller-vanoce-2026/",
-          "description": "",
+          "description": "Vánoční koncerty 2026 Richarda Müllera navazují na loňskou koncertní sérii a dále rozvíjejí její dramaturgickou i aranžérskou koncepci. Program je postaven na výběru klíčových…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2955,7 +2959,7 @@
           "sourceId": "sono",
           "title": "Jitka Čvančarová: Vánoční galavečer",
           "date": "2026-12-15",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2963,7 +2967,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/jitka-cvancarova-vanocni-galavecer/",
-          "description": "",
+          "description": "Sváteční večer plný kouzelných tónů, jedinečné atmosféry a především charismatického hlasu Jitky Čvančarové. Za doprovodu kapely Blue Cimbal, smyčcového Eterea Tria a dalších…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2971,7 +2975,7 @@
           "sourceId": "sono",
           "title": "Dire Straits Show: Dire Strats",
           "date": "2026-12-16",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2979,7 +2983,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/dire-straits-show-dire-strats/",
-          "description": "",
+          "description": "Hudba skupiny Dire Straits provázela posluchače po dvě desetiletí a tvorba jejího zakladatele Marka Knopflera dodnes patří k vrcholům světové pop-rockové scény. Mezi uznávané…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -2987,7 +2991,7 @@
           "sourceId": "sono",
           "title": "B-Fresh Christmas Show",
           "date": "2026-12-20",
-          "time": "",
+          "time": "16:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -2995,7 +2999,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/b-fresh-christmas-show/",
-          "description": "",
+          "description": "Adventní taneční koncert členů a hostů Tanečního studia B-Fresh Brno proběhne 20. prosince v brněnském Sono Centru.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3003,7 +3007,7 @@
           "sourceId": "sono",
           "title": "Ben Cristovao",
           "date": "2026-12-21",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3011,7 +3015,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/ben-cristovao-2/",
-          "description": "",
+          "description": "Ben Cristovao se vrací se svojí kapelou do brněnského Sono Music Clubu. V rámci svojí tour se tu zastavil loni, poprvé zde vystoupil už v roce 2017. Svoje show tvoří s důrazem na…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3019,7 +3023,7 @@
           "sourceId": "sono",
           "title": "Adventní gospely / Carole Alston & Christmas Gospel (USA)",
           "date": "2026-12-22",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3027,7 +3031,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/adventni-gospely-carole-alston-christmas-gospel-usa/",
-          "description": "",
+          "description": "Adventní gospely mají v České republice více než patnáctiletou tradici a každoročně přinášejí jedinečnou atmosféru adventního období prostřednictvím autentické gospelové hudby.…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3035,7 +3039,7 @@
           "sourceId": "sono",
           "title": "Silvestrovská Goldies Party",
           "date": "2026-12-31",
-          "time": "",
+          "time": "21:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3043,7 +3047,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/silvestrovska-goldies-party/",
-          "description": "",
+          "description": "SILVESTROVSKÁ G’oldies PARTY ve čtvrtek 31.12. v brněnském Sono Centru! Přijď oslavit Nový rok do Sona!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3051,7 +3055,7 @@
           "sourceId": "sono",
           "title": "FILM MRAZÍK ŽIVĚ SE SYMFONICKÝM ORCHESTREM",
           "date": "2027-01-08",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3059,7 +3063,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/film-mrazik-zive-se-symfonickym-orchestrem/",
-          "description": "",
+          "description": "Legendární pohádka Mrazík poprvé na velkém plátně za doprovodu symfonického orchestru Jedna z nejoblíbenějších pohádek všech dob přichází do České republiky ve zcela jedinečném…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3067,7 +3071,7 @@
           "sourceId": "sono",
           "title": "Dan Bárta & Illustratosphere & Lash & Grey",
           "date": "2027-01-15",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3075,7 +3079,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/dan-barta-illustratosphere-lash-grey/",
-          "description": "",
+          "description": "Dan Bárta & Illustratosphere & Lash & Grey / Stříbrná svatba tour: Jedinečný koncert Dana Bárty & Illustratosphere, jedenáctinásobného držitele Ceny Anděl v kategoriích Zpěvák…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3083,7 +3087,7 @@
           "sourceId": "sono",
           "title": "Louskáček by Grand Royal Classic Ballet",
           "date": "2027-01-18",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3091,7 +3095,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/louskacek-by-grand-royal-classic-ballet/",
-          "description": "",
+          "description": "Zveme vás na nezapomenutelné baletní představení „Louskáček“! Jde o klasický příběh, který potěší jak milovníky baletu, tak lidi hledající nezapomenutelný kulturní zážitek.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3099,7 +3103,7 @@
           "sourceId": "sono",
           "title": "THE ORIGINAL GOLDEN VOICES OF GOSPEL Z NEW YORKUAA",
           "date": "2027-01-19",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3107,7 +3111,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/the-original-golden-voices-of-gospel-z-new-yorkuaa/",
-          "description": "",
+          "description": "Světoznámá gospelová formace, která patří k nejlepším gospelovým souborům na světě, se poprvé představí v České republice!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3115,7 +3119,7 @@
           "sourceId": "sono",
           "title": "Richard Müller - Komorní recitál",
           "date": "2027-01-20",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3123,7 +3127,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/richard-muller-komorni-recital/",
-          "description": "",
+          "description": "Přidáváme novoroční koncert v Brně! Richard Müller představí poprvé v Brně svůj výjimečný a osobitý Komorní recitál. Hudba v té nejčistší podobě. Texty, které jsou nezaměnitelné.…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3131,7 +3135,7 @@
           "sourceId": "sono",
           "title": "Prague Cello Quartet - odpolední",
           "date": "2027-01-24",
-          "time": "",
+          "time": "16:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3139,7 +3143,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/prague-cello-quartet-odpoledni/",
-          "description": "",
+          "description": "Jedinečné koncerty plné originální hudby i humoru.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3147,7 +3151,7 @@
           "sourceId": "sono",
           "title": "Prague Cello Quartet - večerní",
           "date": "2027-01-24",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3155,7 +3159,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/prague-cello-quartet-vecerni/",
-          "description": "",
+          "description": "Jedinečné koncerty plné originální hudby i humoru.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3163,7 +3167,7 @@
           "sourceId": "sono",
           "title": "JIŘÍ KRHUT - TO NEVYMYSLÍŠ",
           "date": "2027-01-25",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3171,7 +3175,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/jiri-krhut-to-nevymyslis/",
-          "description": "",
+          "description": "Český muzikant, textař a bavič Jiří Krhut se po svém loňském vyprodaném představení Varieté Krhut v brněnském Sonu opět vrací na místo činu, tentokrát ale s jiným pořadem! To…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3179,7 +3183,7 @@
           "sourceId": "sono",
           "title": "JFB: Punch Brothers",
           "date": "2027-01-26",
-          "time": "",
+          "time": "18:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3195,7 +3199,7 @@
           "sourceId": "sono",
           "title": "A Tribute to Ray Charles: Joey Green (USA) and RayVille Big Band",
           "date": "2027-01-28",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3203,7 +3207,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/a-tribute-to-ray-charles-joey-green-usa-and-rayville-big-band/",
-          "description": "",
+          "description": "Hudba Raye Charlese naživo v brněnském Sono Centru!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3211,7 +3215,7 @@
           "sourceId": "sono",
           "title": "Deep Purple Tribute – Strange Kind Of Women (IT /FR)",
           "date": "2027-01-30",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3219,7 +3223,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/deep-purple-tribute-strange-kind-of-women-it-fr-2/",
-          "description": "",
+          "description": "Strange Kind Of Women se po velkém úspěchu vrací do České republiky. Jediný koncert odehrají 30. ledna 2027 v brněnském Sono Centru.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3227,7 +3231,7 @@
           "sourceId": "sono",
           "title": "FANTASY MOVIES SYMPHONY MUSIC EXPERIENCE",
           "date": "2027-01-31",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3235,7 +3239,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/fantasy-movies-symphony-music-experience-2/",
-          "description": "",
+          "description": "Koncert magické filmové hudby FANTASY MOVIES Symphony Music Experience – nejlepší hudba ze všech dílu o Harry Potterovi je zpět s novým a jeste větším magickým show koncertem. 24.…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3243,7 +3247,7 @@
           "sourceId": "sono",
           "title": "IMT Smile",
           "date": "2027-02-04",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3251,7 +3255,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/imt-smile-6/",
-          "description": "",
+          "description": "IMT Smile rozzáří Brno — nevšední start roku 2027! Připravte se na jedinečný zimní koncert plný slovenských hitů, silné energie a skvělé atmosféry. 4. února 2027 odstartuje IMT…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3259,7 +3263,7 @@
           "sourceId": "sono",
           "title": "NEJVĚTŠÍ HITY SADE PŘI SVÍČKÁCH",
           "date": "2027-02-06",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3267,7 +3271,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/nejvetsi-hity-sade-pri-svickach/",
-          "description": "",
+          "description": "Tribute to Sade – nejkrásnější písně Sade při svíčkách Zažijte nejkrásnější písně Sade v jedinečné atmosféře stovek svíček! Zveme vás na výjimečný tribute koncert věnovaný tvorbě…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3275,7 +3279,7 @@
           "sourceId": "sono",
           "title": "U.D.O. Triple Anniversary Tour Europe 2027",
           "date": "2027-02-09",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3283,7 +3287,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/u-d-o-triple-anniversary-tour-europe-2027/",
-          "description": "",
+          "description": "U.D.O. vystoupí v rámci svého turné „Triple Anniversaty Tour Euripe 2027“ i v ČR! V únoru 2027 v BRNĚ!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3291,15 +3295,17 @@
           "sourceId": "sono",
           "title": "Koncert filmové hudby Hanse Zimmera",
           "date": "2027-02-11",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
-          "topics": [],
+          "topics": [
+            "hoste"
+          ],
           "url": "https://www.sono.cz/event/koncert-filmove-hudby-hanse-zimmera-3/",
-          "description": "",
+          "description": "Hans Zimmer je německý hudební skladatel, který se proslavil díky své práci na filmových soundtrackech. Je známý svou schopností přinést intenzitu a emocionální hloubku do…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3307,7 +3313,7 @@
           "sourceId": "sono",
           "title": "Velký koncert filmové hudby v Brně",
           "date": "2027-02-14",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3315,7 +3321,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/velky-koncert-filmove-hudby-v-brne-2/",
-          "description": "",
+          "description": "Zažijte velkolepý večer plný nejslavnější filmové hudby v podání Filmového orchestru Praha ! Desítky hudebníků na jednom pódiu, monumentální zvuk a melodie, které zná celý svět.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3323,7 +3329,7 @@
           "sourceId": "sono",
           "title": "LABUTÍ JEZERO - GRAND ROYAL CLASSIC BALLET",
           "date": "2027-02-19",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3331,7 +3337,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/labuti-jezero-grand-royal-classic-ballet/",
-          "description": "",
+          "description": "„Labutí jezero“ je unikátní baletní představení, které skvěle předvádí renomovaný Grand Royal Classic Ballet pod vedením Marcina Rolczyńského. Tato klasická inscenace, kterou…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3339,7 +3345,7 @@
           "sourceId": "sono",
           "title": "Sila hudby",
           "date": "2027-02-20",
-          "time": "",
+          "time": "18:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3347,7 +3353,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/sila-hudby/",
-          "description": "",
+          "description": "Sila hudby míří i do vašeho města!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3355,7 +3361,7 @@
           "sourceId": "sono",
           "title": "DUO JATEKOK - Rammstein on the beach 2027",
           "date": "2027-03-02",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3371,7 +3377,7 @@
           "sourceId": "sono",
           "title": "ABBA SYMPHONIC SHOW 2027",
           "date": "2027-03-13",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3379,7 +3385,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/abba-symphonic-show-2027/",
-          "description": "",
+          "description": "ABBA WORLD REVIVAL – 100% Live in Symphonic Show!!!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3387,7 +3393,7 @@
           "sourceId": "sono",
           "title": "THE MACHINE PERFORMS PINK FLOYD SYMPHONIC ORCHESTRA LIVE",
           "date": "2027-03-16",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3395,7 +3401,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/the-machine-performs-pink-floyd-symphonic-orchestra-live/",
-          "description": "",
+          "description": "The MACHINE performs PINK FLOYD Symphonic Orchestra Live",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3403,7 +3409,7 @@
           "sourceId": "sono",
           "title": "KAMELOT",
           "date": "2027-03-20",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3411,7 +3417,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/kamelot/",
-          "description": "",
+          "description": "KAMELOT přijíždí představit svoji desku „Dark Asylum“ v březnu 2027 do BRNA!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3419,7 +3425,7 @@
           "sourceId": "sono",
           "title": "VAN GOGH — TANEČNÍ PŘEDSTAVENÍ",
           "date": "2027-03-22",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3427,7 +3433,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/van-gogh-tanecni-predstaveni/",
-          "description": "",
+          "description": "„Van Gogh“ — taneční představení, ve kterém se malba mění v pohyb.",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3435,7 +3441,7 @@
           "sourceId": "sono",
           "title": "Vojtěch Dyk & D.Y.K.",
           "date": "2027-03-23",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3443,7 +3449,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/vojtech-dyk-d-y-k/",
-          "description": "",
+          "description": "Vojtěch Dyk se se svou kapelou D.Y.K. po loňských vyprodaných koncertech vrací do Prahy a do Brna. Konec roku 2026 protančí a v roce 2027 se vrací na hudební stage a chystá plno…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3451,7 +3457,7 @@
           "sourceId": "sono",
           "title": "IGORRR + SECRET CHIEFS 3 + FANGE",
           "date": "2027-03-28",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3459,7 +3465,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/igorrr-secret-chiefs-3-fange/",
-          "description": "",
+          "description": "Hudební alchymie Gautiera Serreho se vrací! Igorrr přivezou do Brna a Košic svou divokou směs extrémního metalu, opery a elektroniky. Speciální hosté Secret Chiefs 3 a avantgardní…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3467,7 +3473,7 @@
           "sourceId": "sono",
           "title": "Jelen",
           "date": "2027-03-31",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3475,7 +3481,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/jelen-4/",
-          "description": "",
+          "description": "Skupina Jelen se na jaře 2027 vrací do klubů a kulturních domů. Po letech na velkých koncertních pódiích a festivalech navštíví místa, kde je fanouškům nejblíž. Právě po takových…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3483,7 +3489,7 @@
           "sourceId": "sono",
           "title": "Vesna: Morava Tour",
           "date": "2027-04-01",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3491,7 +3497,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/vesna-morava-tour/",
-          "description": "",
+          "description": "Vstupenky ZTP/P jsou v prodeji přes Fan Support. Kontaktujte nás pomocí tohoto odkazu .",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3499,7 +3505,7 @@
           "sourceId": "sono",
           "title": "David Koller – Nebudem se bát tour 2027",
           "date": "2027-04-07",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3507,7 +3513,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/david-koller-nebudem-se-bat-tour-2027/",
-          "description": "",
+          "description": "David Koller pokračuje se svou kapelou v koncertním turné k novému albu Nebudem se bát, které vyšlo na podzim 2026. Jedna z nejvýraznějších osobností české rockové scény představí…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3515,7 +3521,7 @@
           "sourceId": "sono",
           "title": "Harlej",
           "date": "2027-04-09",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3523,7 +3529,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/harlej/",
-          "description": "",
+          "description": "Harlej vyjíždí na své jarní Dávno vím tour .",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3531,7 +3537,7 @@
           "sourceId": "sono",
           "title": "JITKA ZELENKOVÁ & PETR SPÁLENÝ – 2 LEGENDY NA JEDNOM PÓDIU",
           "date": "2027-04-10",
-          "time": "",
+          "time": "18:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3539,7 +3545,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/jitka-zelenkova-petr-spaleny-2-legendy-na-jednom-podiu/",
-          "description": "",
+          "description": "Jitka Zelenková & Petr Spálený – 2 legendy na jednom pódiu",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3547,7 +3553,7 @@
           "sourceId": "sono",
           "title": "ZRUŠENO: Hana Holišová & New Time Orchestra - 10 let - MY",
           "date": "2027-04-11",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3555,7 +3561,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/hana-holisova-new-time-orchestra-10-let-my/",
-          "description": "",
+          "description": "Koncert New Time Orchestra a Hany Holišové se ruší",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3563,15 +3569,17 @@
           "sourceId": "sono",
           "title": "MASTODON",
           "date": "2027-04-12",
-          "time": "",
+          "time": "19:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
-          "topics": [],
+          "topics": [
+            "hoste"
+          ],
           "url": "https://www.sono.cz/event/mastodon/",
-          "description": "",
+          "description": "Americká kapela Mastodon, držitel ceny Grammy a jedna z nejvlivnějších rockových a metalových kapel současnosti, vystoupí 12. dubna 2027 v brněnském Sono Centru. Do Brna přiveze…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3579,7 +3587,7 @@
           "sourceId": "sono",
           "title": "Rozálie - Salto AMORtale Tour 2027",
           "date": "2027-04-13",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3587,7 +3595,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/rozalie-salto-amortale-tour-2027/",
-          "description": "",
+          "description": "Zpěvačka, harmonikářka a autorka Rozálie vydá 3. března 2027 nové album Salto AMORtale a 1. dubna vyrazí na stejnojmenné koncertní turné, které zavítá do patnácti měst napříč…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3595,7 +3603,7 @@
           "sourceId": "sono",
           "title": "Mňága a Žďorp - Oslavy 40 let",
           "date": "2027-04-14",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3603,7 +3611,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/mnaga-a-zdorp-5/",
-          "description": "",
+          "description": "Mňága a Žďorp slaví 40 let na scéně. Jedna z nejvýraznějších českých kapel posledních desetiletí nabídne na speciálních koncertech průřez svojí tvorbou – od písní z debutu Made in…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3611,7 +3619,7 @@
           "sourceId": "sono",
           "title": "THE GREATEST LOVE OF ALL, WHITNEY HOUSTON TRIBUTE BY BELINDA DAVIDS",
           "date": "2027-04-21",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3619,7 +3627,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/the-greatest-love-of-all-whitney-houston-tribute-by-belinda-davids/",
-          "description": "",
+          "description": "Whitney Houston Tribute The Greatest Love of All – Pop star Belinda Davids v Praze!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3627,7 +3635,7 @@
           "sourceId": "sono",
           "title": "Zdeněk Kluka 80",
           "date": "2027-04-22",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3635,7 +3643,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/zdenek-kluka-80/",
-          "description": "",
+          "description": "Brněnská hudební legenda Zdeněk Kluka, spoluzakladatel Progres 2, bubeník, zpěvák, autor scénické hudby pro řadu divadel (např. Divadlo Na provázku atd.), televizní a filmové…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3643,7 +3651,7 @@
           "sourceId": "sono",
           "title": "TARJA - FRISSON LIVE 2027",
           "date": "2027-04-28",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3651,7 +3659,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/tarja-frisson-live-2027/",
-          "description": "",
+          "description": "TARJA TURUNEN přijede v rámci „Frisson Live Tour“ v dubnu 2027 do BRNA!",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3659,7 +3667,7 @@
           "sourceId": "sono",
           "title": "NEREZ & LUCIA",
           "date": "2027-04-29",
-          "time": "",
+          "time": "20:00",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3667,7 +3675,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/nerez-lucia/",
-          "description": "",
+          "description": "Legendární formace NEREZ & LUCIA vystoupí v Sono Centru, v jednom z akusticky nejlepších sálů v Brně, ve čtvrtek 29. 4. 2027 a nabídne výjimečný koncert, který propojí odkaz…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3675,7 +3683,7 @@
           "sourceId": "sono",
           "title": "PURPENDICULAR * IAN PAICE",
           "date": "2027-05-08",
-          "time": "",
+          "time": "19:30",
           "city": "Brno",
           "venue": "Sono Centrum",
           "country": "CZ",
@@ -3683,18 +3691,18 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://www.sono.cz/event/purpendicular-ian-paice/",
-          "description": "",
+          "description": "Koncertní turné k 20. výročí 2007–2027 Kapela Purpendicular feat. Ian Paice slaví své 20. výročí koncertním turné (2007-2027), kterým připomíná dvě desetiletí na scéně jako jedna…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "light-move": {
       "events": [],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "torchlight": {
@@ -3718,8 +3726,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "up-helly-aa": {
@@ -3743,8 +3751,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "amsterdam-light": {
@@ -3769,14 +3777,14 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:36:15+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     },
     "wianki": {
       "events": [],
-      "lastSuccess": "2026-11-27T22:38:24+01:00",
-      "lastAttempt": "2026-11-27T22:38:24+01:00",
+      "lastSuccess": "2026-11-27T22:42:41+01:00",
+      "lastAttempt": "2026-11-27T22:42:41+01:00",
       "error": false
     }
   }
