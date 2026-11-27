@@ -45,6 +45,7 @@ function element(tag, text, className) {
 
 const fold = text => (text || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
 const matchKey = text => fold(text).replace(/[^a-z0-9]+/g, ' ').trim()
+const venueKey = venue => matchKey(venue?.split(/,|\s[–—-]\s/)[0])
 const topicNames = {
   kurzy:'Kurzy a dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
   hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo'
@@ -102,8 +103,8 @@ function groupOccurrences(rows) {
         return matchKey(event.title) === matchKey(row.title) &&
           bucket.filter(item => item.links.some(link => urls.includes(normalizedUrl(link.url)))).length === 1
       }
-      const venue = matchKey(event.venue?.split(',')[0])
-      return Boolean(venue && venue === matchKey(row.venue?.split(',')[0]) &&
+      const venue = venueKey(event.venue)
+      return Boolean(venue && venue === venueKey(row.venue) &&
         event.time === row.time && matchKey(event.title) === matchKey(row.title))
     })
     if (duplicate) {
