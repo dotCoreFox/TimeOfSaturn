@@ -1,0 +1,798 @@
+{
+  "descriptions": {
+    "dsb+ proces pelicot": "Divadelní výjezd za inscenací Proces Pelicot do Galaxie kulturní stanice v Praze. Na programu spolupracují Dejvické divadlo a Národní divadlo.",
+    "ndb 2: ticho plné lidí / na každém konci světla je tunel": "Program 9 juniorského souboru Baletu NdB2 přináší dvě nové choreografie, které obracejí pozornost k člověku, jeho vnitřnímu světu…",
+    "ze života hmyzu": "Inscenace je vhodná pro děti od 10 let s doprovodem dospělých, kteří vytvoří dětským divákům průvodce po říši…",
+    "louskáček": "Proč se celý svět neobejde o Vánocích bez Louskáčka? Protože Čajkovského hudba spolu s vánočním příběhem malé Klárky…",
+    "maryša": "Velké drama bratří Mrštíků, často považováno za nejlepší českou divadelní hru vůbec, vtrhlo na jeviště Mahenova divadla s…",
+    "obraz": "Může jeden bílý obraz zničit čtrnáctileté přátelství mezi třemi muži? Komedie, u které se budete smát od začátku…",
+    "edison!": "V hravé inscenaci spolu účinkují herci i loutky, kteří nejen zpívají a hrají, ale také připravují chemické a…",
+    "rozsvícení vánočního stromu": "Letošní rozsvícení vánočního stromu bude netradiční. Město Brno po mnoha letech opět navštíví samotný velký vynálezce Thomas Alva…",
+    "adam plachetka & melody makers": "Světově proslulý operní pěvec se s vášní sobě vlastní vrhá do různorodých náročných projektů a s šarmantní drzostí…",
+    "pronájem: 4 tenoři a filharmonie bohuslava martinů": "Koncert vokálního uskupení 4 Tenoři s Filharmonií Bohuslava Martinů v Janáčkově divadle.",
+    "prodaná nevěsta": "Jak prodat nevěstu? Nejlépe prostřednictvím inscenace režiséra Ondřeje Havelky. Jedna z nejpopulárnějších českých oper Prodaná nevěsta Bedřicha Smetany…",
+    "hana": "Dramatický a napínavý bestseller Aleny Mornštajnové na jevišti! Uhrančivé osudy tří žen a jednoho století se odehrávají v…",
+    "lidovky jdou do řiti": "Skončila éra tištěných novin. Toto je kabaret ohlížející se za historií těch možná nejslavnějších. Za doprovodu živě hraných…",
+    "pokoušení": "Nemáte dost odvahy na oslovení dívky svých snů? Nezoufejte. Zaměstnanec vědeckého ústavu dr. Foustka také ne. Možná si…",
+    "jak se dělá opera? x jak se dělá balet? workshop pro školy": "Účastníky čeká několik na sebe navazujících aktivit, do kterých se aktivně zapojí pohybově i hlasově a prostřednictvím vlastního…",
+    "bratři ebenové": "Bratři Ebenové – kapela tří bratří Ebenových (Marek, Kryštof, David) a dalších předních českých hudebníků (Pavel Skála, Jaromír…",
+    "carmen": "Francouzský esprit a španělskou vášeň to v sobě ukrývá hudba Bizetovy Carmen. Nakonec, kdo by neznal nesmrtelné operní…",
+    "faidra (zatmění)": "Svého manžela Thésea, legendárního vítěze nad Minotaurem a hrdinu mnoha válek, královna Faidra nenávidí. V jejích očích není…",
+    "hurvínek prodává nevěstu": "Taťuldo, jak se prodává nevěsta? Jak jsi přišel na to, že by někdo prodal nevěstu, Hurvínku? No tady…",
+    "patriarcha": "Jsou spolu už padesát let, jsou velmi dobře zaopatření, jsou v důchodu a jsou připraveni žít podzim života…",
+    "lhář": "Věnujte pozornost tomuto Dorantovi, je to náš hrdina a – jak vám on sám poví – dovede okouzlit…",
+    "sluha dvou pánů": "Pozitivní energie skupiny činoherců je korunována fascinujícím pohybově improvizačním výkonem Viktora Kuzníka v roli Truffaldina. Inscenace povyšuje také…",
+    "kubula a kuba kubikula": "Inscenace pro odvážné i strašpytlíky, mlsouny i držgrešle, pro děti, rodiče, prarodiče a všemožná domácí strašidla! Interaktivní představení…",
+    "markéta irglová se smyčcovým kvintetem jihočeské filharmonie": "Markéta Irglová je nejen držitelka prestižního Oscara, Grammy a mnoha dalších hudebních cen, ale především výraznou skladatelkou a…",
+    "mucha, mucha, mucha": "Co spojuje Slovanskou epopej Alfonse Muchy a Muchovu boudu v brněnském Mariánském údolí? To zjistíte v nové české…",
+    "sen čarovné noci": "Mladí milenci Hermie a Lysandr utíkají o svatojánské noci z Athén před hněvem nepřejících rodičů. V patách jim…",
+    "krok za oponu: figarova svatba": "Nahlédněte do opery zblízka! Udělejte s námi Krok za oponu. Pořad určený všem zvídavým lidem, malým i velkým,…",
+    "figarova svatba": "Bez hranic či za hranici? Jak dlouho vydrží ta pravá láska Rosiny a Almavivy, co měla být navždy,…",
+    "visací zámek": "Kapela Visací zámek, která již více než čtyři desetiletí formuje českou punkovou scénu, představí na jarním turné speciální…"
+  },
+  "events": [
+    {
+      "id": "d484f070b38dcb1e016d",
+      "date": "2026-11-27",
+      "time": "18:00",
+      "title": "DSB+ Proces Pelicot",
+      "venue": "Dejvické divadlo, Národní divadlo – divadelní výjezd, Galaxie kulturní stanice, Praha",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/dsb-proces-pelicot/",
+      "cancelled": false,
+      "ticket": "4714008",
+      "missing": false,
+      "show": "dsb+ proces pelicot"
+    },
+    {
+      "id": "1166353d9451add9e7b0",
+      "date": "2026-11-27",
+      "time": "19:00",
+      "title": "NdB 2: Ticho plné lidí / Na každém konci světla je tunel",
+      "venue": "divadlo Reduta",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/program-9-2/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel"
+    },
+    {
+      "id": "12825f6bcd900af7ce08",
+      "date": "2026-11-27",
+      "time": "19:00",
+      "title": "Ze života hmyzu",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/ze-zivota-hmyzu-4/",
+      "cancelled": false,
+      "ticket": "4423799",
+      "missing": false,
+      "show": "ze života hmyzu"
+    },
+    {
+      "id": "f5c8595c3d84cdab8ed2",
+      "date": "2026-11-28",
+      "time": "14:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-3/",
+      "cancelled": false,
+      "ticket": "4214598",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "c1a97cb8665c160d1432",
+      "date": "2026-11-28",
+      "time": "18:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-2/",
+      "cancelled": false,
+      "ticket": "4214599",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "78cf1c8602e9b9294595",
+      "date": "2026-11-28",
+      "time": "19:00",
+      "title": "Maryša",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/marysa-3/",
+      "cancelled": false,
+      "ticket": "4423801",
+      "missing": false,
+      "show": "maryša"
+    },
+    {
+      "id": "1f0ec51fbc59b42210c7",
+      "date": "2026-11-28",
+      "time": "19:00",
+      "title": "Obraz",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/obraz-3/",
+      "cancelled": false,
+      "ticket": "4423804",
+      "missing": false,
+      "show": "obraz"
+    },
+    {
+      "id": "e3d978b7b74041645e46",
+      "date": "2026-11-29",
+      "time": "16:00",
+      "title": "Edison!",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/edison-4/",
+      "cancelled": false,
+      "ticket": "4423805",
+      "missing": false,
+      "show": "edison!"
+    },
+    {
+      "id": "acc9155acc29281fd7e4",
+      "date": "2026-11-29",
+      "time": "18:00",
+      "title": "Rozsvícení vánočního stromu",
+      "venue": "Mahenovo divadlo",
+      "category": "Mahenovo divadlo",
+      "url": "https://www.ndbrno.cz/program/rozsviceni-vanocniho-stromu-ndb/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "rozsvícení vánočního stromu"
+    },
+    {
+      "id": "76c1235cd898bc3f6ac1",
+      "date": "2026-11-29",
+      "time": "19:00",
+      "title": "Adam Plachetka & Melody Makers",
+      "venue": "Mahenovo divadlo",
+      "category": "Koncerty",
+      "url": "https://www.ndbrno.cz/program/adam-plachetka/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "adam plachetka & melody makers"
+    },
+    {
+      "id": "5a604248a87a7c535008",
+      "date": "2026-11-29",
+      "time": "19:00",
+      "title": "Pronájem: 4 Tenoři a Filharmonie Bohuslava Martinů",
+      "venue": "Janáčkovo divadlo",
+      "category": "Janáčkovo divadlo",
+      "url": "https://www.ndbrno.cz/program/vanocni-galakoncert/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "pronájem: 4 tenoři a filharmonie bohuslava martinů"
+    },
+    {
+      "id": "90b7e377661e302d14bd",
+      "date": "2026-12-01",
+      "time": "09:00",
+      "title": "Edison!",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/edison/",
+      "cancelled": false,
+      "ticket": "4633807",
+      "missing": false,
+      "show": "edison!"
+    },
+    {
+      "id": "d5a71b22177c82de70f2",
+      "date": "2026-12-01",
+      "time": "10:00",
+      "title": "Prodaná nevěsta",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/prodana-nevesta/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "prodaná nevěsta"
+    },
+    {
+      "id": "1ac8dc3dc795be1ab70d",
+      "date": "2026-12-01",
+      "time": "19:00",
+      "title": "Hana",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/hana/",
+      "cancelled": false,
+      "ticket": "4633805",
+      "missing": false,
+      "show": "hana"
+    },
+    {
+      "id": "e1747bbb98591fafb892",
+      "date": "2026-12-01",
+      "time": "19:00",
+      "title": "NdB 2: Ticho plné lidí / Na každém konci světla je tunel",
+      "venue": "divadlo Reduta",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/program-9-7/",
+      "cancelled": false,
+      "ticket": "4240432",
+      "missing": false,
+      "show": "ndb 2: ticho plné lidí / na každém konci světla je tunel"
+    },
+    {
+      "id": "1a0ce622bf862186c38a",
+      "date": "2026-12-01",
+      "time": "19:00",
+      "title": "Prodaná nevěsta",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/prodana-nevesta-2/",
+      "cancelled": false,
+      "ticket": "4214886",
+      "missing": false,
+      "show": "prodaná nevěsta"
+    },
+    {
+      "id": "d529018dff9641a3aca8",
+      "date": "2026-12-02",
+      "time": "19:00",
+      "title": "Lidovky jdou do řiti",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/lidovky-4/",
+      "cancelled": false,
+      "ticket": "4633808",
+      "missing": false,
+      "show": "lidovky jdou do řiti"
+    },
+    {
+      "id": "87c51db13fbe78f1eb55",
+      "date": "2026-12-02",
+      "time": "19:00",
+      "title": "Pokoušení",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/pokouseni-4/",
+      "cancelled": false,
+      "ticket": "4439465",
+      "missing": false,
+      "show": "pokoušení"
+    },
+    {
+      "id": "263eb79e859ec82781c4",
+      "date": "2026-12-03",
+      "time": "09:00",
+      "title": "Jak se dělá opera? x Jak se dělá balet? Workshop pro školy",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/jak-se-dela-opera-a-balet-3/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "jak se dělá opera? x jak se dělá balet? workshop pro školy"
+    },
+    {
+      "id": "79cf1d57589ff641ad82",
+      "date": "2026-12-03",
+      "time": "19:00",
+      "title": "Bratři Ebenové",
+      "venue": "Mahenovo divadlo",
+      "category": "Koncerty",
+      "url": "https://www.ndbrno.cz/program/bratri-ebenove/",
+      "cancelled": false,
+      "ticket": "4255879",
+      "missing": false,
+      "show": "bratři ebenové"
+    },
+    {
+      "id": "a08fa14c6840b38b49bd",
+      "date": "2026-12-03",
+      "time": "19:00",
+      "title": "Carmen",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/carmen-4/",
+      "cancelled": false,
+      "ticket": "4214887",
+      "missing": false,
+      "show": "carmen"
+    },
+    {
+      "id": "6644f1f7551810070a32",
+      "date": "2026-12-03",
+      "time": "19:00",
+      "title": "Faidra (Zatmění)",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/faidra-4/",
+      "cancelled": false,
+      "ticket": "4634061",
+      "missing": false,
+      "show": "faidra (zatmění)"
+    },
+    {
+      "id": "38c55a7e42a2a26e36af",
+      "date": "2026-12-04",
+      "time": "11:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-5/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "1c15162945d5a16d4ccb",
+      "date": "2026-12-04",
+      "time": "18:00",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu/",
+      "cancelled": false,
+      "ticket": "4223553",
+      "missing": false,
+      "show": "hurvínek prodává nevěstu"
+    },
+    {
+      "id": "95a553b0062036f65fcf",
+      "date": "2026-12-04",
+      "time": "18:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-4/",
+      "cancelled": false,
+      "ticket": "4223547",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "db8eff4b14f19286f29c",
+      "date": "2026-12-04",
+      "time": "19:00",
+      "title": "Patriarcha",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/patriarcha-7/",
+      "cancelled": false,
+      "ticket": "4634063",
+      "missing": false,
+      "show": "patriarcha"
+    },
+    {
+      "id": "887dcadbc0332d8ba8e6",
+      "date": "2026-12-05",
+      "time": "14:00",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-2/",
+      "cancelled": false,
+      "ticket": "4223586",
+      "missing": false,
+      "show": "hurvínek prodává nevěstu"
+    },
+    {
+      "id": "bf2da0d671f57c6df4e0",
+      "date": "2026-12-05",
+      "time": "14:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-7/",
+      "cancelled": false,
+      "ticket": "4223554",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "5df40e42f184dff9ccf2",
+      "date": "2026-12-05",
+      "time": "16:30",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-3/",
+      "cancelled": false,
+      "ticket": "4223587",
+      "missing": false,
+      "show": "hurvínek prodává nevěstu"
+    },
+    {
+      "id": "651906dd9ccd8dc58047",
+      "date": "2026-12-05",
+      "time": "17:00",
+      "title": "Lhář",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/lhar/",
+      "cancelled": false,
+      "ticket": "4209483",
+      "missing": false,
+      "show": "lhář"
+    },
+    {
+      "id": "a4cdcd718ba407ca245c",
+      "date": "2026-12-05",
+      "time": "18:00",
+      "title": "Louskáček",
+      "venue": "Janáčkovo divadlo",
+      "category": "Balet",
+      "url": "https://www.ndbrno.cz/program/louskacek-6/",
+      "cancelled": false,
+      "ticket": "4223583",
+      "missing": false,
+      "show": "louskáček"
+    },
+    {
+      "id": "ec1eef3f408ca5a54bd6",
+      "date": "2026-12-06",
+      "time": "11:00",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-4/",
+      "cancelled": false,
+      "ticket": "4223589",
+      "missing": false,
+      "show": "hurvínek prodává nevěstu"
+    },
+    {
+      "id": "0e255b6e2ba1ad750921",
+      "date": "2026-12-06",
+      "time": "14:00",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-5/",
+      "cancelled": false,
+      "ticket": "4223590",
+      "missing": false,
+      "show": "hurvínek prodává nevěstu"
+    },
+    {
+      "id": "ea74c264ffbbf4cab1b8",
+      "date": "2026-12-06",
+      "time": "19:00",
+      "title": "Sluha dvou pánů",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/sluha-dvou-panu-2/",
+      "cancelled": false,
+      "ticket": "4634066",
+      "missing": false,
+      "show": "sluha dvou pánů"
+    },
+    {
+      "id": "7c3ec61acde774f20612",
+      "date": "2026-12-07",
+      "time": "10:00",
+      "title": "Kubula a Kuba Kubikula",
+      "venue": "Mahenovo divadlo - Malá scéna",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/kubula-2/",
+      "cancelled": false,
+      "ticket": "4634076",
+      "missing": false,
+      "show": "kubula a kuba kubikula"
+    },
+    {
+      "id": "3e36b98b70b7c1537211",
+      "date": "2026-12-07",
+      "time": "19:00",
+      "title": "Markéta Irglová se smyčcovým kvintetem Jihočeské filharmonie",
+      "venue": "Mahenovo divadlo",
+      "category": "Koncerty",
+      "url": "https://www.ndbrno.cz/program/marketa-irglova/",
+      "cancelled": false,
+      "ticket": "4629889",
+      "missing": false,
+      "show": "markéta irglová se smyčcovým kvintetem jihočeské filharmonie"
+    },
+    {
+      "id": "67c8b9a4da0a75a099b0",
+      "date": "2026-12-07",
+      "time": "19:00",
+      "title": "Mucha, Mucha, Mucha",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/mucha-2/",
+      "cancelled": false,
+      "ticket": "4634079",
+      "missing": false,
+      "show": "mucha, mucha, mucha"
+    },
+    {
+      "id": "cf87c8705d6fae6106f5",
+      "date": "2026-12-08",
+      "time": "19:00",
+      "title": "Sen čarovné noci",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/sen-carovne-noci-2/",
+      "cancelled": false,
+      "ticket": "4634100",
+      "missing": false,
+      "show": "sen čarovné noci"
+    },
+    {
+      "id": "634c3c67757e50d30dde",
+      "date": "2026-12-09",
+      "time": "11:00",
+      "title": "Krok za oponu: Figarova svatba",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/krok-za-oponu/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "krok za oponu: figarova svatba"
+    },
+    {
+      "id": "c4d0a553fe3211f58057",
+      "date": "2026-12-09",
+      "time": "18:00",
+      "title": "Figarova svatba",
+      "venue": "Janáčkovo divadlo",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/figarova-svatba/",
+      "cancelled": false,
+      "ticket": "4223591",
+      "missing": false,
+      "show": "figarova svatba"
+    },
+    {
+      "id": "2280fb4efd8a9f6d466f",
+      "date": "2026-12-09",
+      "time": "19:00",
+      "title": "Visací zámek",
+      "venue": "Mahenovo divadlo",
+      "category": "Koncerty",
+      "url": "https://www.ndbrno.cz/program/visaci-zamek/",
+      "cancelled": false,
+      "ticket": "4255880",
+      "missing": false,
+      "show": "visací zámek"
+    },
+    {
+      "id": "14dafe6fbe376605ba39",
+      "date": "2026-12-10",
+      "time": "19:00",
+      "title": "Obraz",
+      "venue": "divadlo Reduta",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/obraz-4/",
+      "cancelled": false,
+      "ticket": "",
+      "missing": false,
+      "show": "obraz"
+    }
+  ],
+  "feed": [
+    {
+      "kind": "new",
+      "event": "d484f070b38dcb1e016d",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "1166353d9451add9e7b0",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "12825f6bcd900af7ce08",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "f5c8595c3d84cdab8ed2",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "c1a97cb8665c160d1432",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "78cf1c8602e9b9294595",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "1f0ec51fbc59b42210c7",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "76c1235cd898bc3f6ac1",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "e3d978b7b74041645e46",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "5a604248a87a7c535008",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "acc9155acc29281fd7e4",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "90b7e377661e302d14bd",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "1ac8dc3dc795be1ab70d",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "e1747bbb98591fafb892",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "d5a71b22177c82de70f2",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "1a0ce622bf862186c38a",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "d529018dff9641a3aca8",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "87c51db13fbe78f1eb55",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "79cf1d57589ff641ad82",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "a08fa14c6840b38b49bd",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "6644f1f7551810070a32",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "263eb79e859ec82781c4",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "1c15162945d5a16d4ccb",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "38c55a7e42a2a26e36af",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "95a553b0062036f65fcf",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "db8eff4b14f19286f29c",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "887dcadbc0332d8ba8e6",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "5df40e42f184dff9ccf2",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "651906dd9ccd8dc58047",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "bf2da0d671f57c6df4e0",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "a4cdcd718ba407ca245c",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "ec1eef3f408ca5a54bd6",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "0e255b6e2ba1ad750921",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "ea74c264ffbbf4cab1b8",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "7c3ec61acde774f20612",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "3e36b98b70b7c1537211",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "67c8b9a4da0a75a099b0",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "cf87c8705d6fae6106f5",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "c4d0a553fe3211f58057",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "634c3c67757e50d30dde",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "2280fb4efd8a9f6d466f",
+      "at": "2026-11-27T19:04:02+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "14dafe6fbe376605ba39",
+      "at": "2026-11-27T19:04:02+01:00"
+    }
+  ],
+  "lastSuccess": "2026-11-27T19:04:02+01:00",
+  "lastAttempt": "2026-11-27T19:04:02+01:00",
+  "error": false,
+  "fromDate": "2026-11-27",
+  "throughDate": "2026-12-10"
+}

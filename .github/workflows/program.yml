@@ -1,0 +1,50 @@
+name: Aktualizovat a publikovat program NdB
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+      timezone: Europe/Prague
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: timeofsaturn-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python refresh.py
+      - name: Commit event snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/events.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Aktualizovat program NdB'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+  publish:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deploy

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Time of Saturn</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<header><a class="brand" href="#feed"><span aria-hidden="true">♄</span> Time of Saturn</a>
+<nav aria-label="Hlavní navigace"><a href="#feed">Feed</a><a href="#sources">Zdroje</a></nav></header>
+<main>
+<section id="feed">
+<h1>Kalendář akcí</h1>
+<p id="status" role="status">Načítám program…</p>
+<div class="calendar-head"><h2 id="month"></h2><div class="controls">
+<button id="previous" aria-label="Předchozí měsíc">‹</button>
+<button id="today">Dnes</button>
+<button id="next" aria-label="Další měsíc">›</button>
+</div></div>
+<div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
+<div class="calendar" id="calendar" aria-labelledby="month"></div>
+<section class="updates"><h2>Aktuality</h2><ul id="news"></ul></section>
+</section>
+<section id="sources" hidden><h1>Zdroje</h1><div class="source">
+<h2>Národní divadlo Brno</h2><p>Program na dnešek a dalších 13 kalendářních dní. Kontrola denně ve 02:00 českého času.</p>
+<a href="https://www.ndbrno.cz/program/">Otevřít program NdB</a></div></section>
+</main>
+<dialog id="details" aria-labelledby="event-title">
+<form method="dialog"><button aria-label="Zavřít">×</button></form>
+<h2 id="event-title"></h2><p id="event-meta"></p><p id="event-description"></p><a id="event-source">Detail na webu NdB</a>
+</dialog>
+</body>
+</html>
