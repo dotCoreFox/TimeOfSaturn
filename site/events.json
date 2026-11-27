@@ -28,7 +28,8 @@
     "sen čarovné noci": "Mladí milenci Hermie a Lysandr utíkají o svatojánské noci z Athén před hněvem nepřejících rodičů. V patách jim…",
     "krok za oponu: figarova svatba": "Nahlédněte do opery zblízka! Udělejte s námi Krok za oponu. Pořad určený všem zvídavým lidem, malým i velkým,…",
     "figarova svatba": "Bez hranic či za hranici? Jak dlouho vydrží ta pravá láska Rosiny a Almavivy, co měla být navždy,…",
-    "visací zámek": "Kapela Visací zámek, která již více než čtyři desetiletí formuje českou punkovou scénu, představí na jarním turné speciální…"
+    "visací zámek": "Kapela Visací zámek, která již více než čtyři desetiletí formuje českou punkovou scénu, představí na jarním turné speciální…",
+    "dsb+ work-in-progress - me!": ""
   },
   "events": [
     {
@@ -576,9 +577,63 @@
       "ticket": "",
       "show": "obraz",
       "missing": false
+    },
+    {
+      "id": "65fc2fbdc6f3730eff11",
+      "date": "2026-12-11",
+      "time": "17:00",
+      "title": "DSB+ Work-in-progress - ME!",
+      "venue": "Burkicom, Zkušebna NdB, Rooseveltova 13, 602 00 Brno – vstup z Rooseveltovy ulice",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/dsb-me/",
+      "cancelled": false,
+      "ticket": "",
+      "show": "dsb+ work-in-progress - me!",
+      "missing": false
+    },
+    {
+      "id": "699ca4d3c27d134c0965",
+      "date": "2026-12-11",
+      "time": "18:00",
+      "title": "Hurvínek prodává nevěstu",
+      "venue": "divadlo Reduta",
+      "category": "Opera",
+      "url": "https://www.ndbrno.cz/program/hurvinek-prodava-nevestu-6/",
+      "cancelled": false,
+      "ticket": "4223592",
+      "show": "hurvínek prodává nevěstu",
+      "missing": false
+    },
+    {
+      "id": "b6173f7b10e211a6c06b",
+      "date": "2026-12-11",
+      "time": "19:00",
+      "title": "Sluha dvou pánů",
+      "venue": "Mahenovo divadlo",
+      "category": "Činohra",
+      "url": "https://www.ndbrno.cz/program/sluha-dvou-panu-6/",
+      "cancelled": false,
+      "ticket": "4702982",
+      "show": "sluha dvou pánů",
+      "missing": false
     }
   ],
   "feed": [
+    {
+      "kind": "new",
+      "event": "65fc2fbdc6f3730eff11",
+      "at": "2026-11-28T00:03:28+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "699ca4d3c27d134c0965",
+      "at": "2026-11-28T00:03:28+01:00"
+    },
+    {
+      "kind": "new",
+      "event": "b6173f7b10e211a6c06b",
+      "at": "2026-11-28T00:03:28+01:00"
+    },
     {
       "kind": "new",
       "event": "d484f070b38dcb1e016d",
@@ -790,9 +845,9 @@
       "at": "2026-11-27T19:04:02+01:00"
     }
   ],
-  "lastSuccess": "2026-11-27T23:35:11+01:00",
-  "lastAttempt": "2026-11-27T23:35:11+01:00",
+  "lastSuccess": "2026-11-28T00:03:28+01:00",
+  "lastAttempt": "2026-11-28T00:03:28+01:00",
   "error": false,
-  "fromDate": "2026-11-27",
-  "throughDate": "2026-12-10"
+  "fromDate": "2026-11-28",
+  "throughDate": "2026-12-11"
 }

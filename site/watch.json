@@ -59,290 +59,6 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         },
         {
-          "id": "go-to-brno-fccde656cce76f2f1c",
-          "sourceId": "go-to-brno",
-          "title": "Festival povolání",
-          "date": "2026-11-27",
-          "time": "09:30",
-          "city": "Brno",
-          "venue": "BVV - Brněnské výstaviště",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/festival-povolani/",
-          "description": "Jaké povolání si vybrat? Kudy vede cesta k úspěchu? Festival povolání je pilotní ročník setkání pro žáky 8. a 9. tříd a jejich učitele. Koná se souběžně s Veletrhem středních škol…",
-          "organizerUrl": "https://festivalpovolani.ukvr.cz/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-16d0546b2a4bbdb72d",
-          "sourceId": "go-to-brno",
-          "title": "Vánoční Art Hrabárna 2026",
-          "date": "2026-11-27",
-          "time": "10:00",
-          "city": "Brno",
-          "venue": "Café Práh",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/vanocni-art-hrabarna-2026/",
-          "description": "Srdečně vás zvu na Vánoční Art Hrabárnu. Přijďte si ulovit originální dárek z velké, barevné hromady mé aktuální tvorby. Osobně se na vás již po osmé těší Rudolf Brančovský.…",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-804a84b97f8d1834e6",
-          "sourceId": "go-to-brno",
-          "title": "Vernisáž Sťatý stromček / Ivana Šáteková",
-          "date": "2026-11-27",
-          "time": "14:00",
-          "city": "Brno",
-          "venue": "Dům umění města Brna",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/vernisaz-staty-stromcek-ivana-satekova/",
-          "description": "Advent v Domě umění trošku jinak. Vánoce, svátky klidu, pohody a rodinné idyly… Ale co když to pod stromečkem zase trochu zaskřípe? V pátek 27. listopadu 2026 od 14 hodin zahájíme…",
-          "organizerUrl": "https://www.dum-umeni.cz/staty-stromcek-ivana-satekova/t10181",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-34b38345a18c86e388",
-          "sourceId": "go-to-brno",
-          "title": "101 let Kamenky",
-          "date": "2026-11-27",
-          "time": "15:00",
-          "city": "Brno",
-          "venue": "Moravská zemská knihovna",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/101-let-kamenky/",
-          "description": "Kamenná kolonie je jedním z nejpozoruhodnějších míst Brna. Jak se z nouzové dělnické osady stala čtvrť s nezaměnitelnou atmosférou, silnou komunitou a pověstí jednoho z nejlepších…",
-          "organizerUrl": "https://www.knihyvbrne.cz/kalendar-akci/101-let-kamenky",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-9665b7cda99c10b780",
-          "sourceId": "go-to-brno",
-          "title": "Barbarizace české politiky a vzestup politických podnikatelů. Uvedení nové knihy Lubomíra Kopečka",
-          "date": "2026-11-27",
-          "time": "15:00",
-          "city": "Brno",
-          "venue": "Moravská zemská knihovna",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/barbarizace-ceske-politiky-a-vzestup-politickych-podnikatelu-uvedeni-nove-knihy-lubomira-kopecka/",
-          "description": "Co znamená barbarizace politiky a kdy naplno zasáhla Česko? Proč se prosadili političtí podnikatelé Andrej Babiš a Tomio Okamura? Jaké okolnosti a politické tahy vynesly Miloše…",
-          "organizerUrl": "https://www.knihyvbrne.cz/kalendar-akci/barbarizace-ceske-politiky-a-vzestup-politickych-podnikatelu-uvedeni-nove-knihy-lubomira-kopecka",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-e44cbafde528d379ee",
-          "sourceId": "go-to-brno",
-          "title": "Mikrosvět piva",
-          "date": "2026-11-27",
-          "time": "16:00",
-          "city": "Brno",
-          "venue": "Moravská zemská knihovna",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/mikrosvet-piva/",
-          "description": "Pivo je součástí české kultury po staletí. Objevuje se v literatuře i příbězích spojených s městy a lidmi, od pivovaru v Nymburce známého z Hrabalových Postřižin až po současné…",
-          "organizerUrl": "https://www.knihyvbrne.cz/kalendar-akci/mikrosvet-piva",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-1d26c1ce368b6faa7d",
-          "sourceId": "go-to-brno",
-          "title": "Rozsvícení vánočního stromu na náměstí Svobody",
-          "date": "2026-11-27",
-          "time": "17:00",
-          "city": "Brno",
-          "venue": "náměstí Svobody",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/rozsviceni-vanocniho-stromu-na-namesti-svobody/",
-          "description": "Zahajte advent v Brně a přijďte v pátek 27. listopadu 2026 na slavnostní rozsvícení vánočního stromu na náměstí Svobody. Právě tady stál už v roce 1924 vůbec první veřejný vánoční…",
-          "organizerUrl": "https://brnenskevanoce.cz/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-d2679067c2b762382d",
-          "sourceId": "go-to-brno",
-          "title": "Adventní zastavení s Williamem Blakem | Hudba, poezie a tanec",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Velký sál KC Skála",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/adventni-zastaveni-s-williamem-blakem-hudba-poezie-a-tanec/",
-          "description": "Adventní zastavení s Williamem Blakem Hudba • Poezie • Tanec Přijďte se na chvíli zastavit v předvánočním shonu a nechte se unést do světa poezie, hudby a představivosti. Srdečně…",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-68ae789e7ddfd87e37",
-          "sourceId": "go-to-brno",
-          "title": "Kriplštreka",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Klub Leitnerova",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/kriplstreka-15/",
-          "description": "Dobrodružná jízda klientů Ústavu posledního tažení. Mrzácká vzpoura proti bezmoci, smrti a nuzáckému životu. Na jevišti masky, loutky, stroje, stíny, živá muzika.",
-          "organizerUrl": "https://goout.net/en/kriplstreka/szkfroy/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-5de722c2737cba5b97",
-          "sourceId": "go-to-brno",
-          "title": "NdB 2: Ticho plné lidí / Na konci každého světla je tunel",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Modelář",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/ndb-2-ticho-plne-lidi-na-konci-kazdeho-svetla-je-tunel/",
-          "description": "Kde končí samota a začíná blízkost? A kolik hranic, které nás omezují, jsme si vytvořili sami? Program 9 juniorského souboru Baletu NdB2 přináší dvě nové choreografie, které…",
-          "organizerUrl": "https://www.ndbrno.cz/balet/ndb2-program-9/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-454fd8894bd6bf0fb3",
-          "sourceId": "go-to-brno",
-          "title": "ZAOCEÁNSKÉ OZVĚNY",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Janáčkovo divadlo",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/zaoceanske-ozveny/",
-          "description": "WILLIAM BOLCOM Symfonie č. 9, česká premiéra SAMUEL BARBER Houslový koncert op. 14 BOHUSLAV MARTINŮ Symfonie č. 4 H 305 Robert McDuffie housle Filharmonie Brno dirigent Dennis…",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-1bb864affe40d358e5",
-          "sourceId": "go-to-brno",
-          "title": "Za betlémským světlem se Světlanou Nálepkovou",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Sál Milosrdných bratří",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/za-betlemskym-svetlem-se-svetlanou-nalepkovou/",
-          "description": "Přijměte pozvání na koncert Za betlémským světlem se Světlanou Nálepkovou do krásného prostředí Konventu milosrdných bratří v Brně. Čekají vás tradiční i nové vánoční písně a…",
-          "organizerUrl": "https://www.ticketmaster.cz/.../za-betlemskym.../451759888",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-7eb575f00c2497668a",
-          "sourceId": "go-to-brno",
-          "title": "Ze života hmyzu",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Mahenovo divadlo – Národní divadlo Brno",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/ze-zivota-hmyzu/",
-          "description": "„Já nechci nikoho napravovat. Ani hmyz, ani člověka. Já se jen dívám.“ Zábavné putování hmyzí říší, světem motýlů, chrobáků, cvrčků, lumků, mravenců a jepic, kdy se stvoření,…",
-          "organizerUrl": "https://www.ndbrno.cz/cinohra/ze-zivota-hmyzu/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-8b0abba557fbb24b4e",
-          "sourceId": "go-to-brno",
-          "title": "bazmek entertainment: klub anonymních ekonomů | premiéra",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "co.labs, Brno",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/bazmek-entertainment-klub-anonymnich-ekonomu-premiera/",
-          "description": "Přednáška o ekonomii ještě nikdy nebyla tak zábavná! Dvě herečky s tituly z JAMU, které jakoby znaly VŠE. Pokud nevěříte, poražte je v jejich vlastním pubkvízu. Ceteris paribus.…",
-          "organizerUrl": "https://www.smsticket.cz/vstupenky/77831-klub-anonymnich-ekonomu-premiera-co-labs-brno",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-dfd96039e2a9f393b3",
-          "sourceId": "go-to-brno",
-          "title": "Racek",
-          "date": "2026-11-27",
-          "time": "19:30",
-          "city": "Brno",
-          "venue": "HaDivadlo",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/racek/",
-          "description": "Vyrvu to ze srdce i s kořeny &lt;3 Je horko. Všechno se stává vyčerpávajícím. Lepší by bylo neřešit vůbec nic. Jenže Nina chce být herečkou, Treplev hledá nové formy v umění,…",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
-          "id": "go-to-brno-6f7de4c71636304dc7",
-          "sourceId": "go-to-brno",
-          "title": "Earth",
-          "date": "2026-11-27",
-          "time": "20:00",
-          "city": "Brno",
-          "venue": "Metro Music Bar",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Ostatní",
-          "topics": [],
-          "url": "https://www.gotobrno.cz/akce/earth-2/",
-          "description": "Na své 29. narozeniny má letos EARTH jen jedno přání. Vyprodat brněnský Metro Music bar! Vstupenky za nejlepší cenu jsou právě v prodeji, tak si udělej místo v kalendáři, obvolej…",
-          "organizerUrl": "https://www.metromusic.cz/program/earth-2/",
-          "cancelled": false,
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
-        {
           "id": "go-to-brno-b8425cf4c1500b386b",
           "sourceId": "go-to-brno",
           "title": "Bleší trhy Brno ALFA pasáž/ Flea market",
@@ -2339,10 +2055,28 @@
           "organizerUrl": "https://www.ndbrno.cz/cinohra/ze-zivota-hmyzu/",
           "cancelled": false,
           "addedAt": "2026-11-27T22:36:15+01:00"
+        },
+        {
+          "id": "go-to-brno-87788e81cee7fe06de",
+          "sourceId": "go-to-brno",
+          "title": "NdB 2: Ticho plné lidí / Na konci každého světla je tunel",
+          "date": "2027-01-26",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Modelář",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Ostatní",
+          "topics": [],
+          "url": "https://www.gotobrno.cz/akce/ndb-2-ticho-plne-lidi-na-konci-kazdeho-svetla-je-tunel/",
+          "description": "Kde končí samota a začíná blízkost? A kolik hranic, které nás omezují, jsme si vytvořili sami? Program 9 juniorského souboru Baletu NdB2 přináší dvě nové choreografie, které…",
+          "organizerUrl": "https://www.ndbrno.cz/balet/ndb2-program-9/",
+          "cancelled": false,
+          "addedAt": "2026-11-28T00:03:37+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "jic": {
@@ -2457,8 +2191,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "kumst": {
@@ -2609,8 +2343,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "nicom": {
@@ -2737,29 +2471,11 @@
         }
       ],
       "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
-      "error": false
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
+      "error": true
     },
     "sono": {
       "events": [
-        {
-          "id": "sono-6d8a4583062ef97f5b",
-          "sourceId": "sono",
-          "title": "YAMATO - Hito no Chikara (The Power of Human Strength)",
-          "date": "2026-11-27",
-          "time": "20:00",
-          "city": "Brno",
-          "venue": "Sono Centrum",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Hudba",
-          "topics": [
-            "hoste"
-          ],
-          "url": "https://www.sono.cz/event/yamato-hito-no-chikara-the-power-of-human-strength/",
-          "description": "Věhlasný soubor japonských bubeníků YAMATO přijíždí se zbrusu novou show v listopadu 2026.",
-          "addedAt": "2026-11-27T22:36:15+01:00"
-        },
         {
           "id": "sono-b274968df1aee97f1a",
           "sourceId": "sono",
@@ -3693,14 +3409,14 @@
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "light-move": {
       "events": [],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "torchlight": {
@@ -3724,8 +3440,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "up-helly-aa": {
@@ -3749,8 +3465,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "amsterdam-light": {
@@ -3775,8 +3491,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "fablab": {
@@ -4116,8 +3832,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "gopas": {
@@ -4203,14 +3919,14 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "wianki": {
       "events": [],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "pisklata": {
@@ -4254,30 +3970,12 @@
           "addedAt": "2026-11-27T23:16:42+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "bad-reputation": {
       "events": [
-        {
-          "id": "bad-reputation-c465b42274a4686408",
-          "sourceId": "bad-reputation",
-          "title": "Ochutnávkový večer",
-          "date": "2026-11-27",
-          "time": "19:00",
-          "city": "Brno",
-          "venue": "Bad Reputation",
-          "country": "CZ",
-          "scope": "cz",
-          "type": "Kink a shibari",
-          "topics": [
-            "kink"
-          ],
-          "url": "https://badreputation.cz/akce/info/jine-ochutnavkovy-vecer",
-          "description": "Komunitní akce studia Bad Reputation.",
-          "addedAt": "2026-11-27T23:12:20+01:00"
-        },
         {
           "id": "bad-reputation-279e877026968d3f44",
           "sourceId": "bad-reputation",
@@ -4714,8 +4412,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "predator": {
@@ -4811,8 +4509,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "spartan-cz": {
@@ -4854,8 +4552,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "spartan-sk": {
@@ -4971,8 +4669,8 @@
           "addedAt": "2026-11-27T23:12:23+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     },
     "naucmese": {
@@ -5662,8 +5360,8 @@
           "addedAt": "2026-11-27T23:15:06+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T23:35:23+01:00",
-      "lastAttempt": "2026-11-27T23:35:23+01:00",
+      "lastSuccess": "2026-11-28T00:03:37+01:00",
+      "lastAttempt": "2026-11-28T00:03:37+01:00",
       "error": false
     }
   }
