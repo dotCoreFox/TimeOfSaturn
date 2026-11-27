@@ -17,6 +17,7 @@
       <label><input type="radio" name="type" value="" checked> Všechny typy</label>
       <label><input type="radio" name="type" value="Hudba"> Hudba</label>
       <label><input type="radio" name="type" value="Výstavy"> Výstavy</label>
+      <label><input type="radio" name="type" value="Kino"> Kino</label>
     </fieldset>
     <fieldset>
       <legend>Město</legend>
@@ -64,7 +65,9 @@
   </section>
   <section id="sources" hidden>
     <h1>Zdroje</h1>
-    <div class="source"><h2>Národní divadlo Brno</h2><p>Program na 14 dní. Kontrola denně ve 02:00 českého času.</p><a href="https://www.ndbrno.cz/program/">Program NdB</a></div>
+    <p class="muted">Denně ve 02:00 českého času. Výhled na 14 dní.</p>
+    <section class="source" aria-labelledby="links-title"><h2 id="links-title">Odkazy na programy</h2><ul id="source-links"></ul></section>
+    <section class="source" aria-labelledby="queries-title"><h2 id="queries-title">Vyhledávání podle klíčových slov</h2><ul id="source-queries"></ul></section>
     <div class="source"><h2>Výstavy v Brně a Praze</h2><p>Ruční výběr z webů pořadatelů.</p><ul id="exhibition-sources"></ul></div>
   </section>
 </main>

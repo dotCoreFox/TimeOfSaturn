@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "id": "gothic-brno-bragolin-carrellee-2026-12-09",
+      "sourceId": "gothic-brno",
+      "title": "Bragolin & Carrellee",
+      "date": "2026-12-09",
+      "time": "20:00",
+      "city": "Brno",
+      "venue": "ARTBAR, Štefánikova 1",
+      "type": "Hudba",
+      "description": "Nizozemský projekt Bragolin a zpěvačka Carrellee navazují na společný duet koncertem na pomezí darkwave, post-punku a shoegaze.",
+      "url": "https://www.artbar.club/",
+      "addedAt": "2026-11-27T19:00:00+01:00"
+    },
+    {
+      "id": "gothic-brno-portrayal-of-guilt-spike-hellis-2026-11-28",
+      "sourceId": "gothic-brno",
+      "title": "Portrayal of Guilt + Spike Hellis",
+      "date": "2026-11-28",
+      "time": "20:00",
+      "city": "Brno",
+      "venue": "Kabinet MÚZ",
+      "type": "Hudba",
+      "description": "Texaské trio s kořeny v hardcoru a screamu vystoupí se Spike Hellis. Do programu zapadá gotická a industriální poloha jejich tvorby.",
+      "url": "https://www.kabinetmuz.cz/program/2026-11-28-portrayal-of-guilt-usa",
+      "addedAt": "2026-11-27T19:00:00+01:00"
+    }
+  ]
+}

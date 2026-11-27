@@ -9,6 +9,9 @@ const [year, month] = today.split('-').map(Number)
 let displayed = new Date(Date.UTC(year, month - 1, 1))
 let snapshot = {}
 let events = new Map()
+let theatre = []
+let kino = {}
+let discoveries = {}
 let exhibitions = []
 let detailTrigger
 let loaded = false
@@ -100,8 +103,9 @@ function drawCalendar() {
     const number = element('time', String(day), 'date')
     number.dateTime = date
     cell.append(number)
-    for (const event of visibleShows) {
-      if (event.date !== date) continue
+    const dayEvents = visibleShows.filter(event => event.date === date).sort((a, b) => a.time.localeCompare(b.time))
+    const overflow = element('details', '', 'day-overflow')
+    for (const [index, event] of dayEvents.entries()) {
       const button = element('button', '', 'event')
       if (event.cancelled) button.classList.add('cancelled')
       if (event.missing) button.classList.add('missing')
@@ -110,17 +114,57 @@ function drawCalendar() {
       if (event.time) button.append(element('time', event.time))
       button.append(document.createTextNode(event.title))
       button.onclick = () => details(event, button)
-      cell.append(button)
+      if (index < 4) cell.append(button)
+      else overflow.append(button)
+    }
+    if (overflow.childElementCount) {
+      overflow.prepend(element('summary', '+' + overflow.childElementCount + ' další'))
+      cell.append(overflow)
     }
     calendar.append(cell)
   }
+}
+
+function updateEvents() {
+  const all = [...theatre, ...(kino.events || []), ...(discoveries.events || [])]
+  const overrides = new Map((discoveries.cancellations || []).map(row => [row.event, row]))
+  events = new Map(all.map(event => {
+    const confirmed = overrides.get(event.id)
+    return [event.id, confirmed ? {...event, cancelled:true, missing:false} : event]
+  }))
+  drawCalendar()
+  drawFeed()
+}
+
+function externalFeed() {
+  const rows = []
+  for (const event of [...(kino.events || []), ...(discoveries.events || [])]) {
+    if (event.addedAt) rows.push({kind:'new', event:event.id, at:event.addedAt})
+    if (event.cancelled && event.cancelledAt) {
+      rows.push({kind:'cancelled', event:event.id, at:event.cancelledAt})
+    }
+  }
+  for (const cancellation of discoveries.cancellations || []) {
+    const event = events.get(cancellation.event)
+    if (event && !(snapshot.feed || []).some(row => row.kind === 'cancelled' && row.event === event.id)
+        && !rows.some(row => row.kind === 'cancelled' && row.event === event.id)) {
+      rows.push({kind:'cancelled', event:event.id, at:cancellation.at})
+    }
+  }
+  if (kino.error && kino.errorSince) {
+    rows.push({kind:'error', at:kino.errorSince, message:'Program Kino Art se nepodařilo aktualizovat. Zobrazuji poslední dostupná data.'})
+  }
+  for (const failure of discoveries.failures || []) {
+    rows.push({kind:'error', at:failure.at, message:failure.message})
+  }
+  return rows
 }
 
 function drawFeed() {
   const news = get('news')
   news.replaceChildren()
   const filters = new FormData(get('filters'))
-  const rows = (snapshot.feed || []).filter(row => {
+  const rows = [...(snapshot.feed || []), ...externalFeed()].sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).filter(row => {
     const event = events.get(row.event)
     return !event || matchesFilters(event, filters)
   })
@@ -132,7 +176,7 @@ function drawFeed() {
     const item = element('li', '', row.kind === 'error' ? 'alert' : '')
     const time = element('time', timestamp.format(new Date(row.at)))
     time.dateTime = row.at
-    item.append(time, document.createTextNode(kind[row.kind]))
+    item.append(time, document.createTextNode(row.message || kind[row.kind]))
     if (event) {
       const button = element('button', event.title)
       button.onclick = () => details(event, button)
@@ -180,13 +224,12 @@ fetch('events.json', {cache:'no-cache'}).then(response => {
   return response.json()
 }).then(data => {
   snapshot = data
-  events = new Map((data.events || []).map(event => [event.id, theatreEvent(event)]))
+  theatre = (data.events || []).map(theatreEvent)
   loaded = true
   get('status').textContent = data.lastSuccess
     ? 'Program do ' + dayLabel(data.throughDate) + ' · Poslední aktualizace ' + timestamp.format(new Date(data.lastSuccess))
     : 'První načtení programu se zatím nepodařilo.'
-  drawCalendar()
-  drawFeed()
+  updateEvents()
 }).catch(() => {
   get('status').textContent = 'Data programu se nepodařilo načíst.'
   snapshot.feed = [{kind:'error', at:new Date().toISOString()}]
@@ -209,4 +252,47 @@ fetch('exhibitions.json', {cache:'no-cache'}).then(response => {
   drawCalendar()
 }).catch(() => {
   get('exhibition-sources').replaceChildren(element('li', 'Výstavy se nepodařilo načíst.', 'alert'))
+})
+
+function readJson(path) {
+  return fetch(path, {cache:'no-cache'}).then(response => {
+    if (!response.ok) throw new Error(path)
+    return response.json()
+  })
+}
+
+readJson('kino.json').then(data => {
+  kino = data
+  updateEvents()
+}).catch(() => {
+  kino = {error:true, errorSince:new Date().toISOString()}
+  drawFeed()
+})
+
+readJson('discoveries.json').then(data => {
+  discoveries = data
+  updateEvents()
+}).catch(() => {
+  discoveries = {failures:[{at:new Date().toISOString(), message:'Výsledky hledání podle klíčových slov se nepodařilo načíst.'}]}
+  drawFeed()
+})
+
+readJson('sources.json').then(config => {
+  const links = config.links.map(source => {
+    const item = element('li')
+    const link = element('a', source.name)
+    link.href = source.url
+    item.append(link, element('p', source.description, 'muted'))
+    return item
+  })
+  const queries = config.queries.map(source => {
+    const item = element('li')
+    item.append(element('strong', source.query))
+    if (source.variants?.length) item.append(element('p', source.variants.join(' · '), 'muted'))
+    return item
+  })
+  get('source-links').replaceChildren(...links)
+  get('source-queries').replaceChildren(...queries)
+}).catch(() => {
+  get('source-links').replaceChildren(element('li', 'Seznam zdrojů se nepodařilo načíst.', 'alert'))
 })

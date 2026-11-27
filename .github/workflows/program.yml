@@ -1,4 +1,4 @@
-name: Aktualizovat a publikovat program NdB
+name: Aktualizovat a publikovat program
 on:
   push:
     branches: [main]
@@ -25,15 +25,17 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python refresh.py
+      - run: |
+          python refresh.py
+          python refresh_kino.py
       - name: Commit event snapshot
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site/events.json
+          git add site/events.json site/kino.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Aktualizovat program NdB'
-            git push
+            git commit -m 'Aktualizovat program NdB a Kino Art'
+            git push || (git pull --rebase && git push)
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4

@@ -1,0 +1,10 @@
+{
+  "windowDays": 14,
+  "links": [
+    {"id":"ndb","name":"Národní divadlo Brno","url":"https://www.ndbrno.cz/program/","description":"Oficiální program divadla se sledováním změn a zrušení."},
+    {"id":"kino-art","name":"Kino Art","url":"https://www.kinoart.cz/cs/program","description":"Projekce a doprovodné akce v Brně."}
+  ],
+  "queries": [
+    {"id":"gothic-brno","query":"Gothic akce Brno","city":"Brno","variants":["gothic rock Brno","darkwave Brno","temný post-punk Brno"]}
+  ]
+}

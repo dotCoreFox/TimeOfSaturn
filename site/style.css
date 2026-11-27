@@ -96,3 +96,7 @@ button:hover { border-color: var(--gold); }
   .week span, .date { padding-inline: .15rem; }
   .event { font-size: .75rem; padding: .18rem .14rem; }
 }
+.day-overflow summary { color: var(--silver); cursor: pointer; font-size: .82rem; margin-block: .3rem; }
+#source-links, #source-queries { list-style: none; padding: 0; margin-bottom: 0; }
+#source-links li + li, #source-queries li + li { border-top: 1px solid var(--line); padding-top: .65rem; }
+#source-links p, #source-queries p { margin: .15rem 0 .7rem; }
