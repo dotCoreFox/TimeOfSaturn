@@ -1,10 +1,295 @@
 {
   "windowDays": 14,
   "links": [
-    {"id":"ndb","name":"Národní divadlo Brno","url":"https://www.ndbrno.cz/program/","description":"Oficiální program divadla se sledováním změn a zrušení."},
-    {"id":"kino-art","name":"Kino Art","url":"https://www.kinoart.cz/cs/program","description":"Projekce a doprovodné akce v Brně."}
+    {
+      "id": "ndb",
+      "name": "Národní divadlo Brno",
+      "url": "https://www.ndbrno.cz/program/",
+      "description": "Oficiální program divadla se sledováním změn a zrušení."
+    },
+    {
+      "id": "kino-art",
+      "name": "Kino Art",
+      "url": "https://www.kinoart.cz/cs/program",
+      "description": "Projekce a doprovodné akce v Brně."
+    },
+    {
+      "id": "go-to-brno",
+      "name": "Go To Brno",
+      "url": "https://www.gotobrno.cz/kalendar-akci/",
+      "description": "Městský kalendář, festivaly a veřejné akce.",
+      "adapter": "brno",
+      "days": 60,
+      "city": "Brno",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Ostatní",
+      "topics": []
+    },
+    {
+      "id": "jic",
+      "name": "JIC",
+      "url": "https://www.jic.cz/cz/akce",
+      "description": "Workshopy, ukázky projektů a komunitní setkání.",
+      "adapter": "jic",
+      "days": 60,
+      "city": "Brno",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Projekty a komunita",
+      "topics": [
+        "projekty"
+      ]
+    },
+    {
+      "id": "kumst",
+      "name": "KUMST",
+      "url": "https://www.kumstbrno.cz/cs/program-kumst",
+      "description": "Design, kreativní technologie, workshopy a networking.",
+      "adapter": "kumst",
+      "days": 60,
+      "city": "Brno",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Projekty a komunita",
+      "topics": [
+        "projekty"
+      ]
+    },
+    {
+      "id": "nicom",
+      "name": "NICOM · Power BI",
+      "url": "https://www.nicom.cz/business_intelligence-nicom_microsoft_power_bi_desktop_zakladni_kurz-766381933-117883287-skoleni-ms-office/",
+      "description": "Základní kurz Power BI Desktop, prezenční termíny.",
+      "adapter": "nicom",
+      "days": 180,
+      "city": "Brno",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Kurzy a dovednosti",
+      "topics": [
+        "kurzy"
+      ]
+    },
+    {
+      "id": "sono",
+      "name": "Sono Centrum",
+      "url": "https://www.sono.cz/program/",
+      "description": "Koncertní program Sono Centra.",
+      "adapter": "sono",
+      "days": 180,
+      "city": "Brno",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Hudba",
+      "topics": []
+    },
+    {
+      "id": "light-move",
+      "name": "Light.Move.Festival",
+      "url": "https://lmf.com.pl/en/",
+      "description": "Světelné instalace a videomapping v Łódźi.",
+      "adapter": "lodz",
+      "days": 365,
+      "city": "Łódź",
+      "country": "PL",
+      "scope": "near",
+      "type": "Světlo a folklor",
+      "topics": [
+        "svetlo"
+      ]
+    },
+    {
+      "id": "torchlight",
+      "name": "Edinburgh Torchlight Procession",
+      "url": "https://edinburgh.org/festivals/edinburghs-hogmanay/",
+      "description": "Pochodňový průvod v rámci Hogmanay.",
+      "adapter": "edinburgh",
+      "days": 365,
+      "city": "Edinburgh",
+      "country": "GB",
+      "scope": "world",
+      "type": "Světlo a folklor",
+      "topics": [
+        "svetlo"
+      ]
+    },
+    {
+      "id": "up-helly-aa",
+      "name": "Up Helly Aa",
+      "url": "https://www.uphellyaa.org/",
+      "description": "Pochodňový festival na Shetlandech.",
+      "adapter": "lerwick",
+      "days": 365,
+      "city": "Lerwick",
+      "country": "GB",
+      "scope": "world",
+      "type": "Světlo a folklor",
+      "topics": [
+        "svetlo"
+      ]
+    },
+    {
+      "id": "amsterdam-light",
+      "name": "Amsterdam Light Festival",
+      "url": "https://amsterdamlightfestival.com/en/dates-hours",
+      "description": "Zimní trasa světelných instalací.",
+      "adapter": "amsterdam",
+      "days": 365,
+      "city": "Amsterdam",
+      "country": "NL",
+      "scope": "world",
+      "type": "Světlo a folklor",
+      "topics": [
+        "svetlo"
+      ]
+    },
+    {
+      "id": "objev-brno",
+      "name": "Objev Brno",
+      "url": "https://www.objevbrno.cz/cs/udalosti",
+      "description": "Městské akce, výstavy a komentované prohlídky.",
+      "scope": "cz"
+    },
+    {
+      "id": "fablab",
+      "name": "FabLab Brno",
+      "url": "https://www.fablabbrno.cz/akce/",
+      "description": "Otevřená dílna a praktické workshopy.",
+      "scope": "cz"
+    },
+    {
+      "id": "impact",
+      "name": "Impact Hub Brno",
+      "url": "https://impacthub.cz/brno/",
+      "description": "Podnikatelská a komunitní setkání.",
+      "scope": "cz"
+    },
+    {
+      "id": "gopas",
+      "name": "GOPAS · Power BI",
+      "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
+      "description": "Školení Power BI.",
+      "scope": "cz"
+    },
+    {
+      "id": "daatlers",
+      "name": "Daatlers",
+      "url": "https://daatlers.cz/en/showcase/community/",
+      "description": "Datová komunita a meetupy.",
+      "scope": "cz"
+    },
+    {
+      "id": "scala",
+      "name": "Kino Scala",
+      "url": "https://www.kinoscala.cz/",
+      "description": "Filmový program a speciální projekce.",
+      "scope": "cz"
+    },
+    {
+      "id": "goout",
+      "name": "GoOut · Koncerty Brno",
+      "url": "https://goout.net/cs/brno/koncerty/lezjyvlkkzf/",
+      "description": "Přehled koncertů a festivalů v Brně.",
+      "scope": "cz"
+    },
+    {
+      "id": "prototyp",
+      "name": "Festival Prototyp",
+      "url": "https://www.prototypbrno.cz/",
+      "description": "Digitální umění a videomapping v Brně.",
+      "scope": "cz"
+    },
+    {
+      "id": "signal",
+      "name": "Signal Festival",
+      "url": "https://www.signalfestival.com/",
+      "description": "Světelné umění v Praze.",
+      "scope": "cz"
+    },
+    {
+      "id": "wianki",
+      "name": "Wianki nad Wisłą",
+      "url": "https://estrada.com.pl/wianki_nad_wisla/",
+      "description": "Varšavské slavnosti inspirované Nocí Kupały.",
+      "scope": "near",
+      "adapter": "wianki",
+      "days": 365,
+      "city": "Varšava",
+      "country": "PL",
+      "type": "Světlo a folklor",
+      "topics": [
+        "svetlo"
+      ]
+    },
+    {
+      "id": "kupała",
+      "name": "Muzea Wielkopolski",
+      "url": "https://muzeawielkopolski.pl/aktualnosci/czytaj/noc-kupaly-w-rezerwacie",
+      "description": "Příklad místní slavnosti a obřadu.",
+      "scope": "near"
+    },
+    {
+      "id": "biela-noc",
+      "name": "Biela Noc",
+      "url": "https://bielanoc.sk/",
+      "description": "Noční světelné instalace na Slovensku.",
+      "scope": "near"
+    },
+    {
+      "id": "beltane",
+      "name": "Beltane Fire Society",
+      "url": "https://beltane.org/",
+      "description": "Beltane a Samhuinn v Edinburghu.",
+      "scope": "world"
+    }
   ],
   "queries": [
-    {"id":"gothic-brno","query":"Gothic akce Brno","city":"Brno","variants":["gothic rock Brno","darkwave Brno","temný post-punk Brno"]}
+    {
+      "id": "gothic-brno",
+      "query": "Gothic akce Brno",
+      "city": "Brno",
+      "variants": [
+        "gothic rock Brno",
+        "darkwave Brno",
+        "temný post-punk Brno"
+      ]
+    },
+    {
+      "id": "projekty-brno",
+      "query": "Lidé pro vlastní projekty",
+      "city": "Brno",
+      "variants": [
+        "produktový design",
+        "AI nástroje",
+        "vývoj aplikací",
+        "hackathon",
+        "networking"
+      ]
+    },
+    {
+      "id": "kurzy-cr",
+      "query": "Datové dovednosti",
+      "city": "Česko",
+      "variants": [
+        "Power BI",
+        "Power Query",
+        "Excel",
+        "datová vizualizace"
+      ]
+    },
+    {
+      "id": "folklor-polsko",
+      "query": "Noční slavnosti a legendy",
+      "city": "Polsko",
+      "variants": [
+        "noc kupały",
+        "noc świętojańska",
+        "słowiańskie opowieści",
+        "spacer z legendami",
+        "pochód z pochodniami",
+        "festiwal światła"
+      ]
+    }
   ]
 }

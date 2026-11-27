@@ -8,67 +8,99 @@
 <script src="app.js" defer></script>
 </head>
 <body>
-<aside class="sidebar">
+<header class="topbar">
   <a class="brand" href="#feed"><span aria-hidden="true">♄</span> Time of Saturn</a>
   <nav aria-label="Stránky"><a href="#feed">Feed</a><a href="#sources">Zdroje</a></nav>
-  <form id="filters" aria-label="Filtry událostí">
-    <fieldset>
-      <legend>Typ události</legend>
-      <label><input type="radio" name="type" value="" checked> Všechny typy</label>
-      <label><input type="radio" name="type" value="Hudba"> Hudba</label>
-      <label><input type="radio" name="type" value="Výstavy"> Výstavy</label>
-      <label><input type="radio" name="type" value="Kino"> Kino</label>
-    </fieldset>
-    <fieldset>
-      <legend>Město</legend>
-      <label><input type="radio" name="city" value="" checked> Všechna města</label>
-      <label><input type="radio" name="city" value="Brno"> Brno</label>
-      <label><input type="radio" name="city" value="Praha"> Praha</label>
-    </fieldset>
-  </form>
-</aside>
+</header>
 <main>
   <section id="feed">
     <header class="page-title">
       <h1>Kalendář akcí</h1>
       <p id="status" role="status">Načítám program…</p>
     </header>
+    <form id="filters" aria-label="Filtry událostí">
+      <fieldset class="segments" id="regions">
+        <legend>Oblast</legend>
+        <label><input type="radio" name="region" value="brno" checked>Brno</label>
+        <label><input type="radio" name="region" value="cz">Česko</label>
+        <label><input type="radio" name="region" value="near">Okolní země</label>
+        <label><input type="radio" name="region" value="world">Svět</label>
+      </fieldset>
+      <div class="filter-tools">
+        <label class="search-field">Hledat<input type="search" name="search" placeholder="Název, místo, Power BI…"></label>
+        <label>Téma<select name="topic">
+          <option value="">Všechna témata</option><option value="kurzy">Kurzy a dovednosti</option>
+          <option value="projekty">Projekty a komunita</option><option value="debaty">Debaty a přednášky</option>
+          <option value="hudba">Hudba</option><option value="hoste">Výrazní hosté (tipy)</option><option value="kino">Kino</option>
+          <option value="svetlo">Světlo a folklor</option><option value="vystavy">Výstavy</option>
+          <option value="divadlo">Divadlo</option>
+        </select></label>
+        <label>Zdroj<select name="source" id="source-filter"><option value="">Všechny zdroje</option></select></label>
+        <button id="clear-filters" type="button">Vymazat filtry</button>
+      </div>
+      <label class="profile-option"><input name="profile" type="checkbox"> Podle mých zájmů</label>
+    </form>
+    <div class="viewbar">
+      <div class="segments" aria-label="Zobrazení">
+        <button type="button" data-view="agenda" aria-pressed="true">Agenda</button>
+        <button type="button" data-view="calendar" aria-pressed="false">Měsíc</button>
+        <button type="button" data-view="news" aria-pressed="false">Změny</button>
+      </div>
+      <label id="period-label">Výhled <select id="period">
+        <option value="7">7 dní</option><option value="30">30 dní</option>
+        <option value="90">90 dní</option><option value="365">12 měsíců</option>
+      </select></label>
+    </div>
     <div class="calendar-layout">
-      <section class="calendar-main" aria-labelledby="month">
-        <div class="calendar-head">
-          <h2 id="month"></h2>
-          <div class="controls">
-            <button id="previous" aria-label="Předchozí měsíc">‹</button>
-            <button id="today">Dnes</button>
-            <button id="next" aria-label="Další měsíc">›</button>
-          </div>
-        </div>
-        <section class="ongoing" id="ongoing" aria-labelledby="ongoing-title" hidden>
-          <h3 id="ongoing-title">Výstavy v tomto měsíci</h3>
-          <div id="exhibition-list"></div>
+      <div class="calendar-main">
+        <section id="agenda" aria-labelledby="agenda-title">
+          <div class="section-head"><h2 id="agenda-title">Nejbližší akce</h2><p id="result-count" role="status"></p></div>
+          <div id="agenda-list"></div>
+          <section class="ongoing" id="agenda-ongoing" aria-labelledby="agenda-exhibitions-title" hidden>
+            <h3 id="agenda-exhibitions-title">Probíhající výstavy</h3>
+            <div class="exhibition-list" id="agenda-exhibitions"></div>
+          </section>
         </section>
-        <div class="calendar-scroll">
-          <div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
-          <div class="calendar" id="calendar" aria-labelledby="month"></div>
-        </div>
-        <p id="empty-calendar" class="muted" role="status" hidden>V tomto měsíci nejsou žádné akce pro zvolené filtry.</p>
-      </section>
+        <section id="month-view" aria-labelledby="month" hidden>
+          <div class="calendar-head">
+            <h2 id="month"></h2>
+            <div class="controls">
+              <button id="previous" aria-label="Předchozí měsíc">‹</button>
+              <button id="today">Dnes</button>
+              <button id="next" aria-label="Další měsíc">›</button>
+            </div>
+          </div>
+          <section class="ongoing" id="ongoing" aria-labelledby="ongoing-title" hidden>
+            <h3 id="ongoing-title">Výstavy v tomto měsíci</h3>
+            <div class="exhibition-list" id="exhibition-list"></div>
+          </section>
+          <div class="calendar-scroll">
+            <div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
+            <div class="calendar" id="calendar" aria-labelledby="month"></div>
+          </div>
+          <p id="empty-calendar" class="muted" role="status" hidden>V tomto měsíci nejsou žádné akce pro zvolené filtry.</p>
+        </section>
+        <section class="updates" id="updates" aria-labelledby="news-title" hidden>
+          <h2 id="news-title">Změny programu</h2><ul id="news"></ul>
+          <button id="more-news" type="button" hidden>Zobrazit další změny</button>
+        </section>
+      </div>
       <section class="details" id="details" aria-labelledby="event-title" hidden>
         <div class="details-controls"><span id="event-type"></span><button id="close-details" aria-label="Zavřít detail">×</button></div>
         <h2 id="event-title" tabindex="-1"></h2>
         <p id="event-meta"></p>
         <p id="event-description"></p>
-        <a id="event-source">Detail u pořadatele</a>
+        <ul id="event-links"></ul>
       </section>
     </div>
-    <section class="updates" aria-labelledby="news-title"><h2 id="news-title">Aktuality</h2><ul id="news"></ul></section>
   </section>
   <section id="sources" hidden>
     <h1>Zdroje</h1>
-    <p class="muted">Denně ve 02:00 českého času. Výhled na 14 dní.</p>
-    <section class="source" aria-labelledby="links-title"><h2 id="links-title">Odkazy na programy</h2><ul id="source-links"></ul></section>
-    <section class="source" aria-labelledby="queries-title"><h2 id="queries-title">Vyhledávání podle klíčových slov</h2><ul id="source-queries"></ul></section>
-    <div class="source"><h2>Výstavy v Brně a Praze</h2><p>Ruční výběr z webů pořadatelů.</p><ul id="exhibition-sources"></ul></div>
+    <p class="muted">Denní import ve 02:00 českého času. Každý zdroj má vlastní výhled a stav aktualizace.</p>
+    <section class="source" aria-labelledby="links-title"><h2 id="links-title">Automatický import</h2><ul class="source-list" id="source-links"></ul></section>
+    <section class="source" aria-labelledby="reference-title"><h2 id="reference-title">Další zdroje k procházení</h2><ul class="source-list" id="source-references"></ul></section>
+    <section class="source" aria-labelledby="queries-title"><h2 id="queries-title">Témata pro ruční hledání</h2><ul class="source-list" id="source-queries"></ul></section>
+    <section class="source"><h2>Ručně vybrané výstavy</h2><ul class="source-list" id="exhibition-sources"></ul></section>
   </section>
 </main>
 </body>

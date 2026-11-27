@@ -9,6 +9,17 @@ const [year, month] = today.split('-').map(Number)
 let displayed = new Date(Date.UTC(year, month - 1, 1))
 let snapshot = {}
 let events = new Map()
+let programmeEvents = []
+let watch = {}
+let config
+let currentView = 'agenda'
+let newsLimit = 24
+const sourceNames = new Map([
+  ['ndb', 'Národní divadlo Brno'], ['kino-art', 'Kino Art'],
+  ['gothic-brno', 'Gothic akce Brno'], ['exhibitions', 'Ruční výběr výstav']
+])
+const regionDays = {brno:7, cz:30, near:365, world:365}
+const regionNames = {cz:'Česko', near:'Okolní země', world:'Svět'}
 let theatre = []
 let kino = {}
 let discoveries = {}
@@ -32,22 +43,168 @@ function element(tag, text, className) {
   return node
 }
 
+const fold = text => (text || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase()
+const matchKey = text => fold(text).replace(/[^a-z0-9]+/g, ' ').trim()
+const topicNames = {
+  kurzy:'Kurzy a dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
+  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo'
+}
+const typeTopics = Object.fromEntries(Object.entries(topicNames).map(([key, name]) => [name, key]))
+
+function enrich(event) {
+  const text = fold([event.title, event.description].filter(Boolean).join(' '))
+  const label = typeTopics[event.type]
+  const topics = new Set(event.topics || [])
+  if (label) topics.add(label)
+  if (/\b(power\s*bi|power query|excel|datov[a-z]* vizualizace)\b/.test(text) ||
+      /\b(kurz|skoleni|workshop)\b/.test(fold(event.title))) topics.add('kurzy')
+  if (/\b(meetup|networking|hackathon|pitch day|open hours|mastermind)\b/.test(text) ||
+      /\b(komunitni setkani|produktovy design|vyvoj aplikaci)\b/.test(text)) topics.add('projekty')
+  if (/\b(debat[a-z]*|prednask[a-z]*|diskuz[a-z]*|diskus[a-z]*)\b/.test(text)) topics.add('debaty')
+  if (/\b(videomapping|video mapping|pochodn[a-z]*|folklor[a-z]*|legend[a-z]*|kupaly|sveteln[a-z]* (show|instalac[a-z]*|festival[a-z]*)|festival svetla)\b/.test(text)) topics.add('svetlo')
+  if (/\b(koncert[a-z]*|recital|darkwave|post punk|post-punk)\b/.test(fold(event.title))) topics.add('hudba')
+  if (/\b(vernisaz|vystava)\b/.test(fold(event.title))) topics.add('vystavy')
+  const type = event.type === 'Ostatní' ? topicNames[[...topics][0]] || event.type : event.type
+  const scope = event.scope || 'cz'
+  const relevantFilm = topics.has('kino') && /\b(debat[a-z]*|retrospektiv[a-z]*|ziv[a-z]* hudb[a-z]*|sci[ -]?fi|animovan[a-z]*|kultovn[a-z]*)\b/.test(text)
+  const relevantMusic = topics.has('hudba') && (event.sourceId === 'gothic-brno' ||
+    /\b(darkwave|post[ -]punk|gothic|mezinarodni host|svetove znam[a-z]*)\b/.test(text))
+  const featured = topics.has('svetlo') || (scope === 'cz' && (
+    topics.has('kurzy') || topics.has('projekty') || topics.has('hoste') || relevantFilm || relevantMusic ||
+    (topics.has('debaty') && !topics.has('kino'))
+  ))
+  return {...event, type, topics:[...topics], scope, featured}
+}
+
+const normalizedUrl = value => {
+  if (!value) return ''
+  try {
+    const url = new URL(value)
+    return url.origin + url.pathname.replace(/\/$/, '') + url.search
+  } catch {
+    return ''
+  }
+}
+
+function groupOccurrences(rows) {
+  const unique = []
+  const aliases = new Map()
+  const buckets = new Map()
+  for (const event of rows) {
+    const key = [matchKey(event.city), event.date, event.endDate || event.date].join('|')
+    const bucket = buckets.get(key) || []
+    buckets.set(key, bucket)
+    const duplicate = bucket.find(row => {
+      if (row.sourceIds.includes(event.sourceId) || (row.time && event.time && row.time !== event.time)) return false
+      const urls = [event.url, event.organizerUrl].map(normalizedUrl).filter(Boolean)
+      if (urls.some(url => new URL(url).pathname !== '/' && row.links.some(link => normalizedUrl(link.url) === url))) {
+        if (event.time && row.time) return true
+        return matchKey(event.title) === matchKey(row.title) &&
+          bucket.filter(item => item.links.some(link => urls.includes(normalizedUrl(link.url)))).length === 1
+      }
+      const venue = matchKey(event.venue?.split(',')[0])
+      return Boolean(venue && venue === matchKey(row.venue?.split(',')[0]) &&
+        event.time === row.time && matchKey(event.title) === matchKey(row.title))
+    })
+    if (duplicate) {
+      duplicate.sourceIds.push(event.sourceId)
+      if (!duplicate.links.some(link => link.url === event.url)) duplicate.links.push({id:event.sourceId, url:event.url})
+      duplicate.topics = [...new Set([...duplicate.topics, ...event.topics])]
+      if (!duplicate.venue) duplicate.venue = event.venue
+      if (!duplicate.time) duplicate.time = event.time
+      if (!duplicate.price) duplicate.price = event.price
+      duplicate.featured ||= event.featured
+      aliases.set(event.id, duplicate)
+    } else {
+      const row = {...event, sourceIds:[event.sourceId], links:[{id:event.sourceId, url:event.url}]}
+      if (event.organizerUrl && event.organizerUrl !== event.url) row.links.unshift({id:'organizer', url:event.organizerUrl})
+      bucket.push(row)
+      unique.push(row)
+      aliases.set(event.id, row)
+    }
+  }
+  return {unique, aliases}
+}
+
 function matchesFilters(event, filters) {
-  return (!filters.get('type') || event.type === filters.get('type'))
-    && (!filters.get('city') || event.city === filters.get('city'))
+  const region = filters.get('region')
+  const topic = filters.get('topic')
+  const source = filters.get('source')
+  if (region === 'brno' ? event.city !== 'Brno' : event.scope !== region) return false
+  if (topic && !event.topics.includes(topic)) return false
+  if (filters.has('profile') && !event.featured) return false
+  if (source && !(event.sourceIds || [event.sourceId]).includes(source)) return false
+  const text = fold([event.title, event.description, event.venue, event.city, event.type,
+    ...event.topics.map(key => topicNames[key]), ...(event.sourceIds || [event.sourceId]).map(id => sourceNames.get(id))].join(' '))
+  return fold(filters.get('search')).trim().split(/\s+/).every(word => text.includes(word))
+}
+
+function addDays(day, days) {
+  const result = new Date(day + 'T12:00:00Z')
+  result.setUTCDate(result.getUTCDate() + days)
+  return result.toISOString().slice(0, 10)
+}
+
+function drawAgenda() {
+  const filters = new FormData(get('filters'))
+  const last = addDays(today, Number(get('period').value) - 1)
+  const group = new Map()
+  const eligible = event => event.date <= last && (event.endDate || event.date) >= today && matchesFilters(event, filters)
+  const visible = [...programmeEvents, ...exhibitions.filter(event => event.date > today)].filter(eligible)
+  for (const event of visible) {
+    const day = event.date < today ? today : event.date
+    if (!group.has(day)) group.set(day, [])
+    group.get(day).push(event)
+  }
+  const list = get('agenda-list')
+  list.replaceChildren()
+  const headingDate = new Intl.DateTimeFormat(locale, {weekday:'long', day:'numeric', month:'long', timeZone:zone})
+  for (const [day, rows] of [...group.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+    const section = element('section', '', 'agenda-day')
+    section.append(element('h3', (day === today ? 'Dnes · ' : '') + headingDate.format(new Date(day + 'T12:00:00Z')),
+      day === today ? 'today-heading' : ''))
+    for (const event of rows.sort((a, b) => (a.time || '99').localeCompare(b.time || '99') || a.title.localeCompare(b.title, locale))) {
+      const button = element('button', '', 'agenda-row')
+      button.type = 'button'
+      const time = event.date < today && event.endDate ? 'do ' + dayLabel(event.endDate) : event.time || (event.endDate ? 'Vícedenní' : 'Bez času')
+      const label = element('span')
+      label.append(element('strong', event.title, 'agenda-title'),
+        element('span', [...new Set([event.type, event.city, event.venue].filter(Boolean))].join(' · '), 'agenda-meta'))
+      if (event.cancelled || event.missing) label.append(element('span', event.cancelled ? kind.cancelled : kind.missing, 'agenda-status'))
+      button.append(element('span', time, 'agenda-time'), label,
+        element('span', sourceNames.get(event.sourceId) || '', 'agenda-source'))
+      button.onclick = () => details(event, button)
+      section.append(button)
+    }
+    list.append(section)
+  }
+  const ongoing = exhibitions.filter(event => event.date <= today && eligible(event))
+  get('agenda-exhibitions').replaceChildren(...ongoing.map(exhibitionButton))
+  get('agenda-ongoing').hidden = !ongoing.length
+  if (!visible.length && !ongoing.length && loaded) list.append(element('p', 'V tomto období nejsou pro zvolené filtry žádné akce.', 'muted'))
+  get('result-count').textContent = loaded ? `Akce: ${visible.length + ongoing.length}` : ''
 }
 
 function details(event, trigger) {
+  detailTrigger?.removeAttribute('aria-current')
   detailTrigger = trigger
+  trigger.setAttribute('aria-current', 'true')
   const metaDate = event.endDate ? dayLabel(event.date) + ' – ' + dayLabel(event.endDate) : dayLabel(event.date)
   const title = get('event-title')
   title.textContent = event.title
   get('event-type').textContent = [event.type, event.city].filter(Boolean).join(' · ')
-  get('event-meta').textContent = [metaDate, event.time, event.venue,
+  get('event-meta').textContent = [metaDate, event.time, event.venue, event.price,
     event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(' · ')
   get('event-description').textContent = event.description || snapshot.descriptions?.[event.show]
     || 'Popis je dostupný v detailu u pořadatele.'
-  get('event-source').href = event.url
+  const links = (event.links || [{id:event.sourceId, url:event.url}]).filter(link => link.url).map(link => {
+    const item = element('li')
+    const anchor = element('a', sourceNames.get(link.id) || 'Detail u pořadatele')
+    anchor.href = link.url
+    item.append(anchor)
+    return item
+  })
+  get('event-links').replaceChildren(...links)
   get('details').hidden = false
   title.focus({preventScroll:true})
   get('details').scrollIntoView({block:'nearest'})
@@ -55,6 +212,7 @@ function details(event, trigger) {
 
 function closeDetails(restoreFocus = false) {
   get('details').hidden = true
+  detailTrigger?.removeAttribute('aria-current')
   if (restoreFocus && detailTrigger?.isConnected) detailTrigger.focus()
   detailTrigger = null
 }
@@ -72,7 +230,7 @@ function theatreEvent(event) {
   const city = /pra(?:ha|ze)|dejvické/i.test(venue) ? 'Praha'
     : /janáčkovo|mahenovo|reduta/i.test(venue) ? 'Brno' : ''
   const type = /koncert|opera/i.test(event.category || '') || /galakoncert|filharmoni/i.test(event.title) ? 'Hudba' : 'Divadlo'
-  return {...event, city, type}
+  return {...event, city:city || 'Brno', type, sourceId:'ndb'}
 }
 
 function drawCalendar() {
@@ -85,8 +243,8 @@ function drawCalendar() {
   const monthStart = first + '01'
   const monthEnd = first + String(numDays)
   const filters = new FormData(get('filters'))
-  const visibleShows = [...events.values()].filter(event =>
-    event.date >= monthStart && event.date <= monthEnd && matchesFilters(event, filters))
+  const visibleShows = programmeEvents.filter(event =>
+    (event.endDate || event.date) >= monthStart && event.date <= monthEnd && matchesFilters(event, filters))
   const visibleExhibitions = exhibitions.filter(event =>
     event.date <= monthEnd && event.endDate >= monthStart && matchesFilters(event, filters))
   get('exhibition-list').replaceChildren(...visibleExhibitions.map(exhibitionButton))
@@ -103,7 +261,7 @@ function drawCalendar() {
     const number = element('time', String(day), 'date')
     number.dateTime = date
     cell.append(number)
-    const dayEvents = visibleShows.filter(event => event.date === date).sort((a, b) => a.time.localeCompare(b.time))
+    const dayEvents = visibleShows.filter(event => (event.date < monthStart ? monthStart : event.date) === date).sort((a, b) => a.time.localeCompare(b.time))
     const overflow = element('details', '', 'day-overflow')
     for (const [index, event] of dayEvents.entries()) {
       const button = element('button', '', 'event')
@@ -125,20 +283,23 @@ function drawCalendar() {
   }
 }
 
+const watchEvents = () => Object.values(watch).flatMap(source => source.events || [])
+
 function updateEvents() {
-  const all = [...theatre, ...(kino.events || []), ...(discoveries.events || [])]
-  const overrides = new Map((discoveries.cancellations || []).map(row => [row.event, row]))
-  events = new Map(all.map(event => {
-    const confirmed = overrides.get(event.id)
-    return [event.id, confirmed ? {...event, cancelled:true, missing:false} : event]
-  }))
-  drawCalendar()
-  drawFeed()
+  const direct = watchEvents().filter(event => event.sourceId !== 'go-to-brno')
+  const cityCalendar = watch['go-to-brno']?.events || []
+  const all = [...theatre, ...(kino.events || []), ...(discoveries.events || []), ...direct, ...cityCalendar]
+  const overrides = new Set((discoveries.cancellations || []).map(row => row.event))
+  const grouped = groupOccurrences(all.map(event => enrich(overrides.has(event.id) ? {...event, cancelled:true, missing:false} : event)))
+  programmeEvents = grouped.unique
+  events = grouped.aliases
+  drawSources()
+  renderView()
 }
 
 function externalFeed() {
   const rows = []
-  for (const event of [...(kino.events || []), ...(discoveries.events || [])]) {
+  for (const event of [...(kino.events || []), ...(discoveries.events || []), ...watchEvents()]) {
     if (event.addedAt) rows.push({kind:'new', event:event.id, at:event.addedAt})
     if (event.cancelled && event.cancelledAt) {
       rows.push({kind:'cancelled', event:event.id, at:event.cancelledAt})
@@ -154,6 +315,9 @@ function externalFeed() {
   if (kino.error && kino.errorSince) {
     rows.push({kind:'error', at:kino.errorSince, message:'Program Kino Art se nepodařilo aktualizovat. Zobrazuji poslední dostupná data.'})
   }
+  for (const [id, source] of Object.entries(watch)) {
+    if (source.error && source.lastAttempt) rows.push({kind:'error', at:source.lastAttempt, message:`Obnova zdroje ${sourceNames.get(id) || id} selhala.`})
+  }
   for (const failure of discoveries.failures || []) {
     rows.push({kind:'error', at:failure.at, message:failure.message})
   }
@@ -164,14 +328,20 @@ function drawFeed() {
   const news = get('news')
   news.replaceChildren()
   const filters = new FormData(get('filters'))
+  const seen = new Set()
   const rows = [...(snapshot.feed || []), ...externalFeed()].sort((a, b) => Date.parse(b.at) - Date.parse(a.at)).filter(row => {
     const event = events.get(row.event)
-    return !event || matchesFilters(event, filters)
+    if (!event) return !row.event
+    if (!matchesFilters(event, filters)) return false
+    const key = [event.id, row.kind, row.kind === 'new' ? '' : row.at].join('|')
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
   })
   if (!snapshot.error && snapshot.lastAttempt && Date.now() - Date.parse(snapshot.lastAttempt) > 27 * 3600000) {
     news.append(element('li', 'Denní aktualizace programu má zpoždění. Zobrazuji poslední dostupná data.', 'alert'))
   }
-  for (const row of rows) {
+  for (const row of rows.slice(0, newsLimit)) {
     const event = events.get(row.event)
     const item = element('li', '', row.kind === 'error' ? 'alert' : '')
     const time = element('time', timestamp.format(new Date(row.at)))
@@ -184,6 +354,7 @@ function drawFeed() {
     }
     news.append(item)
   }
+  get('more-news').hidden = rows.length <= newsLimit
   if (!news.children.length) news.append(element('li', 'Zatím žádné aktuality.'))
 }
 
@@ -199,11 +370,32 @@ function navigate() {
 }
 window.addEventListener('hashchange', navigate)
 navigate()
+
+function renderView() {
+  if (currentView === 'agenda') drawAgenda()
+  else if (currentView === 'calendar') drawCalendar()
+  else drawFeed()
+}
+
+function setView(view) {
+  closeDetails()
+  currentView = view
+  get('agenda').hidden = view !== 'agenda'
+  get('period-label').hidden = view !== 'agenda'
+  get('month-view').hidden = view !== 'calendar'
+  get('updates').hidden = view !== 'news'
+  document.querySelectorAll('[data-view]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.dataset.view === view))
+  })
+  renderView()
+}
+
 function shift(amount) {
   closeDetails()
   displayed.setUTCMonth(displayed.getUTCMonth() + amount)
   drawCalendar()
 }
+
 get('previous').onclick = () => shift(-1)
 get('next').onclick = () => shift(1)
 get('today').onclick = () => {
@@ -212,47 +404,86 @@ get('today').onclick = () => {
   drawCalendar()
 }
 get('close-details').onclick = () => closeDetails(true)
-get('filters').onchange = () => {
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !get('details').hidden) closeDetails(true)
+})
+document.querySelectorAll('[data-view]').forEach(button => {
+  button.onclick = () => setView(button.dataset.view)
+})
+get('period').onchange = () => {
   closeDetails()
-  drawCalendar()
+  drawAgenda()
+}
+get('more-news').onclick = () => {
+  newsLimit += 24
   drawFeed()
 }
-drawCalendar()
-
-fetch('events.json', {cache:'no-cache'}).then(response => {
-  if (!response.ok) throw new Error('Missing snapshot')
-  return response.json()
-}).then(data => {
-  snapshot = data
-  theatre = (data.events || []).map(theatreEvent)
-  loaded = true
-  get('status').textContent = data.lastSuccess
-    ? 'Program do ' + dayLabel(data.throughDate) + ' · Poslední aktualizace ' + timestamp.format(new Date(data.lastSuccess))
-    : 'První načtení programu se zatím nepodařilo.'
-  updateEvents()
-}).catch(() => {
-  get('status').textContent = 'Data programu se nepodařilo načíst.'
-  snapshot.feed = [{kind:'error', at:new Date().toISOString()}]
-  drawFeed()
+const form = get('filters')
+function filterChanged() {
+  closeDetails()
+  newsLimit = 24
+  renderView()
+}
+form.addEventListener('input', event => {
+  if (event.target.name === 'region') {
+    get('period').value = regionDays[event.target.value]
+    get('source-filter').value = ''
+    drawSourceOptions()
+  }
+  filterChanged()
 })
+form.onsubmit = event => event.preventDefault()
+get('clear-filters').onclick = () => {
+  form.elements.search.value = ''
+  form.elements.topic.value = ''
+  form.elements.source.value = ''
+  form.elements.profile.checked = false
+  filterChanged()
+}
 
-fetch('exhibitions.json', {cache:'no-cache'}).then(response => {
-  if (!response.ok) throw new Error('Missing exhibitions')
-  return response.json()
-}).then(data => {
-  exhibitions = data.map(event => ({...event, type:'Výstavy'}))
-  const items = exhibitions.map(event => {
+function drawSourceOptions() {
+  const filter = get('source-filter')
+  const region = new FormData(form).get('region')
+  const matching = [...programmeEvents, ...exhibitions].filter(event => region === 'brno' ? event.city === 'Brno' : event.scope === region)
+  const ids = new Set(matching.flatMap(event => event.sourceIds || [event.sourceId]))
+  const selected = filter.value
+  const options = [...ids].filter(id => sourceNames.has(id)).sort((a, b) => sourceNames.get(a).localeCompare(sourceNames.get(b), locale))
+  filter.replaceChildren(new Option('Všechny zdroje', ''), ...options.map(id => new Option(sourceNames.get(id), id)))
+  filter.value = ids.has(selected) ? selected : ''
+}
+
+function drawSources() {
+  drawSourceOptions()
+  if (!config) return
+  const current = {ndb:snapshot, 'kino-art':kino, ...watch}
+  const automatic = []
+  const references = []
+  for (const source of config.links) {
+    const imported = source.adapter || ['ndb', 'kino-art'].includes(source.id)
     const item = element('li')
-    const link = element('a', event.title)
-    link.href = event.url
-    item.append(link, document.createTextNode(' · ' + event.city))
-    return item
-  })
-  get('exhibition-sources').replaceChildren(...items)
-  drawCalendar()
-}).catch(() => {
-  get('exhibition-sources').replaceChildren(element('li', 'Výstavy se nepodařilo načíst.', 'alert'))
-})
+    const link = element('a', source.name)
+    link.href = source.url
+    item.append(link, element('p', source.description, 'muted'))
+    const state = current[source.id]
+    const scope = regionNames[source.scope || 'cz']
+    if (!imported) {
+      item.append(element('p', scope, 'muted'))
+      references.push(item)
+      continue
+    }
+    let status = 'Čeká na první import'
+    if (state?.error) {
+      status = state.lastSuccess ? 'Chyba. Poslední úspěch ' + timestamp.format(new Date(state.lastSuccess)) : 'Chyba importu'
+    } else if (state?.lastSuccess) {
+      status = 'Aktualizováno ' + timestamp.format(new Date(state.lastSuccess))
+      if (source.adapter && !state.events?.length) status += ' · žádný zveřejněný termín ve výhledu'
+    }
+    item.append(element('p', [scope, `Výhled ${source.days || config.windowDays} dní`, status].join(' · '), state?.error ? 'alert' : 'muted'))
+    automatic.push(item)
+  }
+  get('source-links').replaceChildren(...automatic)
+  get('source-references').replaceChildren(...references)
+}
 
 function readJson(path) {
   return fetch(path, {cache:'no-cache'}).then(response => {
@@ -261,38 +492,53 @@ function readJson(path) {
   })
 }
 
-readJson('kino.json').then(data => {
-  kino = data
-  updateEvents()
-}).catch(() => {
-  kino = {error:true, errorSince:new Date().toISOString()}
-  drawFeed()
-})
-
-readJson('discoveries.json').then(data => {
-  discoveries = data
-  updateEvents()
-}).catch(() => {
-  discoveries = {failures:[{at:new Date().toISOString(), message:'Výsledky hledání podle klíčových slov se nepodařilo načíst.'}]}
-  drawFeed()
-})
-
-readJson('sources.json').then(config => {
-  const links = config.links.map(source => {
-    const item = element('li')
-    const link = element('a', source.name)
-    link.href = source.url
-    item.append(link, element('p', source.description, 'muted'))
-    return item
+const requests = [
+  readJson('events.json').then(data => {
+    snapshot = data
+    theatre = (data.events || []).map(theatreEvent)
+  }).catch(() => { snapshot = {error:true, feed:[{kind:'error', at:new Date().toISOString()}]} }),
+  readJson('kino.json').then(data => { kino = data }).catch(() => {
+    kino = {error:true, errorSince:new Date().toISOString()}
+  }),
+  readJson('discoveries.json').then(data => { discoveries = data }).catch(() => {
+    discoveries = {failures:[{at:new Date().toISOString(), message:'Ručně vybrané akce se nepodařilo načíst.'}]}
+  }),
+  readJson('watch.json').then(data => { watch = data.sources || {} }).catch(() => {
+    watch = {import:{error:true, lastAttempt:new Date().toISOString()}}
+  }),
+  readJson('exhibitions.json').then(data => {
+    exhibitions = data.map(event => enrich({...event, type:'Výstavy', sourceId:'exhibitions'}))
+    const items = exhibitions.map(event => {
+      const item = element('li')
+      const link = element('a', event.title)
+      link.href = event.url
+      item.append(link, document.createTextNode(' · ' + event.city))
+      return item
+    })
+    get('exhibition-sources').replaceChildren(...items)
+  }).catch(() => {
+    get('exhibition-sources').replaceChildren(element('li', 'Výstavy se nepodařilo načíst.', 'alert'))
+  }),
+  readJson('sources.json').then(data => {
+    config = data
+    for (const source of data.links) sourceNames.set(source.id, source.name)
+    const queries = data.queries.map(source => {
+      const item = element('li')
+      item.append(element('strong', source.query + ' · ' + source.city))
+      if (source.variants?.length) item.append(element('p', source.variants.join(' · '), 'muted'))
+      return item
+    })
+    get('source-queries').replaceChildren(...queries)
+  }).catch(() => {
+    get('source-links').replaceChildren(element('li', 'Seznam zdrojů se nepodařilo načíst.', 'alert'))
   })
-  const queries = config.queries.map(source => {
-    const item = element('li')
-    item.append(element('strong', source.query))
-    if (source.variants?.length) item.append(element('p', source.variants.join(' · '), 'muted'))
-    return item
-  })
-  get('source-links').replaceChildren(...links)
-  get('source-queries').replaceChildren(...queries)
-}).catch(() => {
-  get('source-links').replaceChildren(element('li', 'Seznam zdrojů se nepodařilo načíst.', 'alert'))
+]
+Promise.all(requests).then(() => {
+  loaded = true
+  const states = [snapshot, kino, ...Object.values(watch)]
+  const count = states.filter(state => state.error).length
+  const latest = states.map(state => state.lastSuccess).filter(Boolean).sort().at(-1)
+  get('status').textContent = latest ? 'Poslední úspěšný import ' + timestamp.format(new Date(latest))
+    + (count ? ` · Zdroje s chybou: ${count}` : '') : 'Aktuální stav importu není dostupný.'
+  updateEvents()
 })
