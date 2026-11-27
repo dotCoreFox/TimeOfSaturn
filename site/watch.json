@@ -2341,9 +2341,9 @@
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:36:15+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
-      "error": true
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
+      "error": false
     },
     "jic": {
       "events": [
@@ -2457,8 +2457,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "kumst": {
@@ -2609,8 +2609,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "nicom": {
@@ -2737,8 +2737,8 @@
         }
       ],
       "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
-      "error": false
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
+      "error": true
     },
     "sono": {
       "events": [
@@ -3301,11 +3301,9 @@
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
-          "topics": [
-            "hoste"
-          ],
+          "topics": [],
           "url": "https://www.sono.cz/event/koncert-filmove-hudby-hanse-zimmera-3/",
-          "description": "Hans Zimmer je německý hudební skladatel, který se proslavil díky své práci na filmových soundtrackech. Je známý svou schopností přinést intenzitu a emocionální hloubku do…",
+          "description": "Připravte se na jedinečný večer, který vás zavede do světa nejikoničtější filmové hudby. Sono centrum v Brně přivítá symfonický orchestr Grande Orchestra, který představí…",
           "addedAt": "2026-11-27T22:36:15+01:00"
         },
         {
@@ -3695,14 +3693,14 @@
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "light-move": {
       "events": [],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "torchlight": {
@@ -3726,8 +3724,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "up-helly-aa": {
@@ -3751,8 +3749,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "amsterdam-light": {
@@ -3777,14 +3775,14 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     },
     "wianki": {
       "events": [],
-      "lastSuccess": "2026-11-27T22:42:41+01:00",
-      "lastAttempt": "2026-11-27T22:42:41+01:00",
+      "lastSuccess": "2026-11-27T22:44:49+01:00",
+      "lastAttempt": "2026-11-27T22:44:49+01:00",
       "error": false
     }
   }
