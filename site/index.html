@@ -34,7 +34,10 @@
         <section class="topics-section" aria-labelledby="topics-title">
           <div class="topics-heading">
             <h2 id="topics-title">Kategorie</h2>
-            <button id="clear-topics" type="button" disabled>Zrušit výběr kategorií</button>
+            <div class="topic-controls">
+              <label title="Více kategorií můžeš vybrat také s klávesou Shift"><input id="multi-topics" type="checkbox"> Vícenásobný výběr</label>
+              <button id="clear-topics" type="button" disabled>Zrušit výběr kategorií</button>
+            </div>
           </div>
           <div id="topic-buttons" class="topic-buttons" role="group" aria-labelledby="topics-title"></div>
         </section>
@@ -53,6 +56,7 @@
       <div class="segments" aria-label="Zobrazení">
         <button type="button" data-view="calendar" aria-pressed="true">Měsíc</button>
         <button type="button" data-view="week" aria-pressed="false">Týden</button>
+        <button type="button" data-view="day" aria-pressed="false">Den</button>
         <button type="button" data-view="agenda" aria-pressed="false">Agenda</button>
         <button type="button" data-view="news" aria-pressed="false">Změny</button>
       </div>
@@ -84,6 +88,22 @@
           <section class="ongoing" id="week-ongoing" aria-labelledby="week-ongoing-title" hidden>
             <h3 id="week-ongoing-title">Dlouhodobé akce</h3>
             <div class="exhibition-list" id="week-long-events"></div>
+          </section>
+        </section>
+        <section id="day-view" aria-labelledby="day-title" hidden>
+          <div class="calendar-head">
+            <h2 id="day-title"></h2>
+            <div class="controls">
+              <button id="day-previous" aria-label="Předchozí den">‹</button>
+              <button id="day-today">Dnes</button>
+              <input id="day-date" type="date" aria-label="Datum zobrazeného dne">
+              <button id="day-next" aria-label="Další den">›</button>
+            </div>
+          </div>
+          <div id="day-events"></div>
+          <section class="ongoing" id="day-ongoing" aria-labelledby="day-ongoing-title" hidden>
+            <h3 id="day-ongoing-title">Dlouhodobé akce</h3>
+            <div class="exhibition-list" id="day-long-events"></div>
           </section>
         </section>
         <section id="month-view" aria-labelledby="month">
@@ -120,10 +140,13 @@
           <h2 id="event-title" tabindex="-1"></h2>
           <p id="event-meta"></p>
           <p id="event-description"></p>
+          <p id="event-context" hidden></p>
+          <p id="event-admission" hidden></p>
           <ul id="event-links"></ul>
         </section>
         <section id="day-panel" aria-labelledby="day-panel-title" hidden>
           <div class="details-controls"><h2 id="day-panel-title" tabindex="-1"></h2><button id="close-day" aria-label="Zavřít program dne">×</button></div>
+          <button id="open-day-view" type="button">Zobrazit celý den</button>
           <div id="day-panel-list"></div>
         </section>
       </aside>
@@ -140,7 +163,7 @@
       </table></div>
     </section>
     <section class="source" aria-labelledby="reference-title">
-      <h2 id="reference-title">Další weby</h2>
+      <h2 id="reference-title">Weby pro vyhledávání</h2>
       <div class="source-table"><table aria-labelledby="reference-title">
         <thead><tr><th scope="col">Web</th><th scope="col">Co na něm najdeš</th><th scope="col">Oblast</th></tr></thead>
         <tbody id="source-references"></tbody>
@@ -148,7 +171,7 @@
     </section>
     <section class="source" aria-labelledby="queries-title">
       <h2 id="queries-title">Klíčová slova</h2>
-      <p class="muted">Výrazy uložené pro ruční hledání.</p>
+      <p class="muted">Výrazy pro plánované vyhledávání nových akcí.</p>
       <div class="source-table"><table aria-labelledby="queries-title">
         <thead><tr><th scope="col">Téma</th><th scope="col">Oblast</th><th scope="col">Výrazy</th></tr></thead>
         <tbody id="source-queries"></tbody>

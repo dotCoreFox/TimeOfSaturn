@@ -1,5 +1,6 @@
 {
   "windowDays": 14,
+  "discoveryDays": {"cz": 60, "near": 180, "world": 365},
   "links": [
     {
       "id": "ndb",
@@ -383,7 +384,66 @@
       "scope": "cz",
       "days": 60,
       "adapter": "olomouc",
+      "eventDetails": {
+        "https://tourism.olomouc.eu/akce/telegrowth-2-0-margareta-krizova/": {
+          "description": "Podnikatelka a mentorka Margareta Křížová mluví o sebeřízení, rozhodování v nejistotě a práci pod tlakem. Po přednášce následuje krátká debata.",
+          "detailText": "V programu je práce s pozorností a energií, učení nových návyků a zvládání změn i neúspěchu. Přednáška je součástí cyklu o profesním růstu nezávislých profesionálů, který Telegraph pořádá s portálem Na volné noze.",
+          "venue": "Telegraph, Jungmannova 802/3",
+          "price": "150 Kč",
+          "organizerUrl": "https://telegraph.cz/telegrowth-20-margareta-krizova"
+        }
+      },
       "description": "Městský kalendář Olomouce s koncerty, výstavami, debatami, kinem a místními akcemi."
+    },
+    {
+      "id": "ceska-pohanska-spolecnost",
+      "name": "Česká pohanská společnost",
+      "url": "https://pohanskaspolecnost.cz/kalendar-akci/",
+      "scope": "cz",
+      "days": 365,
+      "description": "Veřejné obřady, sezónní slavnosti a setkání pohanské komunity. Podmínky účasti jsou v jednotlivých pozvánkách."
+    },
+    {
+      "id": "druidi-cz",
+      "name": "Druidi.cz",
+      "url": "https://druidi.cz/pozvanka/",
+      "scope": "cz",
+      "days": 365,
+      "description": "Pozvánky na oslavy slunovratu a rovnodennosti i společné druidské obřady."
+    },
+    {
+      "id": "zeme-keltu",
+      "name": "Země Keltů · Nasavrky",
+      "url": "https://zemekeltu.cz/akce/",
+      "scope": "cz",
+      "days": 365,
+      "description": "Program keltského skanzenu s veřejnými slavnostmi, jako jsou Samhain a Beltine."
+    },
+    {
+      "id": "bmwc",
+      "name": "Česko-moravský čarodějnický slet",
+      "url": "https://bmwc.org/",
+      "scope": "cz",
+      "days": 365,
+      "description": "Program a přihlašování na setkání s workshopy, přednáškami a společnými rituály."
+    },
+    {
+      "id": "wianki-nad-wisla",
+      "name": "Stołeczna Estrada · Wianki nad Wisłą",
+      "url": "https://estrada.com.pl/wianki_nad_wisla/",
+      "scope": "near",
+      "country": "PL",
+      "days": 365,
+      "description": "Oficiální program varšavské slavnosti u Visly inspirované nocí Kupaly."
+    },
+    {
+      "id": "gniazdo-rodzimowiercy",
+      "name": "Gniazdo · Kalendarz obrzędów",
+      "url": "https://gniazdo.rodzimowiercy.pl/",
+      "scope": "near",
+      "country": "PL",
+      "days": 365,
+      "description": "Rozcestník kalendářů polských pohanských skupin. Přístupnost obřadu ověřuje jeho pořadatel."
     }
   ],
   "queries": [
@@ -391,6 +451,7 @@
       "id": "gothic-brno",
       "query": "Gothic akce Brno",
       "city": "Brno",
+      "scope": "cz",
       "variants": [
         "gothic rock Brno",
         "darkwave Brno",
@@ -401,6 +462,7 @@
       "id": "projekty-brno",
       "query": "Lidé pro vlastní projekty",
       "city": "Brno",
+      "scope": "cz",
       "variants": [
         "produktový design",
         "AI nástroje",
@@ -413,6 +475,7 @@
       "id": "kurzy-cr",
       "query": "Datové dovednosti",
       "city": "Česko",
+      "scope": "cz",
       "variants": [
         "Power BI",
         "Power Query",
@@ -421,9 +484,44 @@
       ]
     },
     {
+      "id": "folklor-cesko",
+      "query": "Noční slavnosti a legendy",
+      "city": "Česko",
+      "scope": "cz",
+      "days": 180,
+      "variants": [
+        "svatojánská noc",
+        "slovanské pověsti",
+        "noční prohlídka s pověstmi",
+        "pochodňový průvod",
+        "festival světla"
+      ]
+    },
+    {
+      "id": "ritualy-cesko",
+      "query": "Pohanství a rituály",
+      "city": "Česko",
+      "scope": "cz",
+      "days": 365,
+      "variants": [
+        "letní slunovrat u vody",
+        "noční rituál u vody",
+        "půlnoční obřad",
+        "pohanská slavnost",
+        "svatojánské obřady a pouštění věnců",
+        "ženský kruh u vody",
+        "veřejný sabat",
+        "Kračun",
+        "Samhain",
+        "Beltane",
+        "Litha"
+      ]
+    },
+    {
       "id": "folklor-polsko",
       "query": "Noční slavnosti a legendy",
       "city": "Polsko",
+      "scope": "near",
       "variants": [
         "noc kupały",
         "noc świętojańska",
@@ -431,6 +529,21 @@
         "spacer z legendami",
         "pochód z pochodniami",
         "festiwal światła"
+      ]
+    },
+    {
+      "id": "ritualy-polsko",
+      "query": "Pohanství a rituály",
+      "city": "Polsko",
+      "scope": "near",
+      "days": 365,
+      "variants": [
+        "obrzędy nocy kupały",
+        "nocny obrzęd nad wodą",
+        "słowiańskie święto przesilenia",
+        "puszczanie wianków",
+        "krąg kobiet nad wodą",
+        "publiczny sabat"
       ]
     }
   ]

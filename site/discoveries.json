@@ -25,6 +25,45 @@
       "description": "Texaské trio s kořeny v hardcoru a screamu vystoupí se Spike Hellis. Do programu zapadá gotická a industriální poloha jejich tvorby.",
       "url": "https://www.kabinetmuz.cz/program/2026-11-28-portrayal-of-guilt-usa",
       "addedAt": "2026-11-27T19:00:00+01:00"
+    },
+    {
+      "id": "ritualy-cz-kracun-jindrichovice-2026-12-19",
+      "sourceId": "ceska-pohanska-spolecnost",
+      "title": "Kračun 2026 – slavnost příchodu nového slunce",
+      "date": "2026-12-19",
+      "endDate": "2026-12-20",
+      "time": "14:00",
+      "city": "Jindřichovice pod Smrkem",
+      "venue": "Jindřichovice pod Smrkem 33",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Pohanství a rituály",
+      "topics": ["ritualy"],
+      "description": "Celonoční slovanská slavnost kolem zimního slunovratu. Program zahrnuje odpolední obřad s vodou, půlnoční obřad u ohně a výstup na kopec za úsvitu.",
+      "detailText": "Součástí večera je také společné jídlo a výroba svící. Pořadatel uvádí možnost přespání ve srubu ve vlastním spacáku. Akce končí v neděli v poledne.",
+      "admission": "Pořadatel žádá o přihlášení předem kvůli omezené kapacitě. Kontakt je v pozvánce.",
+      "price": "Příspěvek cca 150 Kč",
+      "url": "https://pohanskaspolecnost.cz/kalendar-akci/#:~:text=Kra%C4%8Dun%202026",
+      "organizerUrl": "https://www.facebook.com/events/1010473272095293/",
+      "addedAt": "2026-11-28T00:55:00+01:00"
+    },
+    {
+      "id": "ritualy-cz-dobra-spolecnost-praha-2026-12-11",
+      "sourceId": "ceska-pohanska-spolecnost",
+      "title": "V pražské dobré společnosti – prosinec",
+      "date": "2026-12-11",
+      "time": "19:00",
+      "city": "Praha",
+      "venue": "Kellyxír, Jánský vršek 8",
+      "country": "CZ",
+      "scope": "cz",
+      "type": "Pohanství a rituály",
+      "topics": ["ritualy", "projekty"],
+      "description": "Neformální večerní setkání pražské pohanské komunity s prostorem pro otázky. Prosincový večer před Yule doplní dobrovolná výměna drobných dárků.",
+      "admission": "Pořadatel zve i nově příchozí a zájemce o pohanství.",
+      "url": "https://pohanskaspolecnost.cz/kalendar-akci/#:~:text=V%20pra%C5%BEsk%C3%A9%20dobr%C3%A9%20spole%C4%8Dnosti",
+      "organizerUrl": "https://www.facebook.com/events/1871519653861520/",
+      "addedAt": "2026-11-28T00:55:00+01:00"
     }
   ]
 }

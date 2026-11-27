@@ -505,10 +505,63 @@ def olomouc_cards(source, page):
         if re.search(r"\b(strelba|strelnice|streleck\w*|palne zbrane)\b", normalized(title)):
             continue
         category = value(card.select_one(".gen-categories-list"))
-        row = event(source, title, span, url, time=clock(when.split(" - ", 1)[0]),
-                    description=f"Program města Olomouc · {category}" if category else "")
+        row = event(source, title, span, url, time=clock(when.split(" - ", 1)[0]))
         row["type"] = types.get(category, "Ostatní")
         yield row
+
+
+OLOMOUC_DETAIL_FIELDS = ("description", "detailText", "venue", "price", "organizerUrl", "detailCheckedAt")
+
+
+def olomouc_detail(row, stamp):
+    try:
+        page = fetch(row["url"], timeout=6)
+    except OSError:
+        return
+    header = page.select_one("main.action .gen-title-inner")
+    if not header:
+        return
+    paragraphs = [value(node) for node in page.select("main.action .gen-text-inner > p")]
+    excerpt = next((part for part in paragraphs if len(part.split()) >= 7), "")
+    if excerpt:
+        words = excerpt.split()
+        row["description"] = readable(" ".join(words[:24]) + ("…" if len(words) > 24 else ""), 180)
+    venue = value(header.select_one("p"))
+    if venue:
+        row["venue"] = venue
+    for anchor in header.select("a.btn--img-arrow-right[href]"):
+        link = absolute(row["url"], anchor["href"])
+        if link and urlsplit(link).hostname != "tourism.olomouc.eu":
+            row["organizerUrl"] = link
+            break
+    row["detailCheckedAt"] = stamp
+
+
+def enrich_olomouc(source, rows, previous, now):
+    stamp = now.isoformat(timespec="seconds")
+    stale = (now - timedelta(days=7)).isoformat(timespec="seconds")
+    edited = source.get("eventDetails", {})
+    pending = {}
+    priorities = {"Debaty a přednášky": 0, "Kurzy a dovednosti": 0, "Kino": 2, "Divadlo": 2}
+    for row in sorted(rows, key=lambda e: (bool(previous.get(e["id"], {}).get("detailCheckedAt")),
+                                          priorities.get(e["type"], 1), e["date"], e["time"])):
+        cached = previous.get(row["id"], {})
+        if cached.get("detailCheckedAt"):
+            row.update({key: cached[key] for key in OLOMOUC_DETAIL_FIELDS if key in cached})
+        if row["url"] in edited:
+            row.update(edited[row["url"]])
+        elif row.get("detailCheckedAt", "") < stale:
+            pending.setdefault(row["url"], []).append(row)
+
+    def fill(group):
+        olomouc_detail(group[0], stamp)
+        fresh = group[0]
+        if fresh.get("detailCheckedAt") == stamp:
+            for row in group[1:]:
+                row.update({key: fresh[key] for key in OLOMOUC_DETAIL_FIELDS if key in fresh})
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        list(pool.map(fill, list(pending.values())[:36]))
 
 
 def programme(source, start):
@@ -556,6 +609,8 @@ def update_source(source, old, now):
         print(f"{source['name']}: {error}")
         return dict(old, lastAttempt=stamp, error=True)
     previous = {row["id"]: row for row in old.get("events", [])}
+    if source["adapter"] == "olomouc":
+        enrich_olomouc(source, rows, previous, now)
     detail = {"sono":sono_detail, "shibari":shibari_detail}.get(source["adapter"])
     if detail:
         with ThreadPoolExecutor(max_workers=4) as pool:

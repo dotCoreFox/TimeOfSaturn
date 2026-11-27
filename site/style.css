@@ -111,6 +111,8 @@ legend, #topics-title {
 .region-buttons label:nth-last-child(-n+2) { grid-column: span 2; }
 .topics-heading { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; margin-bottom: .42rem; }
 .topics-heading #topics-title { margin-bottom: 0; }
+.topic-controls { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: .28rem .7rem; }
+.topic-controls label { display: inline-flex; align-items: center; gap: .24rem; color: var(--muted); font-size: .77rem; }
 #clear-topics { padding: .08rem .4rem; font-size: .77rem; }
 #clear-topics:disabled { opacity: .55; cursor: default; }
 #clear-topics:disabled:hover { border-color: var(--line); }
@@ -134,7 +136,7 @@ legend, #topics-title {
 .topics-section { min-width: 0; }
 .filter-tools { display: grid; grid-template-columns: minmax(9rem, 2fr) minmax(8rem, 1.25fr) auto auto; align-items: end; gap: .4rem .7rem; }
 .filter-tools > label { display: grid; gap: .2rem; color: var(--muted); font-size: .8rem; }
-select, input[type="search"] {
+select, input[type="search"], input[type="date"] {
   min-width: 0;
   width: 100%;
   color: var(--text);
@@ -143,6 +145,8 @@ select, input[type="search"] {
   border-radius: .16rem;
   padding: .38rem .5rem;
 }
+#day-date { width: auto; }
+#day-view .controls { flex-wrap: wrap; }
 ::placeholder { color: var(--muted); }
 .topic-buttons {
   display: grid;
@@ -301,7 +305,10 @@ select, input[type="search"] {
 #event-meta { margin: .55rem 0; font-size: .9rem; }
 #event-title { font-size: 1.65rem; }
 #event-description { margin: .75rem 0; font-size: 1.03rem; line-height: 1.65; white-space: pre-line; }
+#event-context, #event-admission { margin: .7rem 0; line-height: 1.55; white-space: pre-line; }
+#event-admission { padding: .45rem .6rem; border-inline-start: 2px solid var(--gold); background: var(--panel); }
 #event-links { padding-inline-start: 1.1rem; }
+#open-day-view { margin-block-end: .65rem; }
 #day-panel-list { display: grid; gap: .75rem; }
 .day-group { display: grid; gap: .23rem; }
 .day-group h3 {
@@ -359,6 +366,17 @@ select, input[type="search"] {
 .agenda-row:hover { background: var(--raised); }
 .agenda-time { color: var(--gold); font-variant-numeric: tabular-nums; }
 .agenda-title, .agenda-meta { display: block; overflow-wrap: anywhere; }
+.event-preview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  margin-block-start: .22rem;
+  color: var(--text);
+  font-size: .88rem;
+  line-height: 1.4;
+}
 .agenda-meta, .agenda-source { font-size: .79rem; color: var(--muted); }
 .agenda-source { text-align: end; }
 .agenda-status { display: block; color: var(--rose); font-size: .79rem; }
