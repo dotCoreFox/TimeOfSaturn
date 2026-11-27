@@ -155,8 +155,11 @@
       "id": "fablab",
       "name": "FabLab Brno",
       "url": "https://www.fablabbrno.cz/akce/",
-      "description": "Otevřená dílna a praktické workshopy.",
-      "scope": "cz"
+      "description": "Digitální dílna. Školení 3D tisku, laserové řezačky, plotru, šicího stroje a CNC frézování.",
+      "scope": "cz",
+      "adapter": "fablab",
+      "days": 60,
+      "type": "Praktické dovednosti"
     },
     {
       "id": "impact",
@@ -169,8 +172,15 @@
       "id": "gopas",
       "name": "GOPAS · Power BI",
       "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
-      "description": "Školení Power BI.",
-      "scope": "cz"
+      "description": "Prezenční termíny školení Power BI (PL-300).",
+      "scope": "cz",
+      "adapter": "gopas",
+      "days": 180,
+      "type": "Kurzy a dovednosti",
+      "topics": [
+        "kurzy",
+        "prakticke"
+      ]
     },
     {
       "id": "daatlers",
@@ -242,6 +252,127 @@
       "url": "https://beltane.org/",
       "description": "Beltane a Samhuinn v Edinburghu.",
       "scope": "world"
+    },
+    {
+      "id": "pisklata",
+      "name": "Písklata",
+      "url": "https://pisklata.cz/udalosti/",
+      "scope": "cz",
+      "country": "CZ",
+      "days": 180,
+      "adapter": "pisklata",
+      "starred": true,
+      "type": "Kink a shibari",
+      "topics": [
+        "kink"
+      ],
+      "description": "Veřejný program komunity v Brně a Praze. Akce jsou označené hvězdičkou.",
+      "initialEvents": [
+        {
+          "title": "Kecy v kleci: Písklonoce V.",
+          "date": "2026-12-01",
+          "time": "19:00",
+          "city": "Praha",
+          "url": "https://pisklata.cz/kecy-praha-2026-12/",
+          "description": "Komunitní večer. Vstup od 19:00, diskuse od 20:00."
+        },
+        {
+          "title": "Kecy v kleci: Písklonoce V.",
+          "date": "2026-12-17",
+          "time": "19:00",
+          "city": "Brno",
+          "url": "https://pisklata.cz/kecy-brno-2026-12/",
+          "description": "Komunitní večer. Vstup od 19:00, diskuse od 20:00."
+        }
+      ]
+    },
+    {
+      "id": "bad-reputation",
+      "name": "Bad Reputation · Brno",
+      "url": "https://badreputation.cz/akce/seznam",
+      "scope": "cz",
+      "city": "Brno",
+      "country": "CZ",
+      "days": 180,
+      "adapter": "shibari",
+      "type": "Kink a shibari",
+      "topics": [
+        "kink"
+      ],
+      "description": "Rope jamy, úvodní setkání a workshopy shibari v Brně."
+    },
+    {
+      "id": "predator",
+      "name": "Predator Race",
+      "url": "https://www.predatorrace.cz/race/",
+      "scope": "cz",
+      "country": "CZ",
+      "days": 365,
+      "adapter": "predator",
+      "type": "Překážkové a trailové závody",
+      "topics": [
+        "ocr"
+      ],
+      "description": "Oficiální závody Predator Race a Predator Run."
+    },
+    {
+      "id": "spartan-cz",
+      "name": "Spartan · Česko",
+      "url": "https://cz.spartan.com/en/race/find-race?countryCode=cz",
+      "scope": "cz",
+      "country": "CZ",
+      "countryName": "Czech Republic",
+      "days": 365,
+      "adapter": "spartan",
+      "type": "Překážkové a trailové závody",
+      "topics": [
+        "ocr"
+      ],
+      "description": "Oficiální termíny Spartan v Česku. Formát akce je uvedený v detailu."
+    },
+    {
+      "id": "spartan-sk",
+      "name": "Spartan · Slovensko",
+      "url": "https://sk.spartan.com/en/race/find-race?countryCode=sk",
+      "scope": "near",
+      "country": "SK",
+      "countryName": "Slovakia",
+      "days": 365,
+      "adapter": "spartan",
+      "type": "Překážkové a trailové závody",
+      "topics": [
+        "ocr"
+      ],
+      "description": "Oficiální závody Spartan na Slovensku."
+    },
+    {
+      "id": "diana-vera",
+      "name": "Diana Vera · Praha",
+      "url": "https://dianavera.com/shibari-praha/",
+      "scope": "cz",
+      "description": "Přehled kurzů shibari v Praze a nejbližší termíny."
+    },
+    {
+      "id": "kjm-ma21",
+      "name": "Mahenova akademie · Brno",
+      "url": "https://knihvnici.kjm.cz/ma21",
+      "scope": "cz",
+      "description": "Praktické workshopy, přednášky a besedy v Knihovně Jiřího Mahena."
+    },
+    {
+      "id": "naucmese",
+      "name": "Naučmese",
+      "url": "https://www.naucmese.cz/",
+      "scope": "cz",
+      "country": "CZ",
+      "days": 90,
+      "adapter": "naucmese",
+      "type": "Praktické dovednosti",
+      "topics": [
+        "prakticke",
+        "kurzy"
+      ],
+      "description": "Výběr prezenčních kurzů v Brně a Praze. Improvizace, komunikace, tvůrčí dílny a technické dovednosti z prvních pěti stran kalendáře."
     }
   ],
   "queries": [

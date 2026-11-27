@@ -47,8 +47,8 @@ const fold = text => (text || '').normalize('NFD').replace(/\p{Diacritic}/gu, ''
 const matchKey = text => fold(text).replace(/[^a-z0-9]+/g, ' ').trim()
 const venueKey = venue => matchKey(venue?.split(/,|\s[–—-]\s/)[0])
 const topicNames = {
-  kurzy:'Kurzy a dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
-  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo'
+  kurzy:'Kurzy a dovednosti', prakticke:'Praktické dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
+  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Kink a shibari', ocr:'Překážkové a trailové závody'
 }
 const typeTopics = Object.fromEntries(Object.entries(topicNames).map(([key, name]) => [name, key]))
 
@@ -59,6 +59,8 @@ function enrich(event) {
   if (label) topics.add(label)
   if (/\b(power\s*bi|power query|excel|datov[a-z]* vizualizace)\b/.test(text) ||
       /\b(kurz|skoleni|workshop)\b/.test(fold(event.title))) topics.add('kurzy')
+  if (/\b(power\s*bi|power query|3d tisk|cnc frezovani|obrazov[a-z]* editac[ei]|prvni pomoc)\b/.test(text) ||
+      /\b(praktick[a-z]* (?:kurz|workshop)|prakticky si vyzkous|naucis se|naucite se|hands-on)\b/.test(text)) topics.add('prakticke')
   if (/\b(meetup|networking|hackathon|pitch day|open hours|mastermind)\b/.test(text) ||
       /\b(komunitni setkani|produktovy design|vyvoj aplikaci)\b/.test(text)) topics.add('projekty')
   if (/\b(debat[a-z]*|prednask[a-z]*|diskuz[a-z]*|diskus[a-z]*)\b/.test(text)) topics.add('debaty')
@@ -70,8 +72,8 @@ function enrich(event) {
   const relevantFilm = topics.has('kino') && /\b(debat[a-z]*|retrospektiv[a-z]*|ziv[a-z]* hudb[a-z]*|sci[ -]?fi|animovan[a-z]*|kultovn[a-z]*)\b/.test(text)
   const relevantMusic = topics.has('hudba') && (event.sourceId === 'gothic-brno' ||
     /\b(darkwave|post[ -]punk|gothic|mezinarodni host|svetove znam[a-z]*)\b/.test(text))
-  const featured = topics.has('svetlo') || (scope === 'cz' && (
-    topics.has('kurzy') || topics.has('projekty') || topics.has('hoste') || relevantFilm || relevantMusic ||
+  const featured = event.starred || topics.has('svetlo') || topics.has('ocr') || (scope === 'cz' && (
+    topics.has('kurzy') || topics.has('prakticke') || topics.has('kink') || topics.has('projekty') || topics.has('hoste') || relevantFilm || relevantMusic ||
     (topics.has('debaty') && !topics.has('kino'))
   ))
   return {...event, type, topics:[...topics], scope, featured}
@@ -115,6 +117,7 @@ function groupOccurrences(rows) {
       if (!duplicate.time) duplicate.time = event.time
       if (!duplicate.price) duplicate.price = event.price
       duplicate.featured ||= event.featured
+      duplicate.starred ||= event.starred
       aliases.set(event.id, duplicate)
     } else {
       const row = {...event, sourceIds:[event.sourceId], links:[{id:event.sourceId, url:event.url}]}
@@ -134,6 +137,7 @@ function matchesFilters(event, filters) {
   if (region === 'brno' ? event.city !== 'Brno' : event.scope !== region) return false
   if (topic && !event.topics.includes(topic)) return false
   if (filters.has('profile') && !event.featured) return false
+  if (filters.has('starred') && !event.starred) return false
   if (source && !(event.sourceIds || [event.sourceId]).includes(source)) return false
   const text = fold([event.title, event.description, event.venue, event.city, event.type,
     ...event.topics.map(key => topicNames[key]), ...(event.sourceIds || [event.sourceId]).map(id => sourceNames.get(id))].join(' '))
@@ -144,6 +148,16 @@ function addDays(day, days) {
   const result = new Date(day + 'T12:00:00Z')
   result.setUTCDate(result.getUTCDate() + days)
   return result.toISOString().slice(0, 10)
+}
+
+function titledEvent(node, event) {
+  if (event.starred) {
+    const star = element('span', '★', 'event-star')
+    star.setAttribute('aria-label', 'S hvězdičkou')
+    node.append(star)
+  }
+  node.append(document.createTextNode(event.title))
+  return node
 }
 
 function drawAgenda() {
@@ -169,7 +183,7 @@ function drawAgenda() {
       button.type = 'button'
       const time = event.date < today && event.endDate ? 'do ' + dayLabel(event.endDate) : event.time || (event.endDate ? 'Vícedenní' : 'Bez času')
       const label = element('span')
-      label.append(element('strong', event.title, 'agenda-title'),
+      label.append(titledEvent(element('strong', '', 'agenda-title'), event),
         element('span', [...new Set([event.type, event.city, event.venue].filter(Boolean))].join(' · '), 'agenda-meta'))
       if (event.cancelled || event.missing) label.append(element('span', event.cancelled ? kind.cancelled : kind.missing, 'agenda-status'))
       button.append(element('span', time, 'agenda-time'), label,
@@ -192,7 +206,8 @@ function details(event, trigger) {
   trigger.setAttribute('aria-current', 'true')
   const metaDate = event.endDate ? dayLabel(event.date) + ' – ' + dayLabel(event.endDate) : dayLabel(event.date)
   const title = get('event-title')
-  title.textContent = event.title
+  title.replaceChildren()
+  titledEvent(title, event)
   get('event-type').textContent = [event.type, event.city].filter(Boolean).join(' · ')
   get('event-meta').textContent = [metaDate, event.time, event.venue, event.price,
     event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(' · ')
@@ -268,10 +283,10 @@ function drawCalendar() {
       const button = element('button', '', 'event')
       if (event.cancelled) button.classList.add('cancelled')
       if (event.missing) button.classList.add('missing')
-      button.setAttribute('aria-label', [event.title, dayLabel(date), event.time,
+      button.setAttribute('aria-label', [event.title, event.starred ? 'S hvězdičkou' : '', dayLabel(date), event.time,
         event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(', '))
       if (event.time) button.append(element('time', event.time))
-      button.append(document.createTextNode(event.title))
+      titledEvent(button, event)
       button.onclick = () => details(event, button)
       if (index < 4) cell.append(button)
       else overflow.append(button)
@@ -349,7 +364,7 @@ function drawFeed() {
     time.dateTime = row.at
     item.append(time, document.createTextNode(row.message || kind[row.kind]))
     if (event) {
-      const button = element('button', event.title)
+      const button = titledEvent(element('button'), event)
       button.onclick = () => details(event, button)
       item.append(document.createTextNode(' · '), button, document.createTextNode(' · ' + dayLabel(event.date) + (event.time ? ' · ' + event.time : '')))
     }
@@ -431,6 +446,12 @@ form.addEventListener('input', event => {
     get('source-filter').value = ''
     drawSourceOptions()
   }
+  const period = get('period')
+  const minimum = {ocr:365, prakticke:90, kink:30}[form.elements.topic.value]
+    || (form.elements.starred.checked ? 30 : 0)
+  if (['region', 'topic', 'starred'].includes(event.target.name) && Number(period.value) < minimum) {
+    period.value = String(minimum)
+  }
   filterChanged()
 })
 form.onsubmit = event => event.preventDefault()
@@ -439,6 +460,7 @@ get('clear-filters').onclick = () => {
   form.elements.topic.value = ''
   form.elements.source.value = ''
   form.elements.profile.checked = false
+  form.elements.starred.checked = false
   filterChanged()
 }
 
@@ -474,7 +496,9 @@ function drawSources() {
     }
     let status = 'Čeká na první import'
     if (state?.error) {
-      status = state.lastSuccess ? 'Chyba. Poslední úspěch ' + timestamp.format(new Date(state.lastSuccess)) : 'Chyba importu'
+      status = 'Chyba importu'
+      if (state.lastSuccess) status += ' · poslední úspěch ' + timestamp.format(new Date(state.lastSuccess))
+      else if (source.initialEvents && state.events?.length) status += ' · zobrazuji ověřené termíny z pozvánek'
     } else if (state?.lastSuccess) {
       status = 'Aktualizováno ' + timestamp.format(new Date(state.lastSuccess))
       if (source.adapter && !state.events?.length) status += ' · žádný zveřejněný termín ve výhledu'

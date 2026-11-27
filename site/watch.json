@@ -3784,6 +3784,1884 @@
       "lastSuccess": "2026-11-27T23:05:42+01:00",
       "lastAttempt": "2026-11-27T23:05:42+01:00",
       "error": false
+    },
+    "fablab": {
+      "events": [
+        {
+          "id": "fablab-75aca81c391cd6ff28",
+          "sourceId": "fablab",
+          "title": "FabLab Tour",
+          "date": "2026-11-28",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/fablab-tour/2026-11-28-1000/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-f7ab2969d39076e53c",
+          "sourceId": "fablab",
+          "title": "Akademie digitálního řemesla",
+          "date": "2026-12-01",
+          "time": "17:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/akademie-digitalniho-remesla/2026-12-01-1700/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-e7180bdc122df227ae",
+          "sourceId": "fablab",
+          "title": "FabLab Tour",
+          "date": "2026-12-02",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/fablab-tour/2026-12-02-1800/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-1c20abc41a2cf06dae",
+          "sourceId": "fablab",
+          "title": "Školení 3D tiskárny",
+          "date": "2026-12-02",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/3d-tiskarny/2026-12-02-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-2627b0061e1cadecf6",
+          "sourceId": "fablab",
+          "title": "Fablab Tour na KUMSTu",
+          "date": "2026-12-03",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/tour-kumst/2026-12-03-1800/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-dd90e52cdcd93385ac",
+          "sourceId": "fablab",
+          "title": "FabLab Tour",
+          "date": "2026-12-05",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/fablab-tour/2026-12-05-1000/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-54b0b7f5fa56f1cbaf",
+          "sourceId": "fablab",
+          "title": "FabLab Tour in English",
+          "date": "2026-12-07",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/fablab-tour-eng/2026-12-07-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-cf3bcadc80c1f05d9e",
+          "sourceId": "fablab",
+          "title": "Akademie digitálního řemesla",
+          "date": "2026-12-08",
+          "time": "17:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/akademie-digitalniho-remesla/2026-12-08-1700/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-de0b69ba0d9f0e5323",
+          "sourceId": "fablab",
+          "title": "Školení Programovatelný šicí stroj - základy",
+          "date": "2026-12-09",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/skoleni-programovatelny-sici-stroj/2026-12-09-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-4d7609fe11e4dd598b",
+          "sourceId": "fablab",
+          "title": "Úvod do CNC frézování",
+          "date": "2026-12-10",
+          "time": "17:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/uvod-do-cnc-frezovani/2026-12-10-1700/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-7e2c3c11d709f8cc0c",
+          "sourceId": "fablab",
+          "title": "Fablab Tour na KUMSTu",
+          "date": "2026-12-10",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/tour-kumst/2026-12-10-1800/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-673c126672f70acb59",
+          "sourceId": "fablab",
+          "title": "Laserová řezačka: Kompletní průvodce (Vánoční edice)",
+          "date": "2026-12-13",
+          "time": "12:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/laser-kompletni-pruvodce/2026-12-13-1200/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-703dc9f38e9bfc6283",
+          "sourceId": "fablab",
+          "title": "Akademie digitálního řemesla",
+          "date": "2026-12-15",
+          "time": "17:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/akademie-digitalniho-remesla/2026-12-15-1700/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-088a2ed947c1f19ef0",
+          "sourceId": "fablab",
+          "title": "Fablab Tour na KUMSTu",
+          "date": "2026-12-17",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/tour-kumst/2026-12-17-1800/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-2a318b57e122eac6de",
+          "sourceId": "fablab",
+          "title": "FabLab Tour in English",
+          "date": "2027-01-04",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Projekty a komunita",
+          "topics": [
+            "projekty"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/fablab-tour-eng/2027-01-04-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-e3a91746123fa78318",
+          "sourceId": "fablab",
+          "title": "Školení 3D tiskárny",
+          "date": "2027-01-06",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/3d-tiskarny/2027-01-06-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-1c69211b93d8c85757",
+          "sourceId": "fablab",
+          "title": "Školení Programovatelný šicí stroj - základy",
+          "date": "2027-01-13",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/skoleni-programovatelny-sici-stroj/2027-01-13-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "fablab-8e22c171f47928f089",
+          "sourceId": "fablab",
+          "title": "Školení Řezací ploter",
+          "date": "2027-01-20",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "FabLab Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.fablabbrno.cz/akce/skoleni-rezaci-ploter/2027-01-20-1900/",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:20+01:00",
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": false
+    },
+    "gopas": {
+      "events": [
+        {
+          "id": "gopas-fb0e5370a57094c68e",
+          "sourceId": "gopas",
+          "title": "Analýza dat nástrojem a službou Microsoft Power BI",
+          "date": "2026-12-21",
+          "time": "",
+          "city": "Praha",
+          "venue": "GOPAS Praha",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kurzy a dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
+          "description": "Délka 3 dny",
+          "endDate": "2026-12-23",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "gopas-978c5cb4795e4f68e4",
+          "sourceId": "gopas",
+          "title": "Analýza dat nástrojem a službou Microsoft Power BI",
+          "date": "2027-02-10",
+          "time": "",
+          "city": "Praha",
+          "venue": "GOPAS Praha",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kurzy a dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
+          "description": "Délka 3 dny",
+          "endDate": "2027-02-12",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "gopas-5d5d3872050e93bc64",
+          "sourceId": "gopas",
+          "title": "Analýza dat nástrojem a službou Microsoft Power BI",
+          "date": "2027-03-08",
+          "time": "",
+          "city": "Brno",
+          "venue": "GOPAS Brno",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kurzy a dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
+          "description": "Délka 3 dny",
+          "endDate": "2027-03-10",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "gopas-9002c9f2ba967fb255",
+          "sourceId": "gopas",
+          "title": "Analýza dat nástrojem a službou Microsoft Power BI",
+          "date": "2027-05-19",
+          "time": "",
+          "city": "Praha",
+          "venue": "GOPAS Praha",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kurzy a dovednosti",
+          "topics": [
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://www.gopas.cz/analyza-dat-nastrojem-a-sluzbou-microsoft-power-bi_moc-pl-300",
+          "description": "Délka 3 dny",
+          "endDate": "2027-05-21",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:20+01:00",
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": false
+    },
+    "pisklata": {
+      "events": [
+        {
+          "id": "pisklata-e2e98421f54fc3c449",
+          "sourceId": "pisklata",
+          "title": "Kecy v kleci: Písklonoce V.",
+          "date": "2026-12-01",
+          "time": "19:00",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://pisklata.cz/kecy-praha-2026-12/",
+          "description": "Komunitní večer. Vstup od 19:00, diskuse od 20:00.",
+          "starred": true
+        },
+        {
+          "id": "pisklata-f536397382fe7f8389",
+          "sourceId": "pisklata",
+          "title": "Kecy v kleci: Písklonoce V.",
+          "date": "2026-12-17",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://pisklata.cz/kecy-brno-2026-12/",
+          "description": "Komunitní večer. Vstup od 19:00, diskuse od 20:00.",
+          "starred": true
+        }
+      ],
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": true
+    },
+    "bad-reputation": {
+      "events": [
+        {
+          "id": "bad-reputation-c465b42274a4686408",
+          "sourceId": "bad-reputation",
+          "title": "Ochutnávkový večer",
+          "date": "2026-11-27",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/jine-ochutnavkovy-vecer",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-279e877026968d3f44",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Hypnóza",
+          "date": "2026-11-28",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-hypnoza",
+          "description": "Workshop studia Bad Reputation.",
+          "endDate": "2026-11-29",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-700d50c2e58089aa8f",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam: No Extras",
+          "date": "2026-11-30",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-no-extras-930",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-e38e181a3968623b36",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-01",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-932",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-c1c6e34a317c4c326e",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Futomomo",
+          "date": "2026-12-03",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-futomomo-933",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-8449785dfd9f52305f",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-05",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-934",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-fd13bfb033b096c680",
+          "sourceId": "bad-reputation",
+          "title": "Náhled do shibari",
+          "date": "2026-12-08",
+          "time": "17:30",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/nahled-do-shibari-935",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-6cd04deb1dd116bcd4",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-08",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-936",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-f5c2351fcdc48d9ea2",
+          "sourceId": "bad-reputation",
+          "title": "Sauna",
+          "date": "2026-12-09",
+          "time": "20:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/jine-sauna-938",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-4437643499f44cb585",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Dominance tělem - Základy manipulace",
+          "date": "2026-12-10",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-dominance-telem-zaklady-manipulace",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-f6c521c3fbb9418cd0",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-11",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-939",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-ef17c615f502065795",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Bambusy I",
+          "date": "2026-12-12",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-bambusy-i-885",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-4ecb9e12578ae723b2",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Bambusy II",
+          "date": "2026-12-13",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-bambusy-ii-886",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-b4bbd64160a2640009",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-15",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-940",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-f1a788af078e6d2bc7",
+          "sourceId": "bad-reputation",
+          "title": "Tantrické setkání",
+          "date": "2026-12-16",
+          "time": "18:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/tantricke-setkani-941",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-8a56ee7eeef0644af1",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam: Temný",
+          "date": "2026-12-17",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-temny-942",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-357b65eca8419b225d",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-19",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-943",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-3ca74d078c50b4c262",
+          "sourceId": "bad-reputation",
+          "title": "Náhled do shibari",
+          "date": "2026-12-22",
+          "time": "17:30",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/nahled-do-shibari-944",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-e229fb122591cf29a4",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam: Vánoční",
+          "date": "2026-12-22",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-vanocni-945",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-be50ddfa86183c4477",
+          "sourceId": "bad-reputation",
+          "title": "Rope jam",
+          "date": "2026-12-29",
+          "time": "19:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink"
+          ],
+          "url": "https://badreputation.cz/akce/info/rope-jam-946",
+          "description": "Komunitní akce studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-c852ebdb75721cf481",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Shibari I - Základy",
+          "date": "2027-01-09",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-shibari-i-zaklady-911",
+          "description": "Workshop studia Bad Reputation.",
+          "endDate": "2027-01-10",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-2e0d0b55bdc2fe355e",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Shibari II - Částečné závěsy",
+          "date": "2027-02-06",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-shibari-ii-castecne-zavesy-947",
+          "description": "Workshop studia Bad Reputation.",
+          "endDate": "2027-02-07",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-8ff7d010781b03b596",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Hashira I",
+          "date": "2027-04-17",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-hashira-i",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "bad-reputation-f48654ac0cdd1a957c",
+          "sourceId": "bad-reputation",
+          "title": "Workshop: Hashira II",
+          "date": "2027-04-18",
+          "time": "10:00",
+          "city": "Brno",
+          "venue": "Bad Reputation",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Kink a shibari",
+          "topics": [
+            "kink",
+            "kurzy",
+            "prakticke"
+          ],
+          "url": "https://badreputation.cz/akce/info/workshop-hashira-ii",
+          "description": "Workshop studia Bad Reputation.",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:20+01:00",
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": false
+    },
+    "predator": {
+      "events": [
+        {
+          "id": "predator-2f5ad1a47074663a19",
+          "sourceId": "predator",
+          "title": "Predator RUN Winter edition",
+          "date": "2027-02-13",
+          "time": "",
+          "city": "Plzeň",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://www.predatorrace.cz/race/detail/494",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "predator-c3edd1fba1d491066c",
+          "sourceId": "predator",
+          "title": "Predator Winter JUNIOR",
+          "date": "2027-02-13",
+          "time": "",
+          "city": "Plzeň",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://www.predatorrace.cz/race/detail/495",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "predator-63230fbd6302ce7ae0",
+          "sourceId": "predator",
+          "title": "Predator RACE BRUTAL Monínec",
+          "date": "2027-05-22",
+          "time": "",
+          "city": "Monínec",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://www.predatorrace.cz/race/detail/497",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "predator-5cf4803e4aeb0ad12d",
+          "sourceId": "predator",
+          "title": "Predator RACE Dril Monínec",
+          "date": "2027-05-22",
+          "time": "",
+          "city": "Monínec",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://www.predatorrace.cz/race/detail/496",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "predator-b7cce27a0294ecf3fa",
+          "sourceId": "predator",
+          "title": "Predator RACE Dril&Brutal",
+          "date": "2027-05-22",
+          "time": "",
+          "city": "Monínec",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://www.predatorrace.cz/race/detail/500",
+          "description": "",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:20+01:00",
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": false
+    },
+    "spartan-cz": {
+      "events": [
+        {
+          "id": "spartan-cz-e8f00d4b564348919a",
+          "sourceId": "spartan-cz",
+          "title": "Spartan · Frenstat TRAIL 10 K  2026",
+          "date": "2026-12-05",
+          "time": "",
+          "city": "Frenstat",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://cz.spartan.com/en/race/detail/11579/overview",
+          "description": "Trail 10K",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        },
+        {
+          "id": "spartan-cz-fb4ecaaa768450eea3",
+          "sourceId": "spartan-cz",
+          "title": "Spartan · Praha TRAIL 10 K  2027",
+          "date": "2027-03-14",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://cz.spartan.com/en/race/detail/11580/overview",
+          "description": "Trail 10K",
+          "addedAt": "2026-11-27T23:12:20+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:20+01:00",
+      "lastAttempt": "2026-11-27T23:12:20+01:00",
+      "error": false
+    },
+    "spartan-sk": {
+      "events": [
+        {
+          "id": "spartan-sk-a7e9e204bba1026afb",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Telgart Spartan Trail  2026",
+          "date": "2026-11-28",
+          "time": "",
+          "city": "Telgart",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/11367/overview",
+          "description": "Trail 10K",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        },
+        {
+          "id": "spartan-sk-e667c31acfad9b6a8f",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Smolenice Spartan Trail  2027",
+          "date": "2027-02-27",
+          "time": "",
+          "city": "Smolenice",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/11684/overview",
+          "description": "Kids Race • Trail 10K • Trail Half Marathon",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        },
+        {
+          "id": "spartan-sk-31083575e16a402fa5",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Kojsovská hola Spartan Trail  2027",
+          "date": "2027-04-03",
+          "time": "",
+          "city": "Kojsovská hola",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/10912/overview",
+          "description": "Trail 50K • Trail 10K",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        },
+        {
+          "id": "spartan-sk-6cefd4852e4ac65bec",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Valcianska dolina Trifecta Weekend 2027",
+          "date": "2027-05-15",
+          "time": "",
+          "city": "Valča",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/11832/overview",
+          "description": "Sprint • Super • Beast • Kids Race",
+          "endDate": "2027-05-16",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        },
+        {
+          "id": "spartan-sk-65439f6c5c66b84fa6",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Komarno Super/Sprint/Charity/Kids 2027",
+          "date": "2027-07-03",
+          "time": "",
+          "city": "Komarno",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/11510/overview",
+          "description": "Sprint • Super • Kids Race • Charity",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        },
+        {
+          "id": "spartan-sk-0833c699c25816bcc8",
+          "sourceId": "spartan-sk",
+          "title": "Spartan · Malino Brdo Trifecta Weekend 2027",
+          "date": "2027-08-28",
+          "time": "",
+          "city": "Ružomberok",
+          "venue": "",
+          "country": "SK",
+          "scope": "near",
+          "type": "Překážkové a trailové závody",
+          "topics": [
+            "ocr"
+          ],
+          "url": "https://sk.spartan.com/en/race/detail/11690/overview",
+          "description": "Sprint • Super • Beast • Ultra • Kids Race",
+          "endDate": "2027-08-29",
+          "addedAt": "2026-11-27T23:12:23+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:12:23+01:00",
+      "lastAttempt": "2026-11-27T23:12:23+01:00",
+      "error": false
+    },
+    "naucmese": {
+      "events": [
+        {
+          "id": "naucmese-c24a2083261295f5de",
+          "sourceId": "naucmese",
+          "title": "Workshop burlesky: pravidelné open class pro všechny úrovně",
+          "date": "2026-11-28",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/workshop-burlesky-pravidelne-open-class-pro-vsechny-urovne",
+          "description": "Série oblíbených OPEN CLASS pro všechny úrovně. Každý měsíc jiná choreografie a jiné téma. Toužíš po zážitku plném elegance, sebevědomí a zábavy? Připoj se k populárním OPEN CLASS!",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-5c6ce0e95d7d92b1a2",
+          "sourceId": "naucmese",
+          "title": "Re-Design - Renovace nábytku",
+          "date": "2026-11-29",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/re-design-renovace-nabytku",
+          "description": "Máte doma starý kus nábytku, který byste si rádi svépomocí opravili? Chcete si vyzkoušet tradiční truhlářské řemeslo? Máte v hlavě projekt, který byste rádi zrealizovali, ale…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-12569015d777b2623f",
+          "sourceId": "naucmese",
+          "title": "Workshop burlesky: pravidelné open class pro všechny úrovně",
+          "date": "2026-11-29",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/workshop-burlesky-pravidelne-open-class-pro-vsechny-urovne",
+          "description": "Série oblíbených OPEN CLASS pro všechny úrovně. Každý měsíc jiná choreografie a jiné téma. Toužíš po zážitku plném elegance, sebevědomí a zábavy? Připoj se k populárním OPEN CLASS!",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-e8d7ea09ee84580db7",
+          "sourceId": "naucmese",
+          "title": "Kurz háčkování - začátky",
+          "date": "2026-12-01",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-hackovani-zacatky",
+          "description": "Víte že háčkování je lék na stres? Vypni monitor - zapoj ruce! Učím háčkovat od úplných základů v malé skupině. Individuální vedení, klidné tempo a bezpečný prostor pro úplné…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-82945f466827d96c46",
+          "sourceId": "naucmese",
+          "title": "Kurz pletení: začátky",
+          "date": "2026-12-01",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-pleteni-zacatky",
+          "description": "Víte že pletení je lék na stres? Vypni monitor - zapoj ruce! Učím plést od úplných základů v malé skupině (max 4 lidi). Individuální vedení, klidné tempo a bezpečný prostor pro…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-7fb437f02ad5297f7d",
+          "sourceId": "naucmese",
+          "title": "Improdílny - Otevřené tréninky improvizace",
+          "date": "2026-12-02",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/improdilny-otevrene-treninky-improvizace",
+          "description": "Otevřené tréninky improvizace pro každého jsou prostorem pro hraní, tvoření i učení. Přijďte i vy objevit svoji kreativitu, hravost, spontaneitu a mnoho dalšího. To vše, v rámci…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-e0a219635d04b4fbb9",
+          "sourceId": "naucmese",
+          "title": "Slaměná dílna",
+          "date": "2026-12-02",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/slamena-dilna",
+          "description": "Přijďte si vyrobit slaměné dekorace a vyzkoušet si jednu z tradičních technik s přírodním materiálem.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-c096e6f9e9ce3782e1",
+          "sourceId": "naucmese",
+          "title": "Šití od začátku 1",
+          "date": "2026-12-03",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/siti-od-zacatku-1",
+          "description": "Naučíme se úplným základům ručního a strojového šití tak, abyste byli schopni si ušít a zašít, zkrátit a zúžit. Po zkušenostech z kurzů, které trvají celý den a informací je tak…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-dcc0b86c4da5cf930b",
+          "sourceId": "naucmese",
+          "title": "Vánoční zpívání: Rybovka pro ženské hlasy",
+          "date": "2026-12-04",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/vanocni-zpivani-rybovka-pro-zenske-hlasy",
+          "description": "Láká vás přidat se k těm, co na Vánoce zpívají „Rybovku“? Česká mše Vánoční Jana Jakuba Ryby má mnoho provedení po celé České republice, ke kterých se můžete přidat a už vás…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-436916cb51839bc9f7",
+          "sourceId": "naucmese",
+          "title": "Smysluplné rozhovory",
+          "date": "2026-12-05",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/smysluplne-rozhovory",
+          "description": "Co se stane, když se sejde skupina cizích lidí, přeskočí běžné seznamovací fráze a začnou se bavit rovnou o věcech, které jdou do hloubky? Přijď to zjistit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-6e5c778b8a36842943",
+          "sourceId": "naucmese",
+          "title": "Namaluj si vlastní vánoční pohlednici",
+          "date": "2026-12-06",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/namaluj-si-vlastni-vanocni-pohlednici",
+          "description": "Namalujte si vlastní vánoční pohlednici! Originální vánoční pozdrav, který potěší vaše blízké a přátele.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-12bce9e2fb4b4faed8",
+          "sourceId": "naucmese",
+          "title": "Plátěná taška s vlastním motivem - šití pro začátečníky a mírně pokročilé",
+          "date": "2026-12-06",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/platena-taska-s-vlastnim-motivem-siti-pro-zacatecniky-a-mirne-pokrocile",
+          "description": "Vyzkoušej si šití bez stresu – na kurzu si ušiješ jednoduchou tašku přes rameno a nažehlíš na ni motiv podle vlastního návrhu. Všechno ti nachystám, stačí dorazit s chutí tvořit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-99fc9e0d872f4bd9ef",
+          "sourceId": "naucmese",
+          "title": "Kurz háčkování - začátky",
+          "date": "2026-12-08",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-hackovani-zacatky",
+          "description": "Víte že háčkování je lék na stres? Vypni monitor - zapoj ruce! Učím háčkovat od úplných základů v malé skupině. Individuální vedení, klidné tempo a bezpečný prostor pro úplné…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-d7387184dcd048a210",
+          "sourceId": "naucmese",
+          "title": "Kurz pletení: začátky",
+          "date": "2026-12-08",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-pleteni-zacatky",
+          "description": "Víte že pletení je lék na stres? Vypni monitor - zapoj ruce! Učím plést od úplných základů v malé skupině (max 4 lidi). Individuální vedení, klidné tempo a bezpečný prostor pro…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-8202b41c4eb2e3a55f",
+          "sourceId": "naucmese",
+          "title": "Improdílny - Otevřené tréninky improvizace",
+          "date": "2026-12-09",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/improdilny-otevrene-treninky-improvizace",
+          "description": "Otevřené tréninky improvizace pro každého jsou prostorem pro hraní, tvoření i učení. Přijďte i vy objevit svoji kreativitu, hravost, spontaneitu a mnoho dalšího. To vše, v rámci…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-24ae0ed8c49215aaf2",
+          "sourceId": "naucmese",
+          "title": "Pletení od začátku 1.",
+          "date": "2026-12-09",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/pleteni-od-zacatku-1",
+          "description": "Naučíme se úplné základy pletení a popovídáme si o vhodných materiálech",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-e496169be596d97461",
+          "sourceId": "naucmese",
+          "title": "Partnerská - vztahová komunikace",
+          "date": "2026-12-10",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/partnerska-vztahova-komunikace",
+          "description": "Co se naučíte: Základy efektivní komunikace ve vztahu. Rozdílnost vnímání a komunikace muži x ženy Jak lépe naslouchat a být slyšen. Techniky zvládání konfliktů a řešení problémů.…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-1004cf5d7a2d7fa0d5",
+          "sourceId": "naucmese",
+          "title": "Smysluplné rozhovory",
+          "date": "2026-12-11",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/smysluplne-rozhovory",
+          "description": "Co se stane, když se sejde skupina cizích lidí, přeskočí běžné seznamovací fráze a začnou se bavit rovnou o věcech, které jdou do hloubky? Přijď to zjistit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-edb117f3cfdc4f6508",
+          "sourceId": "naucmese",
+          "title": "Workshop burlesky: pravidelné open class pro všechny úrovně",
+          "date": "2026-12-12",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/workshop-burlesky-pravidelne-open-class-pro-vsechny-urovne",
+          "description": "Série oblíbených OPEN CLASS pro všechny úrovně. Každý měsíc jiná choreografie a jiné téma. Toužíš po zážitku plném elegance, sebevědomí a zábavy? Připoj se k populárním OPEN CLASS!",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-a628e30f6bbb5552c9",
+          "sourceId": "naucmese",
+          "title": "Workshop burlesky: pravidelné open class pro všechny úrovně",
+          "date": "2026-12-13",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/workshop-burlesky-pravidelne-open-class-pro-vsechny-urovne",
+          "description": "Série oblíbených OPEN CLASS pro všechny úrovně. Každý měsíc jiná choreografie a jiné téma. Toužíš po zážitku plném elegance, sebevědomí a zábavy? Připoj se k populárním OPEN CLASS!",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-126cf5ff3a5df39cf1",
+          "sourceId": "naucmese",
+          "title": "Kurz rodinné fotografie",
+          "date": "2026-12-14",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-rodinne-fotografie",
+          "description": "Rodinná fotografie je vše o čem fotografové mluví, zaslouží si kvalitu, všechny ty prchavé okamžiky, které se vrací jen párkrát a pak už jsou pryč, aby je nahradily nové okamžiky.…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-3416eafabfdbf2b68f",
+          "sourceId": "naucmese",
+          "title": "Slaměná dílna",
+          "date": "2026-12-14",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/slamena-dilna",
+          "description": "Přijďte si vyrobit slaměné dekorace a vyzkoušet si jednu z tradičních technik s přírodním materiálem.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-cc186bf5b88bcf627a",
+          "sourceId": "naucmese",
+          "title": "Smysluplné rozhovory",
+          "date": "2026-12-14",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/smysluplne-rozhovory",
+          "description": "Co se stane, když se sejde skupina cizích lidí, přeskočí běžné seznamovací fráze a začnou se bavit rovnou o věcech, které jdou do hloubky? Přijď to zjistit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-1c53df5aa6fa039370",
+          "sourceId": "naucmese",
+          "title": "Betonování – šperky, květináče, doplňky",
+          "date": "2026-12-15",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/betonovani-sperky-kvetinace-doplnky",
+          "description": "Pojďte objevit nový materiál a zkusit si s ním pracovat. Vytvořit si můžete třeba květináč, vázu, šperky nebo něco jiného.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-d9c26d04e888dd3c76",
+          "sourceId": "naucmese",
+          "title": "Kurz háčkování - začátky",
+          "date": "2026-12-15",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-hackovani-zacatky",
+          "description": "Víte že háčkování je lék na stres? Vypni monitor - zapoj ruce! Učím háčkovat od úplných základů v malé skupině. Individuální vedení, klidné tempo a bezpečný prostor pro úplné…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-93b37b0881eedac3d8",
+          "sourceId": "naucmese",
+          "title": "Kurz pletení: začátky",
+          "date": "2026-12-15",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/kurz-pleteni-zacatky",
+          "description": "Víte že pletení je lék na stres? Vypni monitor - zapoj ruce! Učím plést od úplných základů v malé skupině (max 4 lidi). Individuální vedení, klidné tempo a bezpečný prostor pro…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-e0f237906f5d610c22",
+          "sourceId": "naucmese",
+          "title": "Základy háčkování",
+          "date": "2026-12-16",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/zaklady-hackovani",
+          "description": "Naučím úplné základy háčkování, můžeme uháčkovat, kdo co bude chtít - čepici, šálu, polštář deku - co si kdo bude přát....",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-d77966333f5aa8b0a5",
+          "sourceId": "naucmese",
+          "title": "Jak nenaštvat druhé - funkční komunikace",
+          "date": "2026-12-17",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/jak-nenastvat-druhe-funkcni-komunikace",
+          "description": "Kurz vám přináší jednoduché tipy, vysvětlení a doporučení jak a kdy komunikovat s druhými, abychom byli slyšeni, jak naslouchat druhým, jak zvládnout situace, kdy je na nás v…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-8b208a3f5c049df0eb",
+          "sourceId": "naucmese",
+          "title": "Smysluplné rozhovory",
+          "date": "2026-12-17",
+          "time": "",
+          "city": "Brno",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/smysluplne-rozhovory",
+          "description": "Co se stane, když se sejde skupina cizích lidí, přeskočí běžné seznamovací fráze a začnou se bavit rovnou o věcech, které jdou do hloubky? Přijď to zjistit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-52690e1d7285eb9c76",
+          "sourceId": "naucmese",
+          "title": "Trénink efektivní a sebejisté komunikace",
+          "date": "2026-12-17",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/trenink-efektivni-a-sebejiste-komunikace",
+          "description": "Trénink komunikace a situací v reálném čase – přes neverbální signály, nácvik rolí a práce ve skupině vede zkušená terapeutka, lektorka a mediátorka Jana Mašková.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-8422ca11c82a1fbb05",
+          "sourceId": "naucmese",
+          "title": "Plátěná taška s vlastním motivem - šití pro začátečníky a mírně pokročilé",
+          "date": "2026-12-22",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/platena-taska-s-vlastnim-motivem-siti-pro-zacatecniky-a-mirne-pokrocile",
+          "description": "Vyzkoušej si šití bez stresu – na kurzu si ušiješ jednoduchou tašku přes rameno a nažehlíš na ni motiv podle vlastního návrhu. Všechno ti nachystám, stačí dorazit s chutí tvořit.",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-9dd8029d508ecd1292",
+          "sourceId": "naucmese",
+          "title": "Dron - kurz bezpečné létání, natáčení a legislativa, řidičák (možno i on-line)",
+          "date": "2026-12-30",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/dron-kurz-bezpecne-letani-nataceni-a-legislativa-ridicak-mozno-i-on-line",
+          "description": "Jak létat s dronem - bezpečně a správně dle legislativy. Získání řidičáku (open / specific, A1, A3) Jak natáčet s dronem - zajímavě a za pomoci inteligentních režimů. Kde nalézt…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-d45a3c1c8ebd3145c1",
+          "sourceId": "naucmese",
+          "title": "Natáčení videa foťákem, kamerou i mobilem (možno i on-line)",
+          "date": "2026-12-30",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/nataceni-videa-fotakem-kamerou-i-mobilem-mozno-i-on-line",
+          "description": "Individuální kurz vychází z jednoho z nejnavštěvovanějších jednodenních kurzů pro začátečníky v ČR. Nyní na míru jen pro Vás. Naučte se maximum co umí Vaše videokamera, mobil či…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-53cf661ab9cb014d26",
+          "sourceId": "naucmese",
+          "title": "Šití od začátku 1",
+          "date": "2027-01-06",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/siti-od-zacatku-1",
+          "description": "Naučíme se úplným základům ručního a strojového šití tak, abyste byli schopni si ušít a zašít, zkrátit a zúžit. Po zkušenostech z kurzů, které trvají celý den a informací je tak…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-7d2d41a3666d09c7f2",
+          "sourceId": "naucmese",
+          "title": "Pletení od začátku 1.",
+          "date": "2027-01-07",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/pleteni-od-zacatku-1",
+          "description": "Naučíme se úplné základy pletení a popovídáme si o vhodných materiálech",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        },
+        {
+          "id": "naucmese-d9a5af9f3c581d97cd",
+          "sourceId": "naucmese",
+          "title": "Hlasem k sobě - objevování (základní kurz)",
+          "date": "2027-01-10",
+          "time": "",
+          "city": "Praha",
+          "venue": "",
+          "country": "CZ",
+          "scope": "cz",
+          "type": "Praktické dovednosti",
+          "topics": [
+            "prakticke",
+            "kurzy"
+          ],
+          "url": "https://www.naucmese.cz/kurz/hlasem-k-sobe-objevovani-zakladni-kurz",
+          "description": "Na kurzu získáš více sebedůvěry při zpěvu i v mluveném projevu. Objevíš dary hlasu, zazpíváš si jen tak pro radost a posuneš svoje hranice. Srdečně tě zvu na dobrodružnou cestu…",
+          "addedAt": "2026-11-27T23:15:06+01:00"
+        }
+      ],
+      "lastSuccess": "2026-11-27T23:15:06+01:00",
+      "lastAttempt": "2026-11-27T23:15:06+01:00",
+      "error": false
     }
   }
 }

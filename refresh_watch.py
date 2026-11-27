@@ -64,6 +64,8 @@ def event(source, title, span, url, *, time="", venue="", city="", description="
                country=source.get("country", "CZ"), scope=source.get("scope", "cz"),
                type=source.get("type", "Ostatní"), topics=list(topics or source.get("topics", [])),
                url=url, description=description)
+    if source.get("starred"):
+        row["starred"] = True
     if end > start:
         row["endDate"] = end.isoformat()
     if price:
@@ -281,6 +283,194 @@ def festival(source, page, start):
         yield event(source, source["name"], span, url, description=source["description"])
 
 
+def fablab(source, page, start, end):
+    pages = {(start.year, start.month): page}
+    for offset in range((end.year - start.year) * 12 + end.month - start.month + 1):
+        month, year = (start.month - 1 + offset) % 12 + 1, start.year + (start.month - 1 + offset) // 12
+        if (year, month) not in pages:
+            pages[year, month] = fetch(urljoin(source["url"], f"{month}-{year}/"))
+    for current in pages.values():
+        entries = current.select("#action-list .event-times")
+        if not entries and not current.select_one("#action-list"):
+            raise ValueError("Výpis FabLab nebyl nalezen")
+        for group in entries:
+            title = value(group.parent.select_one("h3.title"))
+            practical = not re.search(r"\btour\b|den otevrenych dveri", normalized(title))
+            topics = ["kurzy", "prakticke"] if practical else ["projekty"]
+            for link in group.select("a.event-date-time[href]"):
+                url = absolute(source["url"], link["href"])
+                when = re.search(r"/(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})/?$", urlsplit(url).path)
+                if when:
+                    row = event(source, title, [date.fromisoformat(when[1])], url,
+                                time=f"{when[2]}:{when[3]}", venue="FabLab Brno", topics=topics)
+                    if not practical:
+                        row["type"] = "Projekty a komunita"
+                    yield row
+
+
+def gopas(source, page):
+    data = page.select_one("script#termsData")
+    if not data or not data.string:
+        raise ValueError("Tabulka termínů GOPAS nebyla nalezena")
+    for item in json.loads(data.string):
+        city = item["Locality"]
+        span = dates(item["StartDayText"])
+        if not span or city not in {"Brno", "Praha"} or item.get("IsDistanceTerm"):
+            continue
+        span.append(span[0] + timedelta(days=max(1, int(item["DaysCount"])) - 1))
+        yield event(source, item["Name"], span, source["url"], city=city,
+                    venue=(item.get("LocalityName") or "GOPAS").strip(),
+                    description=item.get("DaysCountText") or "")
+
+
+def naucmese(source, page):
+    skill = re.compile(
+        r"fotograf|sviceni|nataceni|impro|rozhovor|komunikac|recnictv|prezentac|herectv|zpev|hlas|"
+        r"siti|hackov|pleten|tkan|drev|nabytek|nabytku|keramik|mozaik|slamena dilna|betonovani|"
+        r"kreslen|malb|namaluj|psani|kaligraf|typograf|burlesk|3d modelov|excel|power bi|programov",
+        re.I,
+    )
+    for index in range(5):
+        cards = page.select(".course")
+        if not cards and not index:
+            raise ValueError("Výpis Naučmese nebyl nalezen")
+        for card in cards:
+            link = card.select_one(".perex h2 a[href]")
+            title = value(link)
+            city = value(card.select_one("address"))
+            span = dates(value(card.select_one(".bottom_info time")))
+            if not link or not span or city not in {"Brno", "Praha"} or not skill.search(normalized(title)):
+                continue
+            url = absolute(source["url"], link["href"])
+            yield event(source, title, span, url, city=city,
+                        description=readable(value(card.select_one(".perex p"))))
+        next_page = page.select_one('a.js-course-load-button[href*="loadNextPage"][data-history-url]')
+        if index == 4 or not next_page:
+            break
+        page = fetch(absolute(source["url"], next_page["data-history-url"]))
+
+
+def predator(source, page):
+    listing = page.select_one("#futureraceslistboxes")
+    if not listing:
+        raise ValueError("Program Predator Race nebyl nalezen")
+    for card in listing.select(".race"):
+        title = value(card.select_one(".race-info h2"))
+        city = value(card.select_one(".single-race-info .place"))
+        link = card.select_one('.race-info a[href*="/race/detail/"]')
+        span = czech_span(value(card.select_one(".single-race-info")))
+        if city and link and span:
+            yield event(source, title, span, absolute(source["url"], link["href"]), city=city)
+
+
+def spartan(source, page):
+    cards = page.select('a.result[href*="/race/detail/"]')
+    if not cards:
+        raise ValueError("Program Spartan nebyl nalezen")
+    for card in cards:
+        title = value(card.select_one(".title"))
+        location = [part.strip() for part in value(card.select_one(".location")).split(",")]
+        when = value(card.select_one(".date"))
+        formats = value(card.select_one(".events"))
+        match = re.fullmatch(r"([A-Za-z]+)\s+(\d{1,2})(?:\s*[-–]\s*(?:([A-Za-z]+)\s+)?(\d{1,2}))?,\s*(\d{4})", when)
+        if not match or not location or location[-1] != source["country"]:
+            continue
+        month, first, other_month, last, year = match.groups()
+        month_index = next((i for i, name in enumerate(MONTHS_EN, 1) if name.startswith(month)), None)
+        if not month_index:
+            continue
+        span = [date(int(year), month_index, int(first))]
+        if last:
+            end_month = next((i for i, name in enumerate(MONTHS_EN, 1) if name.startswith(other_month or month)), month_index)
+            span.append(date(int(year) + (end_month < month_index), end_month, int(last)))
+        city = next((part for part in location[:-1] if part != source["countryName"] and part != source["country"]), "")
+        if not city:
+            city = re.split(r"\s+(?:Spartan |EXPO |TRAIL|Race|Super|Sprint)", title, maxsplit=1, flags=re.I)[0]
+        url = absolute(source["url"], card["href"])
+        if not title.casefold().startswith("spartan"):
+            title = "Spartan · " + title
+        yield event(source, title, span, url, city=city, description=formats)
+
+
+def pisklata(source, page):
+    city = ""
+    parsed = 0
+    published = {(item["url"], item["date"]): item for item in source.get("initialEvents", [])}
+    for node in page.select("h2, h3, h4"):
+        title = value(node)
+        if title in {"PRAHA", "BRNO"}:
+            city = title.title()
+        if normalized(title).startswith("udalosti uplynule"):
+            break
+        link = node.select_one("a[href]")
+        card = node.find_parent("article") or node.find_parent(class_="fusion-post-content-wrapper")
+        if not title or not link or not card or not city:
+            continue
+        url = absolute(source["url"], link["href"])
+        if urlsplit(url).hostname not in {"pisklata.cz", "www.pisklata.cz"}:
+            continue
+        date_box = card.select_one(".fusion-date-box")
+        numeric = re.search(r"\b(\d{1,2})\s+(\d{1,2}),?\s+(\d{4})\b", value(date_box))
+        if numeric:
+            day, month, year = map(int, numeric.groups())
+            day = date(year, month, day)
+        else:
+            spelled = re.search(rf"\b(\d{{1,2}})\.?\s+({CZECH_MONTHS}),?\s+(\d{{4}})\b", value(card))
+            if not spelled:
+                continue
+            day = date(int(spelled[3]), MONTH_NUMBER[spelled[2]], int(spelled[1]))
+        parsed += 1
+        prior = published.get((url, day.isoformat()), {})
+        yield event(source, title, [day], url, city=city, time=prior.get("time", ""),
+                    description=prior.get("description", "Komunitní akce Písklat."))
+    if not parsed:
+        raise ValueError("Ve veřejném programu Písklat se nepodařilo rozpoznat termíny")
+
+
+def shibari_days(text, start):
+    full = dates(text)
+    if full:
+        return full
+    result = []
+    for day, month in re.findall(r"\b(\d{1,2})\.\s*(\d{1,2})\.", text):
+        for year in (start.year, start.year + 1):
+            candidate = date(year, int(month), int(day))
+            if candidate >= (result[-1] if result else start - timedelta(days=7)):
+                result.append(candidate)
+                break
+    return result
+
+
+def shibari(source, page, start):
+    cards = page.select('a.event-card-item[href*="/akce/info/"]')
+    if not cards:
+        raise ValueError("Výpis Bad Reputation nebyl nalezen")
+    for card in cards:
+        title = value(card.select_one(".hover-content .card-title"))
+        title = re.sub(r"\s+:", ":", title)
+        label = value(card.select_one(".event-date"))
+        span = shibari_days(label, start)
+        url = absolute(source["url"], card["href"])
+        if not title or not span:
+            continue
+        workshop = normalized(title).startswith("workshop")
+        topics = ["kink", "kurzy", "prakticke"] if workshop else ["kink"]
+        yield event(source, title, span, url, venue="Bad Reputation",
+                    description="Workshop studia Bad Reputation." if workshop else "Komunitní akce studia Bad Reputation.",
+                    topics=topics)
+
+
+def shibari_detail(row):
+    try:
+        page = fetch(row["url"], timeout=6)
+        label = value(page.select_one(".primary-content .d-lg-none p"))
+        if match := re.search(r"\b\d{1,2}:[0-5]\d\b", label):
+            row["time"] = clock(match[0])
+    except OSError:
+        pass
+    return row
+
+
 def programme(source, start):
     page = fetch(source["url"])
     end = start + timedelta(days=source["days"] - 1)
@@ -299,6 +489,12 @@ def programme(source, start):
         rows = nicom(source, page)
     elif adapter == "sono":
         rows = sono(source, page)
+    elif adapter == "shibari":
+        rows = shibari(source, page, start)
+    elif adapter == "fablab":
+        rows = fablab(source, page, start, end)
+    elif adapter in {"gopas", "naucmese", "predator", "spartan", "pisklata"}:
+        rows = dict(gopas=gopas, naucmese=naucmese, predator=predator, spartan=spartan, pisklata=pisklata)[adapter](source, page)
     else:
         rows = festival(source, page, start)
     return [row for row in rows if row["url"] and row["title"]
@@ -307,15 +503,21 @@ def programme(source, start):
 
 def update_source(source, old, now):
     stamp = now.isoformat(timespec="seconds")
+    if "events" not in old and source.get("initialEvents"):
+        initial = [event(source, item["title"], [date.fromisoformat(item["date"])], item["url"],
+                         time=item.get("time", ""), city=item["city"], description=item.get("description", ""))
+                   for item in source["initialEvents"]]
+        old = dict(old, events=[row for row in initial if row["date"] >= now.date().isoformat()])
     try:
         rows = programme(source, now.date())
     except Exception as error:
         print(f"{source['name']}: {error}")
         return dict(old, lastAttempt=stamp, error=True)
     previous = {row["id"]: row for row in old.get("events", [])}
-    if source["adapter"] == "sono":
+    detail = {"sono":sono_detail, "shibari":shibari_detail}.get(source["adapter"])
+    if detail:
         with ThreadPoolExecutor(max_workers=4) as pool:
-            rows = list(pool.map(sono_detail, rows))
+            rows = list(pool.map(detail, rows))
     for row in rows:
         row["addedAt"] = previous.get(row["id"], {}).get("addedAt", stamp)
     print(f"{source['name']}: {len(rows)} akcí")

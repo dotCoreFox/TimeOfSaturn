@@ -121,3 +121,6 @@ button:hover { border-color: var(--gold); }
 
 .profile-option { display: flex; align-items: center; gap: .4rem; color: var(--silver); }
 .profile-option input { accent-color: var(--gold); }
+
+.filter-toggles { display: flex; flex-wrap: wrap; gap: .35rem 1.1rem; }
+.event-star { color: var(--gold); margin-inline-end: .45em; }

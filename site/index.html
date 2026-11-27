@@ -30,15 +30,19 @@
         <label class="search-field">Hledat<input type="search" name="search" placeholder="Název, místo, Power BI…"></label>
         <label>Téma<select name="topic">
           <option value="">Všechna témata</option><option value="kurzy">Kurzy a dovednosti</option>
-          <option value="projekty">Projekty a komunita</option><option value="debaty">Debaty a přednášky</option>
+          <option value="prakticke">Praktické dovednosti</option><option value="projekty">Projekty a komunita</option><option value="debaty">Debaty a přednášky</option>
           <option value="hudba">Hudba</option><option value="hoste">Výrazní hosté (tipy)</option><option value="kino">Kino</option>
           <option value="svetlo">Světlo a folklor</option><option value="vystavy">Výstavy</option>
-          <option value="divadlo">Divadlo</option>
+          <option value="divadlo">Divadlo</option><option value="kink">Kink a shibari</option>
+          <option value="ocr">Překážkové a trailové závody</option>
         </select></label>
         <label>Zdroj<select name="source" id="source-filter"><option value="">Všechny zdroje</option></select></label>
         <button id="clear-filters" type="button">Vymazat filtry</button>
       </div>
-      <label class="profile-option"><input name="profile" type="checkbox"> Podle mých zájmů</label>
+      <div class="filter-toggles">
+        <label class="profile-option"><input name="profile" type="checkbox"> Podle mých zájmů</label>
+        <label class="profile-option"><input name="starred" type="checkbox"> S hvězdičkou</label>
+      </div>
     </form>
     <div class="viewbar">
       <div class="segments" aria-label="Zobrazení">
