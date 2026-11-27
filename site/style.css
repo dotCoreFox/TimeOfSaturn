@@ -10,6 +10,7 @@
   --silver: #dbebef;
   --gold: #ffd78d;
   --rose: #ffb7b3;
+  --page-gutter: clamp(1rem, 2.5vw, 3rem);
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -22,7 +23,7 @@ body {
 }
 a { color: var(--gold); }
 a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-.topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem max(1rem, calc((100% - 76rem) / 2)); background: var(--sidebar); border-bottom: 1px solid var(--line); }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem var(--page-gutter); background: var(--sidebar); border-bottom: 1px solid var(--line); }
 .brand { font: 1.35rem Georgia, serif; text-decoration: none; white-space: nowrap; }
 .brand span { margin-right: .2rem; }
 nav { display: flex; gap: .3rem; }
@@ -60,7 +61,7 @@ select:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .agenda-source { text-align: right; }
 .agenda-status { display: block; color: var(--rose); font-size: .85rem; }
 #event-links { padding-left: 1.2rem; }
-main { width: 100%; max-width: 82rem; margin: 0 auto; padding: 1.65rem clamp(1rem, 3vw, 3rem) 4rem; }
+main { width: 100%; padding: 1.65rem var(--page-gutter) 4rem; }
 h1, h2 { font-family: Georgia, serif; font-weight: normal; margin: 0; }
 h1 { font-size: clamp(2.1rem, 4vw, 3.35rem); }
 h2 { font-size: 1.55rem; }
