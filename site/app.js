@@ -12,7 +12,7 @@ let events = new Map()
 let programmeEvents = []
 let watch = {}
 let config
-let currentView = 'agenda'
+let currentView = 'calendar'
 let newsLimit = 24
 const sourceNames = new Map([
   ['ndb', 'Národní divadlo Brno'], ['kino-art', 'Kino Art'],
@@ -25,6 +25,7 @@ let kino = {}
 let discoveries = {}
 let exhibitions = []
 let detailTrigger
+let selectedDay
 let loaded = false
 const dateLabel = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeZone:zone})
 const timestamp = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeStyle:'short', timeZone:zone})
@@ -48,9 +49,25 @@ const matchKey = text => fold(text).replace(/[^a-z0-9]+/g, ' ').trim()
 const venueKey = venue => matchKey(venue?.split(/,|\s[–—-]\s/)[0])
 const topicNames = {
   kurzy:'Kurzy a dovednosti', prakticke:'Praktické dovednosti', projekty:'Projekty a komunita', debaty:'Debaty a přednášky',
-  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Kink a shibari', ocr:'Překážkové a trailové závody'
+  hudba:'Hudba', hoste:'Výrazní hosté', kino:'Kino', svetlo:'Světlo a folklor', vystavy:'Výstavy', divadlo:'Divadlo', kink:'Kink a shibari', ocr:'Překážkové a trailové závody', strelnice:'Střelnice'
 }
 const typeTopics = Object.fromEntries(Object.entries(topicNames).map(([key, name]) => [name, key]))
+
+function icon(name) {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+  svg.setAttribute('class', 'category-icon')
+  svg.setAttribute('aria-hidden', 'true')
+  svg.setAttribute('focusable', 'false')
+  const shape = document.createElementNS(svg.namespaceURI, 'use')
+  shape.setAttribute('href', 'icons.svg#' + name)
+  svg.append(shape)
+  return svg
+}
+
+function eventIcon(event) {
+  const category = typeTopics[event.type] || event.topics.find(topic => topicNames[topic]) || 'all'
+  return icon(category)
+}
 
 function enrich(event) {
   const text = fold([event.title, event.description].filter(Boolean).join(' '))
@@ -165,7 +182,8 @@ function drawAgenda() {
   const last = addDays(today, Number(get('period').value) - 1)
   const group = new Map()
   const eligible = event => event.date <= last && (event.endDate || event.date) >= today && matchesFilters(event, filters)
-  const visible = [...programmeEvents, ...exhibitions.filter(event => event.date > today)].filter(eligible)
+  const upcoming = [...programmeEvents, ...exhibitions].filter(eligible)
+  const visible = upcoming.filter(event => !isLongEvent(event))
   for (const event of visible) {
     const day = event.date < today ? today : event.date
     if (!group.has(day)) group.set(day, [])
@@ -183,7 +201,9 @@ function drawAgenda() {
       button.type = 'button'
       const time = event.date < today && event.endDate ? 'do ' + dayLabel(event.endDate) : event.time || (event.endDate ? 'Vícedenní' : 'Bez času')
       const label = element('span')
-      label.append(titledEvent(element('strong', '', 'agenda-title'), event),
+      const name = element('strong', '', 'agenda-title')
+      name.append(eventIcon(event))
+      label.append(titledEvent(name, event),
         element('span', [...new Set([event.type, event.city, event.venue].filter(Boolean))].join(' · '), 'agenda-meta'))
       if (event.cancelled || event.missing) label.append(element('span', event.cancelled ? kind.cancelled : kind.missing, 'agenda-status'))
       button.append(element('span', time, 'agenda-time'), label,
@@ -193,14 +213,32 @@ function drawAgenda() {
     }
     list.append(section)
   }
-  const ongoing = exhibitions.filter(event => event.date <= today && eligible(event))
-  get('agenda-exhibitions').replaceChildren(...ongoing.map(exhibitionButton))
+  const ongoing = upcoming.filter(isLongEvent).sort(compareLongEvents)
+  get('agenda-exhibitions').replaceChildren(...ongoing.map(event => longEventButton(event)))
   get('agenda-ongoing').hidden = !ongoing.length
   if (!visible.length && !ongoing.length && loaded) list.append(element('p', 'V tomto období nejsou pro zvolené filtry žádné akce.', 'muted'))
   get('result-count').textContent = loaded ? `Akce: ${visible.length + ongoing.length}` : ''
 }
 
+function showInspection(view) {
+  get('panel-empty').hidden = Boolean(view)
+  get('day-panel').hidden = view !== 'day-panel'
+  get('details').hidden = view !== 'details'
+  document.querySelector('.inspection').classList.toggle('has-selection', Boolean(view))
+}
+
+function focusInspection(heading) {
+  heading.focus({preventScroll:true})
+  if (!matchMedia('(min-width: 62rem)').matches) {
+    document.querySelector('.inspection').scrollIntoView({block:'nearest'})
+  }
+}
+
 function details(event, trigger) {
+  if (!get('day-panel-list').contains(trigger)) {
+    selectedDay?.trigger.removeAttribute('aria-current')
+    selectedDay = null
+  }
   detailTrigger?.removeAttribute('aria-current')
   detailTrigger = trigger
   trigger.setAttribute('aria-current', 'true')
@@ -208,7 +246,8 @@ function details(event, trigger) {
   const title = get('event-title')
   title.replaceChildren()
   titledEvent(title, event)
-  get('event-type').textContent = [event.type, event.city].filter(Boolean).join(' · ')
+  get('event-type').replaceChildren(eventIcon(event),
+    document.createTextNode([event.type, event.city].filter(Boolean).join(' · ')))
   get('event-meta').textContent = [metaDate, event.time, event.venue, event.price,
     event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(' · ')
   get('event-description').textContent = event.description || snapshot.descriptions?.[event.show]
@@ -221,24 +260,92 @@ function details(event, trigger) {
     return item
   })
   get('event-links').replaceChildren(...links)
-  get('details').hidden = false
-  title.focus({preventScroll:true})
-  get('details').scrollIntoView({block:'nearest'})
+  get('back-to-day').hidden = !selectedDay
+  showInspection('details')
+  focusInspection(title)
 }
 
 function closeDetails(restoreFocus = false) {
-  get('details').hidden = true
+  const trigger = detailTrigger || selectedDay?.trigger
   detailTrigger?.removeAttribute('aria-current')
-  if (restoreFocus && detailTrigger?.isConnected) detailTrigger.focus()
+  selectedDay?.trigger.removeAttribute('aria-current')
   detailTrigger = null
+  selectedDay = null
+  showInspection()
+  if (restoreFocus && trigger?.isConnected) trigger.focus()
 }
 
-function exhibitionButton(event) {
-  const button = element('button', event.title, 'exhibition')
+function backToDay() {
+  if (!selectedDay) {
+    closeDetails(true)
+    return
+  }
+  const trigger = detailTrigger
+  detailTrigger?.removeAttribute('aria-current')
+  detailTrigger = null
+  showInspection('day-panel')
+  if (trigger?.isConnected) trigger.focus()
+  else focusInspection(get('day-panel-title'))
+}
+
+const isLongEvent = event => event.endDate &&
+  (event.type === 'Výstavy' || event.endDate >= addDays(event.date, 6))
+const compareLongEvents = (a, b) => a.endDate.localeCompare(b.endDate) || a.title.localeCompare(b.title, locale)
+const overlaps = (event, start, end) => event.date <= end && (event.endDate || event.date) >= start
+
+function longEventButton(event, range) {
+  const button = element('button', '', 'long-event')
   button.type = 'button'
-  button.append(element('span', event.city + ' · do ' + dayLabel(event.endDate)))
+  const title = titledEvent(element('strong', '', 'long-title'), event)
+  title.prepend(eventIcon(event))
+  const location = element('span', [event.city, event.venue].filter(Boolean).join(' · '), 'long-location')
+  button.append(title, location)
+  const duration = dayLabel(event.date) + ' – ' + dayLabel(event.endDate)
+  const rangeLabel = range && event.date <= range.start && event.endDate >= range.end ? 'Celý měsíc' : duration
+  button.append(element('span', rangeLabel, 'long-date'))
+  button.title = duration
+  if (range) {
+    const first = event.date <= range.start ? 0 : Number(event.date.slice(-2)) - 1
+    const last = event.endDate >= range.end ? range.days : Number(event.endDate.slice(-2))
+    const track = element('span', '', 'long-track')
+    const bar = element('span', '', 'long-bar')
+    track.setAttribute('aria-hidden', 'true')
+    bar.style.insetInlineStart = (100 * first / range.days) + '%'
+    bar.style.width = (100 * (last - first) / range.days) + '%'
+    track.append(bar)
+    button.append(track)
+  }
   button.onclick = () => details(event, button)
   return button
+}
+
+const compareTimes = (a, b) => (a.time || '99').localeCompare(b.time || '99') || a.title.localeCompare(b.title, locale)
+
+function dayEventButton(event, compact = false) {
+  const button = element('button', '', compact ? 'event' : 'day-panel-event')
+  button.type = 'button'
+  const status = event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''
+  if (event.cancelled) button.classList.add('cancelled')
+  if (event.missing) button.classList.add('missing')
+  button.setAttribute('aria-label', [event.title, event.type, event.starred ? 'S hvězdičkou' : '',
+    event.time, status].filter(Boolean).join(', '))
+  button.title = [event.time, event.title, status].filter(Boolean).join(' · ')
+  const name = titledEvent(element('span', '', 'calendar-event-title'), event)
+  button.append(eventIcon(event), element(event.time ? 'time' : 'span', event.time || '–', 'event-time'), name)
+  button.onclick = () => details(event, button)
+  return button
+}
+
+function dayPanel(date, rows, trigger) {
+  closeDetails()
+  selectedDay = {trigger}
+  trigger.setAttribute('aria-current', 'true')
+  const title = get('day-panel-title')
+  title.textContent = dayLabel(date)
+  get('day-panel-list').replaceChildren(...(rows.length ? rows.map(event => dayEventButton(event))
+    : [element('p', 'Pro tento den nejsou žádné akce ve zvolených filtrech.', 'muted')]))
+  showInspection('day-panel')
+  focusInspection(title)
 }
 
 function theatreEvent(event) {
@@ -259,14 +366,24 @@ function drawCalendar() {
   const monthStart = first + '01'
   const monthEnd = first + String(numDays)
   const filters = new FormData(get('filters'))
-  const visibleShows = programmeEvents.filter(event =>
-    (event.endDate || event.date) >= monthStart && event.date <= monthEnd && matchesFilters(event, filters))
-  const visibleExhibitions = exhibitions.filter(event =>
-    event.date <= monthEnd && event.endDate >= monthStart && matchesFilters(event, filters))
-  get('exhibition-list').replaceChildren(...visibleExhibitions.map(exhibitionButton))
-  get('ongoing').hidden = !visibleExhibitions.length
-  get('empty-calendar').hidden = !loaded || visibleShows.length > 0 || visibleExhibitions.length > 0
-  for (let i = 0; i < Math.ceil((leading + numDays) / 7) * 7; i++) {
+  const matching = [...programmeEvents, ...exhibitions].filter(event =>
+    overlaps(event, monthStart, monthEnd) && matchesFilters(event, filters))
+  const longEvents = matching.filter(isLongEvent).sort(compareLongEvents)
+  const range = {start:monthStart, end:monthEnd, days:numDays}
+  get('exhibition-list').replaceChildren(...longEvents.map(event => longEventButton(event, range)))
+  get('ongoing').hidden = !longEvents.length
+  get('empty-calendar').hidden = !loaded || Boolean(matching.length)
+  const byDay = new Map()
+  for (const event of matching.filter(event => !isLongEvent(event))) {
+    const day = event.date < monthStart ? monthStart : event.date
+    if (!byDay.has(day)) byDay.set(day, [])
+    byDay.get(day).push(event)
+  }
+  const weeks = Math.ceil((leading + numDays) / 7)
+  const busyWeeks = new Set([...byDay.keys()].map(date => Math.floor((leading + Number(date.slice(-2)) - 1) / 7)))
+  calendar.style.gridTemplateRows = Array.from({length:weeks}, (_, week) =>
+    busyWeeks.has(week) ? 'var(--week-busy)' : 'var(--week-quiet)').join(' ')
+  for (let i = 0; i < weeks * 7; i++) {
     const day = i - leading + 1
     if (day < 1 || day > numDays) {
       calendar.append(element('div', '', 'day empty'))
@@ -274,26 +391,19 @@ function drawCalendar() {
     }
     const date = first + String(day).padStart(2, '0')
     const cell = element('div', '', date === today ? 'day today' : 'day')
-    const number = element('time', String(day), 'date')
-    number.dateTime = date
+    const dayEvents = (byDay.get(date) || []).sort(compareTimes)
+    const number = element('button', String(day), 'date')
+    number.type = 'button'
+    number.setAttribute('aria-label', dayLabel(date) + ', počet akcí: ' + dayEvents.length)
+    number.onclick = () => dayPanel(date, dayEvents, number)
     cell.append(number)
-    const dayEvents = visibleShows.filter(event => (event.date < monthStart ? monthStart : event.date) === date).sort((a, b) => a.time.localeCompare(b.time))
-    const overflow = element('details', '', 'day-overflow')
-    for (const [index, event] of dayEvents.entries()) {
-      const button = element('button', '', 'event')
-      if (event.cancelled) button.classList.add('cancelled')
-      if (event.missing) button.classList.add('missing')
-      button.setAttribute('aria-label', [event.title, event.starred ? 'S hvězdičkou' : '', dayLabel(date), event.time,
-        event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(', '))
-      if (event.time) button.append(element('time', event.time))
-      titledEvent(button, event)
-      button.onclick = () => details(event, button)
-      if (index < 4) cell.append(button)
-      else overflow.append(button)
-    }
-    if (overflow.childElementCount) {
-      overflow.prepend(element('summary', '+' + overflow.childElementCount + ' další'))
-      cell.append(overflow)
+    for (const event of dayEvents.slice(0, 2)) cell.append(dayEventButton(event, true))
+    if (dayEvents.length > 2) {
+      const more = element('button', '+' + (dayEvents.length - 2), 'day-more')
+      more.type = 'button'
+      more.setAttribute('aria-label', 'Všechny akce · ' + dayLabel(date))
+      more.onclick = () => dayPanel(date, dayEvents, more)
+      cell.append(more)
     }
     calendar.append(cell)
   }
@@ -364,7 +474,9 @@ function drawFeed() {
     time.dateTime = row.at
     item.append(time, document.createTextNode(row.message || kind[row.kind]))
     if (event) {
-      const button = titledEvent(element('button'), event)
+      const button = element('button')
+      button.append(eventIcon(event))
+      titledEvent(button, event)
       button.onclick = () => details(event, button)
       item.append(document.createTextNode(' · '), button, document.createTextNode(' · ' + dayLabel(event.date) + (event.time ? ' · ' + event.time : '')))
     }
@@ -419,9 +531,14 @@ get('today').onclick = () => {
   displayed = new Date(Date.UTC(year, month - 1, 1))
   drawCalendar()
 }
-get('close-details').onclick = () => closeDetails(true)
+get('close-details').onclick = backToDay
+get('back-to-day').onclick = backToDay
+get('close-day').onclick = () => closeDetails(true)
+get('panel-empty').prepend(icon('inspect'))
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !get('details').hidden) closeDetails(true)
+  if (event.key !== 'Escape') return
+  if (!get('details').hidden) backToDay()
+  else if (selectedDay) closeDetails(true)
 })
 document.querySelectorAll('[data-view]').forEach(button => {
   button.onclick = () => setView(button.dataset.view)
@@ -435,7 +552,35 @@ get('more-news').onclick = () => {
   drawFeed()
 }
 const form = get('filters')
+const topicSelect = form.elements.topic
+const topicButtons = [...topicSelect.options].map(option => {
+  const button = element('button', '', 'topic-button')
+  button.type = 'button'
+  button.dataset.topic = option.value
+  button.setAttribute('aria-label', option.label)
+  button.title = option.label
+  button.append(icon(option.value || 'all'), element('span', option.label))
+  button.onclick = () => {
+    topicSelect.value = option.value
+    topicSelect.dispatchEvent(new Event('input', {bubbles:true}))
+  }
+  return button
+})
+get('topic-buttons').replaceChildren(...topicButtons)
+get('topic-select').hidden = true
+for (const label of get('regions').querySelectorAll('label')) {
+  const region = label.querySelector('input').value
+  label.prepend(icon(region === 'brno' ? 'pin' : region))
+}
+
+function syncTopicButtons() {
+  for (const button of topicButtons) {
+    button.setAttribute('aria-pressed', String(button.dataset.topic === topicSelect.value))
+  }
+}
+syncTopicButtons()
 function filterChanged() {
+  syncTopicButtons()
   closeDetails()
   newsLimit = 24
   renderView()
@@ -475,6 +620,34 @@ function drawSourceOptions() {
   filter.value = ids.has(selected) ? selected : ''
 }
 
+function tableRow(heading, cells) {
+  const row = element('tr')
+  const name = element('th')
+  name.scope = 'row'
+  name.append(heading)
+  row.append(name)
+  for (const content of cells) {
+    const cell = element('td')
+    cell.append(content)
+    row.append(cell)
+  }
+  return row
+}
+
+function sourceLink(name, url) {
+  const link = element('a', name, 'source-link')
+  link.href = url
+  return link
+}
+
+function tableMessage(tbody, message, columns) {
+  const row = element('tr')
+  const cell = element('td', message, 'alert')
+  cell.colSpan = columns
+  row.append(cell)
+  get(tbody).replaceChildren(row)
+}
+
 function drawSources() {
   drawSourceOptions()
   if (!config) return
@@ -483,17 +656,13 @@ function drawSources() {
   const references = []
   for (const source of config.links) {
     const imported = source.adapter || ['ndb', 'kino-art'].includes(source.id)
-    const item = element('li')
-    const link = element('a', source.name)
-    link.href = source.url
-    item.append(link, element('p', source.description, 'muted'))
-    const state = current[source.id]
     const scope = regionNames[source.scope || 'cz']
+    const link = sourceLink(source.name, source.url)
     if (!imported) {
-      item.append(element('p', scope, 'muted'))
-      references.push(item)
+      references.push(tableRow(link, [source.description, scope]))
       continue
     }
+    const state = current[source.id]
     let status = 'Čeká na první import'
     if (state?.error) {
       status = 'Chyba importu'
@@ -503,8 +672,10 @@ function drawSources() {
       status = 'Aktualizováno ' + timestamp.format(new Date(state.lastSuccess))
       if (source.adapter && !state.events?.length) status += ' · žádný zveřejněný termín ve výhledu'
     }
-    item.append(element('p', [scope, `Výhled ${source.days || config.windowDays} dní`, status].join(' · '), state?.error ? 'alert' : 'muted'))
-    automatic.push(item)
+    const statusCell = element('div')
+    statusCell.append(element('span', status, state?.error ? 'alert' : ''), element('small',
+      `Výhled ${source.days || config.windowDays} dní`, 'muted'))
+    automatic.push(tableRow(link, [source.description, scope, statusCell]))
   }
   get('source-links').replaceChildren(...automatic)
   get('source-references').replaceChildren(...references)
@@ -533,29 +704,24 @@ const requests = [
   }),
   readJson('exhibitions.json').then(data => {
     exhibitions = data.map(event => enrich({...event, type:'Výstavy', sourceId:'exhibitions'}))
-    const items = exhibitions.map(event => {
-      const item = element('li')
-      const link = element('a', event.title)
-      link.href = event.url
-      item.append(link, document.createTextNode(' · ' + event.city))
-      return item
-    })
+    const items = exhibitions.map(event => tableRow(sourceLink(event.title, event.url), [
+      [event.city, event.venue].filter(Boolean).join(' · '), dayLabel(event.endDate)
+    ]))
     get('exhibition-sources').replaceChildren(...items)
   }).catch(() => {
-    get('exhibition-sources').replaceChildren(element('li', 'Výstavy se nepodařilo načíst.', 'alert'))
+    tableMessage('exhibition-sources', 'Výstavy se nepodařilo načíst.', 3)
   }),
   readJson('sources.json').then(data => {
     config = data
     for (const source of data.links) sourceNames.set(source.id, source.name)
     const queries = data.queries.map(source => {
-      const item = element('li')
-      item.append(element('strong', source.query + ' · ' + source.city))
-      if (source.variants?.length) item.append(element('p', source.variants.join(' · '), 'muted'))
-      return item
+      const variants = element('ul', '', 'keyword-list')
+      for (const term of source.variants || []) variants.append(element('li', term))
+      return tableRow(source.query, [source.city || '', variants])
     })
     get('source-queries').replaceChildren(...queries)
   }).catch(() => {
-    get('source-links').replaceChildren(element('li', 'Seznam zdrojů se nepodařilo načíst.', 'alert'))
+    tableMessage('source-links', 'Seznam zdrojů se nepodařilo načíst.', 4)
   })
 ]
 Promise.all(requests).then(() => {

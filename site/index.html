@@ -28,17 +28,18 @@
       </fieldset>
       <div class="filter-tools">
         <label class="search-field">Hledat<input type="search" name="search" placeholder="Název, místo, Power BI…"></label>
-        <label>Téma<select name="topic">
+        <label id="topic-select">Téma<select name="topic">
           <option value="">Všechna témata</option><option value="kurzy">Kurzy a dovednosti</option>
           <option value="prakticke">Praktické dovednosti</option><option value="projekty">Projekty a komunita</option><option value="debaty">Debaty a přednášky</option>
           <option value="hudba">Hudba</option><option value="hoste">Výrazní hosté (tipy)</option><option value="kino">Kino</option>
           <option value="svetlo">Světlo a folklor</option><option value="vystavy">Výstavy</option>
           <option value="divadlo">Divadlo</option><option value="kink">Kink a shibari</option>
-          <option value="ocr">Překážkové a trailové závody</option>
+          <option value="ocr">Překážkové a trailové závody</option><option value="strelnice">Střelnice</option>
         </select></label>
         <label>Zdroj<select name="source" id="source-filter"><option value="">Všechny zdroje</option></select></label>
         <button id="clear-filters" type="button">Vymazat filtry</button>
       </div>
+      <div id="topic-buttons" class="topic-buttons" role="group" aria-label="Kategorie"></div>
       <div class="filter-toggles">
         <label class="profile-option"><input name="profile" type="checkbox"> Podle mých zájmů</label>
         <label class="profile-option"><input name="starred" type="checkbox"> S hvězdičkou</label>
@@ -46,26 +47,26 @@
     </form>
     <div class="viewbar">
       <div class="segments" aria-label="Zobrazení">
-        <button type="button" data-view="agenda" aria-pressed="true">Agenda</button>
-        <button type="button" data-view="calendar" aria-pressed="false">Měsíc</button>
+        <button type="button" data-view="agenda" aria-pressed="false">Agenda</button>
+        <button type="button" data-view="calendar" aria-pressed="true">Měsíc</button>
         <button type="button" data-view="news" aria-pressed="false">Změny</button>
       </div>
-      <label id="period-label">Výhled <select id="period">
+      <label id="period-label" hidden>Výhled <select id="period">
         <option value="7">7 dní</option><option value="30">30 dní</option>
         <option value="90">90 dní</option><option value="365">12 měsíců</option>
       </select></label>
     </div>
     <div class="calendar-layout">
       <div class="calendar-main">
-        <section id="agenda" aria-labelledby="agenda-title">
+        <section id="agenda" aria-labelledby="agenda-title" hidden>
           <div class="section-head"><h2 id="agenda-title">Nejbližší akce</h2><p id="result-count" role="status"></p></div>
           <div id="agenda-list"></div>
           <section class="ongoing" id="agenda-ongoing" aria-labelledby="agenda-exhibitions-title" hidden>
-            <h3 id="agenda-exhibitions-title">Probíhající výstavy</h3>
+            <h3 id="agenda-exhibitions-title">Dlouhodobé akce</h3>
             <div class="exhibition-list" id="agenda-exhibitions"></div>
           </section>
         </section>
-        <section id="month-view" aria-labelledby="month" hidden>
+        <section id="month-view" aria-labelledby="month">
           <div class="calendar-head">
             <h2 id="month"></h2>
             <div class="controls">
@@ -74,14 +75,14 @@
               <button id="next" aria-label="Další měsíc">›</button>
             </div>
           </div>
-          <section class="ongoing" id="ongoing" aria-labelledby="ongoing-title" hidden>
-            <h3 id="ongoing-title">Výstavy v tomto měsíci</h3>
-            <div class="exhibition-list" id="exhibition-list"></div>
-          </section>
           <div class="calendar-scroll">
             <div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
             <div class="calendar" id="calendar" aria-labelledby="month"></div>
           </div>
+          <section class="ongoing" id="ongoing" aria-labelledby="ongoing-title" hidden>
+            <h3 id="ongoing-title">Dlouhodobé akce</h3>
+            <div class="exhibition-list" id="exhibition-list"></div>
+          </section>
           <p id="empty-calendar" class="muted" role="status" hidden>V tomto měsíci nejsou žádné akce pro zvolené filtry.</p>
         </section>
         <section class="updates" id="updates" aria-labelledby="news-title" hidden>
@@ -89,22 +90,58 @@
           <button id="more-news" type="button" hidden>Zobrazit další změny</button>
         </section>
       </div>
-      <section class="details" id="details" aria-labelledby="event-title" hidden>
-        <div class="details-controls"><span id="event-type"></span><button id="close-details" aria-label="Zavřít detail">×</button></div>
-        <h2 id="event-title" tabindex="-1"></h2>
-        <p id="event-meta"></p>
-        <p id="event-description"></p>
-        <ul id="event-links"></ul>
-      </section>
+      <aside class="inspection" aria-label="Informace o programu">
+        <div id="panel-empty" class="inspection-empty">
+          <h2>Detail akce</h2>
+          <p>Vyber akci nebo den v kalendáři.</p>
+        </div>
+        <section id="day-panel" aria-labelledby="day-panel-title" hidden>
+          <div class="details-controls"><h2 id="day-panel-title" tabindex="-1"></h2><button id="close-day" aria-label="Zavřít program dne">×</button></div>
+          <div id="day-panel-list"></div>
+        </section>
+        <section class="details" id="details" aria-labelledby="event-title" hidden>
+          <div class="details-controls"><span id="event-type"></span><button id="close-details" aria-label="Zavřít detail">×</button></div>
+          <h2 id="event-title" tabindex="-1"></h2>
+          <p id="event-meta"></p>
+          <p id="event-description"></p>
+          <ul id="event-links"></ul>
+          <button id="back-to-day" type="button" hidden>‹ Program dne</button>
+        </section>
+      </aside>
     </div>
   </section>
   <section id="sources" hidden>
     <h1>Zdroje</h1>
     <p class="muted">Denní import ve 02:00 českého času. Každý zdroj má vlastní výhled a stav aktualizace.</p>
-    <section class="source" aria-labelledby="links-title"><h2 id="links-title">Automatický import</h2><ul class="source-list" id="source-links"></ul></section>
-    <section class="source" aria-labelledby="reference-title"><h2 id="reference-title">Další zdroje k procházení</h2><ul class="source-list" id="source-references"></ul></section>
-    <section class="source" aria-labelledby="queries-title"><h2 id="queries-title">Témata pro ruční hledání</h2><ul class="source-list" id="source-queries"></ul></section>
-    <section class="source"><h2>Ručně vybrané výstavy</h2><ul class="source-list" id="exhibition-sources"></ul></section>
+    <section class="source" aria-labelledby="links-title">
+      <h2 id="links-title">Automatický import</h2>
+      <div class="source-table"><table aria-labelledby="links-title">
+        <thead><tr><th scope="col">Web</th><th scope="col">Co sleduje</th><th scope="col">Oblast</th><th scope="col">Stav importu</th></tr></thead>
+        <tbody id="source-links"></tbody>
+      </table></div>
+    </section>
+    <section class="source" aria-labelledby="reference-title">
+      <h2 id="reference-title">Další weby</h2>
+      <div class="source-table"><table aria-labelledby="reference-title">
+        <thead><tr><th scope="col">Web</th><th scope="col">Co na něm najdeš</th><th scope="col">Oblast</th></tr></thead>
+        <tbody id="source-references"></tbody>
+      </table></div>
+    </section>
+    <section class="source" aria-labelledby="queries-title">
+      <h2 id="queries-title">Klíčová slova</h2>
+      <p class="muted">Výrazy uložené pro ruční hledání.</p>
+      <div class="source-table"><table aria-labelledby="queries-title">
+        <thead><tr><th scope="col">Téma</th><th scope="col">Oblast</th><th scope="col">Výrazy</th></tr></thead>
+        <tbody id="source-queries"></tbody>
+      </table></div>
+    </section>
+    <section class="source" aria-labelledby="exhibition-sources-title">
+      <h2 id="exhibition-sources-title">Ručně vybrané výstavy</h2>
+      <div class="source-table"><table aria-labelledby="exhibition-sources-title">
+        <thead><tr><th scope="col">Web pořadatele</th><th scope="col">Místo</th><th scope="col">Do</th></tr></thead>
+        <tbody id="exhibition-sources"></tbody>
+      </table></div>
+    </section>
   </section>
 </main>
 </body>
