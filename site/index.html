@@ -8,28 +8,65 @@
 <script src="app.js" defer></script>
 </head>
 <body>
-<header><a class="brand" href="#feed"><span aria-hidden="true">♄</span> Time of Saturn</a>
-<nav aria-label="Hlavní navigace"><a href="#feed">Feed</a><a href="#sources">Zdroje</a></nav></header>
+<aside class="sidebar">
+  <a class="brand" href="#feed"><span aria-hidden="true">♄</span> Time of Saturn</a>
+  <nav aria-label="Stránky"><a href="#feed">Feed</a><a href="#sources">Zdroje</a></nav>
+  <form id="filters" aria-label="Filtry událostí">
+    <fieldset>
+      <legend>Typ události</legend>
+      <label><input type="radio" name="type" value="" checked> Všechny typy</label>
+      <label><input type="radio" name="type" value="Hudba"> Hudba</label>
+      <label><input type="radio" name="type" value="Výstavy"> Výstavy</label>
+    </fieldset>
+    <fieldset>
+      <legend>Město</legend>
+      <label><input type="radio" name="city" value="" checked> Všechna města</label>
+      <label><input type="radio" name="city" value="Brno"> Brno</label>
+      <label><input type="radio" name="city" value="Praha"> Praha</label>
+    </fieldset>
+  </form>
+</aside>
 <main>
-<section id="feed">
-<h1>Kalendář akcí</h1>
-<p id="status" role="status">Načítám program…</p>
-<div class="calendar-head"><h2 id="month"></h2><div class="controls">
-<button id="previous" aria-label="Předchozí měsíc">‹</button>
-<button id="today">Dnes</button>
-<button id="next" aria-label="Další měsíc">›</button>
-</div></div>
-<div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
-<div class="calendar" id="calendar" aria-labelledby="month"></div>
-<section class="updates"><h2>Aktuality</h2><ul id="news"></ul></section>
-</section>
-<section id="sources" hidden><h1>Zdroje</h1><div class="source">
-<h2>Národní divadlo Brno</h2><p>Program na dnešek a dalších 13 kalendářních dní. Kontrola denně ve 02:00 českého času.</p>
-<a href="https://www.ndbrno.cz/program/">Otevřít program NdB</a></div></section>
+  <section id="feed">
+    <header class="page-title">
+      <h1>Kalendář akcí</h1>
+      <p id="status" role="status">Načítám program…</p>
+    </header>
+    <div class="calendar-layout">
+      <section class="calendar-main" aria-labelledby="month">
+        <div class="calendar-head">
+          <h2 id="month"></h2>
+          <div class="controls">
+            <button id="previous" aria-label="Předchozí měsíc">‹</button>
+            <button id="today">Dnes</button>
+            <button id="next" aria-label="Další měsíc">›</button>
+          </div>
+        </div>
+        <section class="ongoing" id="ongoing" aria-labelledby="ongoing-title" hidden>
+          <h3 id="ongoing-title">Výstavy v tomto měsíci</h3>
+          <div id="exhibition-list"></div>
+        </section>
+        <div class="calendar-scroll">
+          <div class="week" aria-hidden="true"><span>Po</span><span>Út</span><span>St</span><span>Čt</span><span>Pá</span><span>So</span><span>Ne</span></div>
+          <div class="calendar" id="calendar" aria-labelledby="month"></div>
+        </div>
+        <p id="empty-calendar" class="muted" role="status" hidden>V tomto měsíci nejsou žádné akce pro zvolené filtry.</p>
+      </section>
+      <section class="details" id="details" aria-labelledby="event-title" hidden>
+        <div class="details-controls"><span id="event-type"></span><button id="close-details" aria-label="Zavřít detail">×</button></div>
+        <h2 id="event-title" tabindex="-1"></h2>
+        <p id="event-meta"></p>
+        <p id="event-description"></p>
+        <a id="event-source">Detail u pořadatele</a>
+      </section>
+    </div>
+    <section class="updates" aria-labelledby="news-title"><h2 id="news-title">Aktuality</h2><ul id="news"></ul></section>
+  </section>
+  <section id="sources" hidden>
+    <h1>Zdroje</h1>
+    <div class="source"><h2>Národní divadlo Brno</h2><p>Program na 14 dní. Kontrola denně ve 02:00 českého času.</p><a href="https://www.ndbrno.cz/program/">Program NdB</a></div>
+    <div class="source"><h2>Výstavy v Brně a Praze</h2><p>Ruční výběr z webů pořadatelů.</p><ul id="exhibition-sources"></ul></div>
+  </section>
 </main>
-<dialog id="details" aria-labelledby="event-title">
-<form method="dialog"><button aria-label="Zavřít">×</button></form>
-<h2 id="event-title"></h2><p id="event-meta"></p><p id="event-description"></p><a id="event-source">Detail na webu NdB</a>
-</dialog>
 </body>
 </html>

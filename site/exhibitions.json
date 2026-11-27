@@ -1,0 +1,52 @@
+[
+  {
+    "id": "exhibition-simotova-brno",
+    "title": "Adriena Šimotová: Brno ’86",
+    "city": "Brno",
+    "venue": "Pražákův palác, Moravská galerie",
+    "date": "2026-10-16",
+    "endDate": "2027-02-28",
+    "description": "Výstava rekonstruuje brněnskou přehlídku Adrieny Šimotové z roku 1986. Původní díla doplňují archivní fotografie a práce s ručně perforovaným a trhaným papírem.",
+    "url": "https://moravska-galerie.cz/vystavy/adriena-simotova-brno-86/"
+  },
+  {
+    "id": "exhibition-kral-audrey",
+    "title": "Boris Kráľ. Bonsoir, Audrey!",
+    "city": "Brno",
+    "venue": "Uměleckoprůmyslové muzeum, Moravská galerie",
+    "date": "2026-09-25",
+    "endDate": "2027-01-24",
+    "description": "Průřez tvorbou slovenského návrháře Borise Kráľe ukazuje ručně dokončované oděvy a jeho současnou interpretaci siluety Diorova New Looku.",
+    "url": "https://moravska-galerie.cz/vystavy/boris-kral-bonsoir-audrey/"
+  },
+  {
+    "id": "exhibition-mozny-night-shift",
+    "title": "David Možný. NIGHT SHIFT",
+    "city": "Brno",
+    "venue": "Dům umění města Brna",
+    "date": "2026-10-07",
+    "endDate": "2027-02-14",
+    "description": "Čtyři prostorové instalace z lokálně získaných materiálů mění hlavní sál v prostředí, ve kterém si návštěvník znovu ujasňuje, kudy projít a jak odhadnout vzdálenost.",
+    "url": "https://www.dum-umeni.cz/david-mozny-night-shift/t10130"
+  },
+  {
+    "id": "exhibition-sekal-modry-kvet",
+    "title": "Zbyněk Sekal — Modrý květ",
+    "city": "Praha",
+    "venue": "Veletržní palác, Národní galerie Praha",
+    "date": "2026-09-24",
+    "endDate": "2027-01-31",
+    "description": "Výstava kreseb sochaře Zbyňka Sekala vede od raných figurálních studií k dílům z vídeňské emigrace. Představuje také dosud nevystavené práce na papíře z jeho pozůstalosti.",
+    "url": "https://www.ngprague.cz/udalost/4892/zbynek-sekal-modry-kvet"
+  },
+  {
+    "id": "exhibition-memory-of-touch-ii",
+    "title": "Memory of Touch: Kapitola II",
+    "city": "Praha",
+    "venue": "Kunsthalle Praha, Galerie 3",
+    "date": "2026-11-13",
+    "endDate": "2027-04-12",
+    "description": "Díla ze sbírky Kunsthalle Praha se setkávají s tvorbou pozvaných umělců. Výstava sleduje, jak různé generace zachycují zranitelnost, péči a odolnost.",
+    "url": "https://www.kunsthallepraha.org/events/memory-of-touch-kapitola-ii"
+  }
+]

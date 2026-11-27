@@ -1,11 +1,17 @@
 const get = id => document.getElementById(id)
 const zone = 'Europe/Prague'
 const locale = 'cs-CZ'
-const today = new Intl.DateTimeFormat('en-CA', {dateStyle:'short', timeZone:zone}).format(new Date())
+const todayParts = new Intl.DateTimeFormat('en', {
+  year:'numeric', month:'2-digit', day:'2-digit', timeZone:zone
+}).formatToParts(new Date())
+const today = ['year', 'month', 'day'].map(part => todayParts.find(item => item.type === part).value).join('-')
 const [year, month] = today.split('-').map(Number)
 let displayed = new Date(Date.UTC(year, month - 1, 1))
 let snapshot = {}
 let events = new Map()
+let exhibitions = []
+let detailTrigger
+let loaded = false
 const dateLabel = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeZone:zone})
 const timestamp = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeStyle:'short', timeZone:zone})
 const dayLabel = date => dateLabel.format(new Date(date + 'T12:00:00Z'))
@@ -23,14 +29,47 @@ function element(tag, text, className) {
   return node
 }
 
-function details(event) {
-  const description = snapshot.descriptions?.[event.show]
-  get('event-title').textContent = event.title
-  get('event-meta').textContent = [dayLabel(event.date), event.time, event.venue, event.category,
+function matchesFilters(event, filters) {
+  return (!filters.get('type') || event.type === filters.get('type'))
+    && (!filters.get('city') || event.city === filters.get('city'))
+}
+
+function details(event, trigger) {
+  detailTrigger = trigger
+  const metaDate = event.endDate ? dayLabel(event.date) + ' – ' + dayLabel(event.endDate) : dayLabel(event.date)
+  const title = get('event-title')
+  title.textContent = event.title
+  get('event-type').textContent = [event.type, event.city].filter(Boolean).join(' · ')
+  get('event-meta').textContent = [metaDate, event.time, event.venue,
     event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(' · ')
-  get('event-description').textContent = description || 'Popis je dostupný v detailu na webu NdB.'
+  get('event-description').textContent = event.description || snapshot.descriptions?.[event.show]
+    || 'Popis je dostupný v detailu u pořadatele.'
   get('event-source').href = event.url
-  get('details').showModal()
+  get('details').hidden = false
+  title.focus({preventScroll:true})
+  get('details').scrollIntoView({block:'nearest'})
+}
+
+function closeDetails(restoreFocus = false) {
+  get('details').hidden = true
+  if (restoreFocus && detailTrigger?.isConnected) detailTrigger.focus()
+  detailTrigger = null
+}
+
+function exhibitionButton(event) {
+  const button = element('button', event.title, 'exhibition')
+  button.type = 'button'
+  button.append(element('span', event.city + ' · do ' + dayLabel(event.endDate)))
+  button.onclick = () => details(event, button)
+  return button
+}
+
+function theatreEvent(event) {
+  const venue = event.venue || ''
+  const city = /pra(?:ha|ze)|dejvické/i.test(venue) ? 'Praha'
+    : /janáčkovo|mahenovo|reduta/i.test(venue) ? 'Brno' : ''
+  const type = /koncert|opera/i.test(event.category || '') || /galakoncert|filharmoni/i.test(event.title) ? 'Hudba' : 'Divadlo'
+  return {...event, city, type}
 }
 
 function drawCalendar() {
@@ -40,6 +79,16 @@ function drawCalendar() {
   const leading = (displayed.getUTCDay() + 6) % 7
   const numDays = new Date(Date.UTC(displayed.getUTCFullYear(), displayed.getUTCMonth() + 1, 0)).getUTCDate()
   const first = displayed.toISOString().slice(0, 8)
+  const monthStart = first + '01'
+  const monthEnd = first + String(numDays)
+  const filters = new FormData(get('filters'))
+  const visibleShows = [...events.values()].filter(event =>
+    event.date >= monthStart && event.date <= monthEnd && matchesFilters(event, filters))
+  const visibleExhibitions = exhibitions.filter(event =>
+    event.date <= monthEnd && event.endDate >= monthStart && matchesFilters(event, filters))
+  get('exhibition-list').replaceChildren(...visibleExhibitions.map(exhibitionButton))
+  get('ongoing').hidden = !visibleExhibitions.length
+  get('empty-calendar').hidden = !loaded || visibleShows.length > 0 || visibleExhibitions.length > 0
   for (let i = 0; i < Math.ceil((leading + numDays) / 7) * 7; i++) {
     const day = i - leading + 1
     if (day < 1 || day > numDays) {
@@ -51,7 +100,7 @@ function drawCalendar() {
     const number = element('time', String(day), 'date')
     number.dateTime = date
     cell.append(number)
-    for (const event of events.values()) {
+    for (const event of visibleShows) {
       if (event.date !== date) continue
       const button = element('button', '', 'event')
       if (event.cancelled) button.classList.add('cancelled')
@@ -60,7 +109,7 @@ function drawCalendar() {
         event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(', '))
       if (event.time) button.append(element('time', event.time))
       button.append(document.createTextNode(event.title))
-      button.onclick = () => details(event)
+      button.onclick = () => details(event, button)
       cell.append(button)
     }
     calendar.append(cell)
@@ -70,7 +119,11 @@ function drawCalendar() {
 function drawFeed() {
   const news = get('news')
   news.replaceChildren()
-  const rows = [...(snapshot.feed || [])]
+  const filters = new FormData(get('filters'))
+  const rows = (snapshot.feed || []).filter(row => {
+    const event = events.get(row.event)
+    return !event || matchesFilters(event, filters)
+  })
   if (!snapshot.error && snapshot.lastAttempt && Date.now() - Date.parse(snapshot.lastAttempt) > 27 * 3600000) {
     news.append(element('li', 'Denní aktualizace programu má zpoždění. Zobrazuji poslední dostupná data.', 'alert'))
   }
@@ -82,7 +135,7 @@ function drawFeed() {
     item.append(time, document.createTextNode(kind[row.kind]))
     if (event) {
       const button = element('button', event.title)
-      button.onclick = () => details(event)
+      button.onclick = () => details(event, button)
       item.append(document.createTextNode(' · '), button, document.createTextNode(' · ' + dayLabel(event.date) + (event.time ? ' · ' + event.time : '')))
     }
     news.append(item)
@@ -94,6 +147,7 @@ function navigate() {
   const sources = location.hash === '#sources'
   get('sources').hidden = !sources
   get('feed').hidden = sources
+  get('filters').hidden = sources
   document.querySelectorAll('nav a').forEach(link => {
     if ((link.hash === '#sources') === sources) link.setAttribute('aria-current', 'page')
     else link.removeAttribute('aria-current')
@@ -102,12 +156,23 @@ function navigate() {
 window.addEventListener('hashchange', navigate)
 navigate()
 function shift(amount) {
+  closeDetails()
   displayed.setUTCMonth(displayed.getUTCMonth() + amount)
   drawCalendar()
 }
 get('previous').onclick = () => shift(-1)
 get('next').onclick = () => shift(1)
-get('today').onclick = () => { displayed = new Date(Date.UTC(year, month - 1, 1)); drawCalendar() }
+get('today').onclick = () => {
+  closeDetails()
+  displayed = new Date(Date.UTC(year, month - 1, 1))
+  drawCalendar()
+}
+get('close-details').onclick = () => closeDetails(true)
+get('filters').onchange = () => {
+  closeDetails()
+  drawCalendar()
+  drawFeed()
+}
 drawCalendar()
 
 fetch('events.json', {cache:'no-cache'}).then(response => {
@@ -115,7 +180,8 @@ fetch('events.json', {cache:'no-cache'}).then(response => {
   return response.json()
 }).then(data => {
   snapshot = data
-  events = new Map((data.events || []).map(event => [event.id, event]))
+  events = new Map((data.events || []).map(event => [event.id, theatreEvent(event)]))
+  loaded = true
   get('status').textContent = data.lastSuccess
     ? 'Program do ' + dayLabel(data.throughDate) + ' · Poslední aktualizace ' + timestamp.format(new Date(data.lastSuccess))
     : 'První načtení programu se zatím nepodařilo.'
@@ -123,5 +189,24 @@ fetch('events.json', {cache:'no-cache'}).then(response => {
   drawFeed()
 }).catch(() => {
   get('status').textContent = 'Data programu se nepodařilo načíst.'
-  get('news').replaceChildren(element('li', 'Data programu se nepodařilo načíst.', 'alert'))
+  snapshot.feed = [{kind:'error', at:new Date().toISOString()}]
+  drawFeed()
+})
+
+fetch('exhibitions.json', {cache:'no-cache'}).then(response => {
+  if (!response.ok) throw new Error('Missing exhibitions')
+  return response.json()
+}).then(data => {
+  exhibitions = data.map(event => ({...event, type:'Výstavy'}))
+  const items = exhibitions.map(event => {
+    const item = element('li')
+    const link = element('a', event.title)
+    link.href = event.url
+    item.append(link, document.createTextNode(' · ' + event.city))
+    return item
+  })
+  get('exhibition-sources').replaceChildren(...items)
+  drawCalendar()
+}).catch(() => {
+  get('exhibition-sources').replaceChildren(element('li', 'Výstavy se nepodařilo načíst.', 'alert'))
 })
