@@ -2075,8 +2075,8 @@
           "addedAt": "2026-11-28T00:03:37+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "jic": {
@@ -2191,8 +2191,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "kumst": {
@@ -2343,8 +2343,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "nicom": {
@@ -2470,8 +2470,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "sono": {
@@ -3409,14 +3409,14 @@
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "light-move": {
       "events": [],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "torchlight": {
@@ -3440,8 +3440,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "up-helly-aa": {
@@ -3465,8 +3465,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "amsterdam-light": {
@@ -3491,8 +3491,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "fablab": {
@@ -3832,8 +3832,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "gopas": {
@@ -3919,14 +3919,14 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "wianki": {
       "events": [],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "pisklata": {
@@ -3970,8 +3970,8 @@
           "addedAt": "2026-11-27T23:16:42+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "bad-reputation": {
@@ -4412,8 +4412,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "predator": {
@@ -4509,8 +4509,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "spartan-cz": {
@@ -4552,8 +4552,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "spartan-sk": {
@@ -4669,8 +4669,8 @@
           "addedAt": "2026-11-27T23:12:23+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "naucmese": {
@@ -5360,8 +5360,8 @@
           "addedAt": "2026-11-27T23:15:06+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     },
     "olomouc-tourism": {
@@ -5373,14 +5373,16 @@
           "date": "2026-01-01",
           "time": "",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ctenarska-vyzva-2026/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "Milí čtenáři, již tradičně se začátkem nového roku vznikla i nová knižní výzva. Neváhejte se zapojit a opět s námi sdílejte svoje knižní tipy.…",
           "endDate": "2026-12-31",
+          "organizerUrl": "https://kmol.cz/29151-ctenarska-vyzva-2026/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5390,14 +5392,16 @@
           "date": "2026-02-02",
           "time": "09:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/trenink-pameti-pro-seniory-2/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "Trénování mozku zábavnou formou prostřednictvím řešení různých úkolů, lekce na sebe nenavazují.",
           "endDate": "2026-12-07",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5407,14 +5411,16 @@
           "date": "2026-02-09",
           "time": "08:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cviceni-pro-seniory-8/",
-          "description": "Program města Olomouc · Sport",
+          "description": "Cvičení pro seniory s Českou asociací Sport pro všechny.",
           "endDate": "2026-12-25",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5424,14 +5430,16 @@
           "date": "2026-02-13",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cviceni-rodicu-s-detmi-8/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "Cvičení pro rodiče s dětmi (1-3 roky) s Terezou Hýskovou.",
           "endDate": "2026-12-18",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5441,14 +5449,16 @@
           "date": "2026-02-13",
           "time": "11:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/joga-pro-seniory-7/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "Termíny a bližší informace naleznete v rezervačním systému aktivni.olomouc.eu .",
           "endDate": "2026-12-18",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5458,14 +5468,16 @@
           "date": "2026-02-16",
           "time": "16:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cviceni-pro-zdrava-zada-2/",
-          "description": "Program města Olomouc · Sport",
+          "description": "Cvičení pro zdravá záda, aneb aby záda nebolela.",
           "endDate": "2026-12-21",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5475,14 +5487,16 @@
           "date": "2026-02-16",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Klub volnočasových aktivit Pešek, Peškova 1",
           "country": "CZ",
           "scope": "cz",
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/line-dance-nejen-pro-seniory-2/",
-          "description": "Program města Olomouc · Sport",
+          "description": "Line dance nejen pro seniory s Centrem pohybu Olomouc.",
           "endDate": "2026-12-18",
+          "organizerUrl": "https://prorodinu.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5492,14 +5506,16 @@
           "date": "2026-03-02",
           "time": "12:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/lovci-perel-2026-2027/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "Jak hra funguje? V knihovně se nacházejí knihy, které jsou na hřbetu označeny žlutozelenou samolepkou (perlorodky). Soutěžící nahlásí své jméno knihovnici, zvolí si přezdívku…",
           "endDate": "2027-01-30",
+          "organizerUrl": "https://kmol.cz/29307-lovci-perel-2026-2027/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5509,14 +5525,16 @@
           "date": "2026-06-18",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Vlastivědné muzeum v Olomouci",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pilire-civilizace/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "Jak vznikla města, písmo, obchod nebo náboženství? Jaké principy spojují civilizace napříč časem a kontinenty? Na tyto otázky hledá odpovědi výstava Pilíře civilizace.",
           "endDate": "2027-07-30",
+          "organizerUrl": "https://www.vmo.cz/vystavy/252/pilire-civilizace",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5526,14 +5544,16 @@
           "date": "2026-10-01",
           "time": "08:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, oddělení pro dospělé",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/soutez-o-knihu-petry-klabouchove/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "Soutěžní arch najdete v prostorách oddělení pro dospělé čtenáře nebo jako online formulář zde:",
           "endDate": "2026-12-31",
+          "organizerUrl": "https://kmol.cz/akce/soutez-o-knihu-petry-klabouchove/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5543,14 +5563,16 @@
           "date": "2026-10-01",
           "time": "08:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, oddělení pro dospělé",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-studentu-sgmo/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "Výstava prací studentů střední školy grafiky a médií Olomouc.",
           "endDate": "2026-12-29",
+          "organizerUrl": "https://kmol.cz/akce/vystava-studentu-sgmo/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5560,14 +5582,16 @@
           "date": "2026-10-01",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Muzeum moderního umění",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/soucasne-zavislosti/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "Kolekce, vyznačující se výjimečným kurátorským citem a otevřeností, zahrnuje téměř sto autorů a autorek napříč generacemi a médii – od malby, kresby a sochy…",
           "endDate": "2027-02-07",
+          "organizerUrl": "https://muo.cz/vystavy/soucasne-zavislosti/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5577,14 +5601,16 @@
           "date": "2026-10-22",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Muzeum moderního umění",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kvarky-a-skvarky/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "Výstava a obsáhlá doprovodná publikace završí „volnou trilogii“, která postupně mapuje výtvarné dění na střední Moravě od roku 1945 až do současnosti. Naváže tak…",
           "endDate": "2027-03-14",
+          "organizerUrl": "https://muo.cz/vystavy/kvarky-a-skvarky/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5594,14 +5620,16 @@
           "date": "2026-10-22",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Muzeum moderního umění",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kvarky-a-skvarky-olomoucka-vytvarna-scena-a-pribuzne-zony-1990-2020/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "Výstava Paměť není archiv vznikla jako součást výzkumného a výstavního projektu Kvarky a škvarky: Olomoucká výtvarná scéna a příbuzné zóny 1990–2020+. Projekt doprovozený odbornou…",
           "endDate": "2027-03-21",
+          "organizerUrl": "https://muo.cz/vystavy/kvarky-a-skvarky/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -5617,7 +5645,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/posvatne-umeni-v-dobe-komerce/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-03-14",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5634,7 +5662,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/white-noise/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-02-04",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5651,7 +5679,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/white-noise-anna-uddenberg/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-02-04",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5668,7 +5696,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kapky-na-kameni/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-31",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5685,7 +5713,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/literarni-klub-pro-maturanty-3/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2027-04-30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5702,7 +5730,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pohadka-podle-obrazku/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-11-30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5719,7 +5747,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/podzimni-carovani-a-zimni-radovanky/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2027-01-28",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5736,7 +5764,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-martin-neumann-prach-a-svetlo-obrazy/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-11-30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5753,7 +5781,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-jiri-pelcl-vazy-zadnou-vystavu-jsem-uz-nechtel/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-22",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5770,7 +5798,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/dalibor-sedlak-finske-reminiscence/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-29",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5787,7 +5815,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/finske-reminiscence/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-29",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5804,7 +5832,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/miroslav-srostlik-moravsky-hovory-se-drevem/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-06",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5821,7 +5849,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/komentovane-prohlidky-vystavy-mohelnice/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "endDate": "2026-11-28",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5838,7 +5866,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ledfest-trznice/",
-          "description": "Program města Olomouc · Festivaly",
+          "description": "",
           "endDate": "2027-01-11",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5855,7 +5883,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/soucasne-zavislosti-2/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "endDate": "2027-03-14",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5872,7 +5900,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/soucasne-zavislosti-mladi-madarsti-umelci-sbirka-balasze-szluky/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "endDate": "2027-03-14",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5889,7 +5917,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/soucasne-zavislosti-tri-generace-madarske-vytvarne-sceny/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "endDate": "2027-03-14",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5906,7 +5934,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/veseli-certici-z-papiru/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-02",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5923,7 +5951,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ondrej-oliva-sochy-kvety/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-11-29",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5940,7 +5968,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pop-up-tvaruzkove-cukrarny-2026/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-20",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5957,7 +5985,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/olomoucke-vanoce-6/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-23",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5974,7 +6002,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/evropsky-tyden-testovani/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-11-30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -5991,7 +6019,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-olomouc-trznice/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-02",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6008,7 +6036,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/propaganda-divadlo-moci-v-ranem-novoveku/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-02-14",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6025,7 +6053,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-plavby-na-ololodi/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-23",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6042,7 +6070,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-vystup-na-radnicni-vez/",
-          "description": "Program města Olomouc · Prohlídky",
+          "description": "",
           "endDate": "2026-12-20",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6059,7 +6087,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/den-pro-detskou-knihu-animaci/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6075,7 +6103,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-354/",
-          "description": "Program města Olomouc · Bruslení",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6091,7 +6119,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/udrzitelne-vanoce-na-flore-2/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-11-29",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6108,7 +6136,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/velka-vanocni-dilna-pro-deti/",
-          "description": "Program města Olomouc · Kultura",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6124,7 +6152,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-31/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6140,7 +6168,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/prohlidky-slavnostniho-salu-fzs-komenium/",
-          "description": "Program města Olomouc · Prohlídky",
+          "description": "",
           "endDate": "2026-12-20",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6157,7 +6185,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-tvoreni-na-flore/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-12",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6174,7 +6202,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kratky-film-o-lasce-2/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6190,7 +6218,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/bacha-holub-3/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6206,7 +6234,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ozivla-historie-vily-primavesi-divadelni-prohlidka/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6222,7 +6250,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/sul-tohoto-more-beneficni-projekce/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6238,7 +6266,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/uvidis-vsechno/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6254,7 +6282,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-355/",
-          "description": "Program města Olomouc · Bruslení",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6270,7 +6298,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-32/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6286,7 +6314,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/o-princezne-fotbalistce-prvni-15/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6302,7 +6330,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pejsek-a-kocicka-o-vanocich/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6318,7 +6346,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pitoma-priroda-2/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6334,7 +6362,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/historicky-krouzek/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6350,7 +6378,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pina/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6366,7 +6394,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kreativni-burza-vol-2/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6382,7 +6410,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/christopherove-2/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6392,13 +6420,16 @@
           "date": "2026-11-30",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Telegraph, Jungmannova 802/3",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/telegrowth-2-0-margareta-krizova/",
-          "description": "Program města Olomouc · Besedy",
+          "description": "Podnikatelka a mentorka Margareta Křížová mluví o sebeřízení, rozhodování v nejistotě a práci pod tlakem. Po přednášce následuje krátká debata.",
+          "detailText": "V programu je práce s pozorností a energií, učení nových návyků a zvládání změn i neúspěchu. Přednáška je součástí cyklu o profesním růstu nezávislých profesionálů, který Telegraph pořádá s portálem Na volné noze.",
+          "price": "150 Kč",
+          "organizerUrl": "https://telegraph.cz/telegrowth-20-margareta-krizova",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6408,13 +6439,15 @@
           "date": "2026-11-30",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Balcárkova 12, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/3p-matematika-je-bozi/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Zastav se na chvíli… V dnešní uspěchané době není jednoduché najít prostor pro zamyšlení nad tím, kam směřujeme a co je v životě skutečně…",
+          "organizerUrl": "https://olomouc.casd.cz/akce/3p-prostor-pro-priblizeni-2026/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6430,7 +6463,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/masakr-elsinor-ondrej-novotny-your-silence-will-not-protect-you/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6446,7 +6479,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ben-poole-uk/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6462,7 +6495,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/knihostromek/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-29",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6479,7 +6512,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanoce-v-muzeu-ozdobte-s-nami-stromek/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6489,13 +6522,14 @@
           "date": "2026-12-01",
           "time": "13:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-odysea-3-casti-prosinec-2026/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "V rámci vzdělávacího programu Digitální odysea nabízíme seniorům příležitost seznámit se s moderními technologiemi a osvojit si dovednosti pro práci s chytrými zařízeními.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6511,7 +6545,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasska-dilna/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6527,7 +6561,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-vence/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6537,14 +6571,16 @@
           "date": "2026-12-01",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "ART Rubikon, Dobnerova 1375/24a, 77900 Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/autorska-beseda-s-ludmilou-e-capkovou-duchodkyne-nedejte-se/",
-          "description": "Program města Olomouc · Besedy",
+          "description": "Zveme vás na příjemné setkání s autorkou Ludmilou E. Čapkovou, která nám představí svou knihu Důchodkyně, nedejte se aneb Lásky jedné šedovlásky a podělí…",
           "endDate": "2026-12-18",
+          "organizerUrl": "https://artrubikon.com/udalosti/autorska-beseda-s-ludmilou-e-capkovou-duchodkyne-nedejte-se",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6560,7 +6596,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-33/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-03",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6577,7 +6613,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/o-soucasnem-umeni-a-jeho-aktivitach-na-slovensku/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6593,7 +6629,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/propaganda-divadlo-moci-v-ranem-novoveku-pocatky-a-principy-propagandy/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6609,7 +6645,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/tragedi-21/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6625,7 +6661,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-beneficni-koncert-krasa-v-tonech-zakleta/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6641,7 +6677,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/marie-rottrova-vanocni-galakoncert-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6657,7 +6693,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/milost-3/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6667,13 +6703,15 @@
           "date": "2026-12-02",
           "time": "",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/matyas-bernard-braun-1684-1738-jezuitsky-kostel-sv-klimenta-v-praze/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Nejvelkolepější a nejkomplexnější Braunova zakázka, kterou se svým ateliérem postupně realizoval v letech 1715–1721. Sérii solitérních pískovcových soch Evangelistů a církevních…",
+          "organizerUrl": "https://muo.cz/program/matyas-bernard-braun-1684-1738-jezuitsky-kostel-sv-klimenta-v-praze/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6689,7 +6727,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-vanocni-salon-2/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-01-16",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6706,7 +6744,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vedome-videni-umelecky-del-3/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6722,7 +6760,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/s-knizkou-do-zivota-broucci/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6732,13 +6770,14 @@
           "date": "2026-12-02",
           "time": "12:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ovladani-pc-4/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "Počítačový kurz pro začátečníky. Základní seznámení s ovládáním počítače a operačním systémem (klávesnice, myš, plocha, práce s okny).",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6754,7 +6793,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-networking-pro-kreativce-a-pratele-kreativni-olomouce/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6764,13 +6803,15 @@
           "date": "2026-12-02",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Pedagogická fakulta Univerzity Palackého v Olomouci, Žižkovo nám. 5",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/za-oponou-podvodu-2/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Jak manipulátoři rozehrávají hru o naše peníze a jak jim můžeme čelit. V rámci iniciativy České Spořietlny #silnější, když nemlčíme",
+          "organizerUrl": "https://aperio.my.site.com/form/za-oponou-podvodu",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6780,13 +6821,15 @@
           "date": "2026-12-02",
           "time": "17:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Telegraph Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/jak-si-eu-poradi-ve-svete-plnem-hrozeb/",
-          "description": "Program města Olomouc · Besedy",
+          "description": "Evropa je pod tlakem: kromě války na Ukrajině čelí hybridním hrozbám – kyberútokům, sabotáži kritickéinfrastruktury, ekonomickému nátlaku i vlivovým operacím (dezinformace,…",
+          "organizerUrl": "https://telegraph.cz/jak-si-eu-poradi-ve-svete-plnem-hrozeb",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6802,7 +6845,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/budouci-lokalni-hvezda-hochman-hraje-byvalou-globalni-hvezdu-thunberg-11/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6818,7 +6861,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/femislam-2026-mistrovstvi-zen-ve-slam-poetry/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6834,7 +6877,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kdyby-se-holubi-promenili-ve-zlato-7/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6850,7 +6893,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/letni-kapela-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6866,7 +6909,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-stromecek/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6882,7 +6925,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/odpoledne-s-pletenim-44/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6898,7 +6941,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/paf-olomouc-3/",
-          "description": "Program města Olomouc · Festivaly",
+          "description": "",
           "endDate": "2026-12-06",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6915,7 +6958,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/natural-perspectives-jana-machackova-oey-jana-vyborna-turunen/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-22",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6932,7 +6975,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vernisaz-art-salon-olomouc-2026/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6948,7 +6991,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/minotaur/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6964,7 +7007,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/olohrani-5/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-06",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6981,7 +7024,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/paf-olomouc-2026-ve-vkol/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "endDate": "2026-12-05",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -6998,7 +7041,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-34/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7008,13 +7051,14 @@
           "date": "2026-12-04",
           "time": "15:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ms-word-4/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "Vzdělávací kurz pro mírně pokročilé (nutnost umět ovládat a používat PC). Základní seznámení s tvorbou dokumentů, práce s textem, vkládání obrázků.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7030,7 +7074,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/fjord-4/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7046,7 +7090,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vila-primavesi-domov-videnske-herecky-eugenie-primavesi-4/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7062,7 +7106,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-3/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7078,7 +7122,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/lea-vitkova-zve-na-mikulasskou-nadilku/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7094,7 +7138,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/studio-sen-kroky-5/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7110,7 +7154,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-barytonisty-adama-plachetky/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7126,7 +7170,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/primetime-2/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7142,7 +7186,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-356/",
-          "description": "Program města Olomouc · Bruslení",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7158,7 +7202,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mini-design-and-art-trh/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7174,7 +7218,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-putovani/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7190,7 +7234,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasske-kostkovani-v-artu-staveni-lego-ve-stylu-minecraft-winter-a-frozen/",
-          "description": "Program města Olomouc · Kultura",
+          "description": "",
           "endDate": "2026-12-18",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -7207,7 +7251,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasska-mezinarodni-vystava-kocek/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2026-12-06",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -7224,7 +7268,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasske-kostkovani-v-artu-staveni-lego-ve-stylu-minecraft-winter-a-frozen-2/",
-          "description": "Program města Olomouc · Kultura",
+          "description": "",
           "endDate": "2026-12-18",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -7241,7 +7285,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/bara-basikova-5/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7257,7 +7301,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/hudba-game-of-thrones-and-house-of-the-dragon/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7273,7 +7317,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/sex-a-smrt-v-kempu-miasma-4/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7289,7 +7333,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/svaty-mikulas-na-svatem-kopecku-3/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7305,7 +7349,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/olomoucke-ai-news-jedna-zprava-petkrat-jinak/",
-          "description": "Program města Olomouc · Kultura",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7321,7 +7365,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/laska-nebeska-3/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7337,7 +7381,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-357/",
-          "description": "Program města Olomouc · Bruslení",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7353,7 +7397,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cocotte-minute-post-it-olomouc-2026/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7369,7 +7413,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-358/",
-          "description": "Program města Olomouc · Bruslení",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7385,7 +7429,7 @@
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/detsky-den-s-tenisem/",
-          "description": "Program města Olomouc · Sport",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7395,13 +7439,14 @@
           "date": "2026-12-06",
           "time": "13:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Hotel Flora",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/longevity-olomouc-2026-zdravi-veda-inovace-byznys/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Co kdybychom o svém zdraví věděli víc, než nám říká náš aktuální pocit?",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7417,7 +7462,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kinospunti-a-kapybary-3/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7433,7 +7478,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/komentovana-prohlidka-kvarky-a-skvarky/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7449,7 +7494,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/o-praclovickovi-25/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7465,7 +7510,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pejsek-a-kocicka-o-vanocich-2/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7481,7 +7526,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-koncert-zus-campanella-olomouc/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7497,7 +7542,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cizinec-3/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7513,7 +7558,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7529,7 +7574,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/prace-s-keramickou-hmotou/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7539,13 +7584,15 @@
           "date": "2026-12-07",
           "time": "15:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "pobočka Kotelna, Trnkova 45, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/zamecek-na-nove-ulici-a-jeho-obyvatele/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "",
+          "organizerUrl": "https://kmol.cz/program/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7561,7 +7608,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/finsky-vecer/",
-          "description": "Program města Olomouc · Kultura",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7577,7 +7624,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/primetime/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7593,7 +7640,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/orfeus-a-eurydika-10/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7609,7 +7656,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7619,13 +7666,15 @@
           "date": "2026-12-07",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Balcárkova 12, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/3p-nac-ten-spech/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Zastav se na chvíli… V dnešní uspěchané době není jednoduché najít prostor pro zamyšlení nad tím, kam směřujeme a co je v životě skutečně…",
+          "organizerUrl": "https://olomouc.casd.cz/akce/3p-prostor-pro-priblizeni-2026/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7641,7 +7690,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kabaret-nahaty-shakespeare-29/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7657,7 +7706,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/robert-richardson-bily-dabel/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7673,7 +7722,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pevnostni-dejiny-olomouce/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7683,13 +7732,14 @@
           "date": "2026-12-08",
           "time": "13:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-odysea-3-casti-prosinec-2026-2/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "V rámci vzdělávacího programu Digitální odysea nabízíme seniorům příležitost seznámit se s moderními technologiemi a osvojit si dovednosti pro práci s chytrými zařízeními.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7705,7 +7755,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/arteterapie/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7715,13 +7765,15 @@
           "date": "2026-12-08",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Červený kostel",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pevnostni-dejiny-olomouce-2/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Pohledy do minulosti – Pevnostní dějiny Olomouce",
+          "organizerUrl": "https://www.vkol.cz/udalosti-a-akce/pevnostni-dejiny-olomouce",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7737,7 +7789,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/predvanocni-ctenarsky-klub-2/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7753,7 +7805,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/charitativni-adventni-koncert/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7763,13 +7815,15 @@
           "date": "2026-12-08",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/idealni-c-k-pevnost-biedermeierska-olomouc-a-kromerizske-finale/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "PŘEDNÁŠKA PAVLA ZATLOUKALA ZE SÉRIE KOUZELNÁ FLÉTNA: EVROPSKÁ A MORAVSKÁ ARCHITEKTURA A ZAHRADNÍ KULTURA 18. A PRVNÍ POLOVINY 19. STOLETÍ",
+          "organizerUrl": "https://muo.cz/program/idealni-c-k-pevnost-biedermeierska-olomouc-a-kromerizske-finale/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7785,7 +7839,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/masarykova-23/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7801,7 +7855,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/divadlo-leti-praha-sivan-ben-yishai-laska-argumentacni-cviceni/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7817,7 +7871,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-strom-koncert-pisni-karla-svobody/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7833,7 +7887,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vse-o-muzich-10/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7849,7 +7903,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/masarykova-24/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7859,13 +7913,14 @@
           "date": "2026-12-09",
           "time": "12:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/prace-se-soubory-4/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "Počítačový kurz pro začátečníky. Základní seznámení se soubory a složkami. Kopírování, přesuny, vytváření složek a jejich úpravy.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7881,7 +7936,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/stammtisch-2/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7897,7 +7952,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/komentovana-prohlidka-posvatne-umeni-v-dobe-komerce-2/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7913,7 +7968,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kruh-19-more-kurat-ornament/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7929,7 +7984,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/caravaggio/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7945,7 +8000,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-2/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7961,7 +8016,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vyvoleny/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7977,7 +8032,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kouzelny-svet-baji-a-pohadek/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7993,7 +8048,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-koncert-zenskeho-peveckeho-sboru-radost/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8009,7 +8064,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/predvanocni-ctenarsky-klub/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8025,7 +8080,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kouzelny-svet-baji-a-pohadek-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8041,7 +8096,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/nevyzadana-rada-6/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8057,7 +8112,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-3/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8073,7 +8128,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/policejni-fyzicke-testy-na-zkousku-nanecisto/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8083,13 +8138,14 @@
           "date": "2026-12-11",
           "time": "15:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ms-excel-4/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "Vzdělávací kurz pro mírně pokročilé (nutnost umět ovládat a používat PC). Základní seznámení s tvorbou tabulek, práce se vzorci a funkcemi, jednoduché grafy.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8105,7 +8161,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kasparek-v-rohliku-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8121,7 +8177,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/za-casu-sanatoria-pribeh-mudr-roberta-pospisila/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8137,7 +8193,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/navrat-do-remese-pres-olomouc-21/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8153,7 +8209,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-4/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8169,7 +8225,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/thankskilling-day/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8185,7 +8241,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-pleteni/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8201,7 +8257,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-strom-pro-zvirata-3/",
-          "description": "Program města Olomouc · Zábava",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8217,7 +8273,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/liptovsky-vecirek-v-twinbergu/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8233,7 +8289,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/asterix-a-obelix-kralovstvi-nubie/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8249,7 +8305,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-charitativni-koncert-skupiny-mc-band/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "endDate": "2026-12-17",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -8266,7 +8322,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/milovany-2/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8282,7 +8338,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/symfonie-ve-sluzbach-markrabstvi-moravskeho/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8298,7 +8354,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ua-kino-dovzenko-prvni-pohled-%d0%b4%d0%be%d0%b2%d0%b6%d0%b5%d0%bd%d0%ba%d0%be-%d0%bb%d0%b5%d0%b3%d0%b5%d0%bd%d0%b4%d0%b0-%d1%83%d0%ba%d1%80%d0%b0%d1%97%d0%bd%d1%81%d1%8c%d0%ba%d0%be%d0%b3%d0%be/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8314,7 +8370,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ozivla-historie-vily-primavesi-divadelni-prohlidka-2/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8330,7 +8386,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/smokie-uk/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8346,7 +8402,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/odyssea/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8362,7 +8418,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/detske-hriste-z-divadelnich-rekvizit-3/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8378,7 +8434,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-zdobeni-pernicku/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8394,7 +8450,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-koncert-scedryk/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8410,7 +8466,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-koncert-scedryk-a-vidrodzennja/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8426,7 +8482,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pejsek-a-kocicka-o-vanocich-3/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8442,7 +8498,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/srdce-dubu/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8458,7 +8514,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/terezka-a-kouzelne-auticko-13/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8474,7 +8530,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/studio-dellarte-vanoce-za-casu-nasich-prababicek/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8490,7 +8546,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vila-primavesi-domov-videnske-herecky-eugenie-primavesi-5/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8506,7 +8562,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/primetime-3/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8522,7 +8578,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vse-o-muzich-11/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8538,7 +8594,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/studio-dellarte-vanoce-za-casu-nasich-prababicek-2/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "endDate": "2026-12-16",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -8555,7 +8611,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-odysea-6/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8571,7 +8627,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/hlas-stredoveku-antifonar-mistra-friedrichova-brevire/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "endDate": "2027-01-07",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -8588,7 +8644,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/dungeons-dragons-5e-nadherna-zima/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8604,7 +8660,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kurz-malovani-pro-seniory-5/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8620,7 +8676,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/milovany/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8636,7 +8692,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pavel-suba-mezi-roky/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8652,7 +8708,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/bacha-holub-4/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8662,13 +8718,15 @@
           "date": "2026-12-14",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Balcárkova 12, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/3p-k-jadru-krestanstvi-nejdulezitejsi-otazka-bible/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "Zastav se na chvíli… V dnešní uspěchané době není jednoduché najít prostor pro zamyšlení nad tím, kam směřujeme a co je v životě skutečně…",
+          "organizerUrl": "https://olomouc.casd.cz/akce/3p-prostor-pro-priblizeni-2026/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8684,7 +8742,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vse-o-muzich-12/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8700,7 +8758,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/fjord-3/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8716,7 +8774,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/flora-17/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8726,13 +8784,14 @@
           "date": "2026-12-15",
           "time": "13:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-odysea-3-casti-prosinec-2026-3/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "V rámci vzdělávacího programu Digitální odysea nabízíme seniorům příležitost seznámit se s moderními technologiemi a osvojit si dovednosti pro práci s chytrými zařízeními.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8748,7 +8807,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vladimir-havlik-bile-vanoce/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8764,7 +8823,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-vence-2/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8780,7 +8839,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/letem-svetem-duny-s-vedatorem/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8796,7 +8855,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/flora-18/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8806,13 +8865,15 @@
           "date": "2026-12-15",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Telegraph Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ttalk-jan-jaromersky/",
-          "description": "Program města Olomouc · Besedy",
+          "description": "Prosincovým hostem talkshow TTalk bude Jan Jaroměřský, který po úspěšné kariéře profesionálního hokejisty, během níž stihl vystřelit Olomouci postupový gól do extraligy a získal…",
+          "organizerUrl": "https://telegraph.cz/ttalk-jan-jaromersky",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8828,7 +8889,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/carodejky-z-lipniku-9/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8844,7 +8905,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanoce-v-muzeu-swap-cukrovi/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8860,7 +8921,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/predvanocni-setkani-v-detskem-koutku-nacucky/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-20",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -8877,7 +8938,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vaclav-koubek-duo-kamberska-a-ponocny/",
-          "description": "Program města Olomouc · Muzea",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8893,7 +8954,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/carodejky-z-lipniku-10/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8903,13 +8964,14 @@
           "date": "2026-12-17",
           "time": "15:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Náměstí republiky 1, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Kurzy a dovednosti",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/3d-tisk-4/",
-          "description": "Program města Olomouc · Vzdělávání",
+          "description": "Vzdělávací kurz pro mírně pokročilé (nutnost umět ovládat a používat PC). Typy 3D tiskáren, různé druhy materiálů, zdroje modelů a základní modelování.",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8925,7 +8987,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/odpoledne-s-pletenim-45/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8935,13 +8997,15 @@
           "date": "2026-12-17",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "pobočka Kotelna, Trnkova 45, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-hvezdna-obloha/",
-          "description": "Program města Olomouc · Přednášky, školení",
+          "description": "",
+          "organizerUrl": "https://kmol.cz/akce/vanocni-hvezdna-obloha/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8957,7 +9021,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-jamovani-v-cafe-gallery-jola/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8973,7 +9037,7 @@
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/open-studio-8/",
-          "description": "Program města Olomouc · Výstavy, galerie",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -8989,7 +9053,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kralove-dabingu-28/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9005,7 +9069,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-ceske-koledy-a-solo-pro-lesni-roh/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9021,7 +9085,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/dungeons-dragons-5e-nadherna-zima-2/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9037,7 +9101,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pohadkova-zoo-2/",
-          "description": "Program města Olomouc · Zábava",
+          "description": "",
           "endDate": "2027-01-03",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -9054,7 +9118,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/dungeons-dragons-5e-nadherna-zima-3/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9070,7 +9134,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-sluzby-statu-4/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9086,7 +9150,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-5/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9102,7 +9166,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/o-princezne-fotbalistce-prvni-14/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9118,7 +9182,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/blahobyti-18/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9134,7 +9198,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/blahobyti-19/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9150,7 +9214,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/disco-sensation-xmas-party/",
-          "description": "Program města Olomouc · Diskotéky",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9166,7 +9230,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/skleneny-zverinec-10/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9182,7 +9246,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-strom-koncert-pisni-karla-svobody-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9198,7 +9262,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/poklad-vikingu-17/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9214,7 +9278,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/horory-z-manzelskych-loznic-51/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9230,7 +9294,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/tragedi-22/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9246,7 +9310,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-tvoreni-2/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9262,7 +9326,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/tragedi-23/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9278,7 +9342,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/bile-vanoce-lucie-bile/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9294,7 +9358,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/horory-z-manzelskych-loznic-52/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9310,7 +9374,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/jiri-pavlica-a-hradistan/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9326,7 +9390,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/u-kocici-baziny-13/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9342,7 +9406,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-darek-pro-navstevniky-2/",
-          "description": "Program města Olomouc · Zábava",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9358,7 +9422,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mimi-liza-zahada-vanocniho-svetla/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9374,7 +9438,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vecerni-vanocni-prohlidky-3/",
-          "description": "Program města Olomouc · Zábava",
+          "description": "",
           "endDate": "2026-12-30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -9391,7 +9455,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/tradicni-vanocni-koncert-gloria/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9407,7 +9471,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-plavby-na-ololodi/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "endDate": "2026-12-31",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -9424,7 +9488,7 @@
           "type": "Kino",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/primetime-4/",
-          "description": "Program města Olomouc · Kino / film",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9440,7 +9504,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/odpoledne-s-pletenim-46/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9456,7 +9520,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vecerni-vanocni-prohlidky-4/",
-          "description": "Program města Olomouc · Zábava",
+          "description": "",
           "endDate": "2027-01-03",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
@@ -9473,7 +9537,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-6/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9489,7 +9553,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/novorocni-koncert-vecer-plny-tancu/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9505,7 +9569,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/novorocni-koncert-vecer-plny-tancu-2/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9521,7 +9585,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-7/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9537,7 +9601,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/osklivec-21/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9553,7 +9617,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/koncert-free-fallin/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9569,7 +9633,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pani-bovaryova-24/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9585,7 +9649,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mestsky-bal/",
-          "description": "Program města Olomouc · Plesy",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9601,7 +9665,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/xxvi-mestsky-bal/",
-          "description": "Program města Olomouc · Plesy",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9617,7 +9681,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/carodejky-z-lipniku-11/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9633,7 +9697,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/workshop-argentinskeho-tanga-pro-zacatecniky-6/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9649,7 +9713,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/pejsek-a-kocicka-o-vanocich-4/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9665,7 +9729,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/carodejky-z-lipniku-12/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9681,7 +9745,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/nohavicova-mala-valka-a-nase-valka-o-nohavicu/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9697,7 +9761,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/cembalovy-recital-mahana-esfahaniho/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9713,7 +9777,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/studio-dva-divadlo-beckham/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9729,7 +9793,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/digitalni-odysea-7/",
-          "description": "Program města Olomouc · Knihovna",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9745,7 +9809,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-8/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9761,7 +9825,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/komorni-vecer-se-zbynkem-mullerem/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9777,7 +9841,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-9/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9793,7 +9857,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/xavier-baumaxa-3/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9809,7 +9873,7 @@
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/olomoucke-masopustni-veseli-4/",
-          "description": "Program města Olomouc · Místní akce",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9825,7 +9889,7 @@
           "type": "Divadlo",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/proc-zeny-zabijeji-sve-muze-10/",
-          "description": "Program města Olomouc · Divadlo, balet",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9841,7 +9905,7 @@
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/duo-mareli/",
-          "description": "Program města Olomouc · Koncerty, kluby",
+          "description": "",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -9851,18 +9915,20 @@
           "date": "2027-01-26",
           "time": "10:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Malá kulturní scéna Sedmička",
           "country": "CZ",
           "scope": "cz",
           "type": "Debaty a přednášky",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/hudebni-setkani-s-filharmonickou-archivarkou/",
-          "description": "Program města Olomouc · Besedy",
+          "description": "Zamysleli jste se někdy při koncertě nad tím, odkud se vzaly noty, ze kterých orchestr právě hraje? Než se dirigentská partitura a zejména orchestrální…",
+          "organizerUrl": "https://www.mfo.cz/program/hudebni-setkani-s-filharmonickou-archivarkou/",
+          "detailCheckedAt": "2026-11-28T00:59:28+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T00:33:19+01:00",
-      "lastAttempt": "2026-11-28T00:33:19+01:00",
+      "lastSuccess": "2026-11-28T00:59:28+01:00",
+      "lastAttempt": "2026-11-28T00:59:28+01:00",
       "error": false
     }
   }
