@@ -31,6 +31,8 @@ let exhibitions = []
 let detailTrigger
 let selectedDay
 let loaded = false
+const readingView = get('reading-view')
+let readingRequest
 const dateLabel = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeZone:zone})
 const timestamp = new Intl.DateTimeFormat(locale, {dateStyle:'medium', timeStyle:'short', timeZone:zone})
 const dayLabel = date => dateLabel.format(new Date(date + 'T12:00:00Z'))
@@ -118,7 +120,9 @@ function enrich(event) {
     topics.has('kurzy') || topics.has('prakticke') || topics.has('kink') || topics.has('projekty') || topics.has('hoste') || relevantFilm || relevantMusic ||
     (topics.has('debaty') && !topics.has('kino'))
   ))
-  return {...event, type, topics:[...topics], scope, featured}
+  const readerId = event.id && /^[a-z0-9-]+$/.test(event.id) &&
+    (event.detailText || event.admission || (event.detailCheckedAt && event.description)) ? event.id : ''
+  return {...event, type, topics:[...topics], scope, featured, readerId}
 }
 
 const normalizedUrl = value => {
@@ -160,6 +164,7 @@ function groupOccurrences(rows) {
       if (!descriptionFor(duplicate) && descriptionFor(event)) duplicate.description = descriptionFor(event)
       if (!duplicate.detailText) duplicate.detailText = event.detailText
       if (!duplicate.admission) duplicate.admission = event.admission
+      if (!duplicate.readerId) duplicate.readerId = event.readerId
       duplicate.topics = [...new Set([...duplicate.topics, ...event.topics])]
       if (!duplicate.venue) duplicate.venue = event.venue
       if (!duplicate.time) duplicate.time = event.time
@@ -288,6 +293,74 @@ function focusInspection(heading) {
   }
 }
 
+function inspectionLinks(event, newTab = false) {
+  return (event.links || [{id:event.sourceId, url:event.url}]).filter(link => /^https?:\/\//i.test(link.url)).map(link => {
+    const item = element('li')
+    const anchor = element('a', sourceNames.get(link.id) || 'Pozvánka pořadatele')
+    anchor.href = link.url
+    if (newTab) {
+      anchor.target = '_blank'
+      anchor.rel = 'noopener noreferrer'
+    }
+    item.append(anchor)
+    return item
+  })
+}
+
+function eventMeta(event, endTime) {
+  const date = event.endDate ? dayLabel(event.date) + ' – ' + dayLabel(event.endDate) : dayLabel(event.date)
+  const time = event.time && endTime ? event.time + '–' + endTime : event.time
+  return [date, time, event.venue, event.price, event.cancelled ? kind.cancelled : event.missing ? kind.missing : '']
+    .filter(Boolean).join(' · ')
+}
+
+function showReadingText(event, reading = {}) {
+  const content = get('reading-content')
+  const intro = reading.description || descriptionFor(event)
+  const context = reading.detailText || event.detailText
+  const admission = reading.admission || event.admission
+  content.replaceChildren()
+  if (intro) content.append(element('p', intro))
+  if (context && context !== intro) content.append(element('p', context))
+  if (reading.programme?.length) {
+    const list = element('ul')
+    list.append(...reading.programme.map(item => element('li', item)))
+    content.append(element('h3', 'Program'), list)
+  }
+  if (admission) content.append(element('h3', 'Účast'), element('p', admission))
+  get('reading-meta').textContent = eventMeta(event, reading.endTime)
+  const checked = reading.checkedAt
+  get('reading-checked').textContent = checked ? 'Podklady ověřeny ' +
+    (checked.length === 10 ? dayLabel(checked) : timestamp.format(new Date(checked))) : ''
+}
+
+async function openReading(event) {
+  readingRequest?.abort()
+  const pending = new AbortController()
+  readingRequest = pending
+  const status = get('reading-status')
+  get('reading-title').textContent = event.title
+  get('reading-links').replaceChildren(...inspectionLinks(event, true))
+  showReadingText(event)
+  status.textContent = 'Načítám pozvánku…'
+  readingView.showModal()
+  readingView.querySelector('.reading-body').scrollTop = 0
+  try {
+    const reading = await readJson('reading/' + event.readerId + '.json', pending.signal)
+    if (pending.signal.aborted || !readingView.open) return
+    showReadingText(event, reading)
+    status.textContent = ''
+  } catch (error) {
+    if (!pending.signal.aborted && readingView.open) {
+      status.textContent = 'Rozšířený text se nepodařilo načíst. Níže je dostupný přehled akce.'
+    }
+  }
+}
+
+readingView.addEventListener('close', () => {
+  if (!readingView.open) readingRequest?.abort()
+})
+
 function details(event, trigger) {
   if (!get('day-panel-list').contains(trigger)) {
     selectedDay?.trigger.removeAttribute('aria-current')
@@ -296,27 +369,21 @@ function details(event, trigger) {
   detailTrigger?.removeAttribute('aria-current')
   detailTrigger = trigger
   trigger.setAttribute('aria-current', 'true')
-  const metaDate = event.endDate ? dayLabel(event.date) + ' – ' + dayLabel(event.endDate) : dayLabel(event.date)
   const title = get('event-title')
   title.replaceChildren()
   titledEvent(title, event)
   get('event-type').replaceChildren(eventIcon(event),
     document.createTextNode([topicNames[eventCategory(event)] || event.type, event.city].filter(Boolean).join(' · ')))
-  get('event-meta').textContent = [metaDate, event.time, event.venue, event.price,
-    event.cancelled ? kind.cancelled : event.missing ? kind.missing : ''].filter(Boolean).join(' · ')
+  get('event-meta').textContent = eventMeta(event)
   get('event-description').textContent = descriptionFor(event) || 'Zdroj k akci neposkytl použitelný popis.'
   for (const [id, text] of [['event-context', event.detailText], ['event-admission', event.admission]]) {
     get(id).textContent = text || ''
     get(id).hidden = !text
   }
-  const links = (event.links || [{id:event.sourceId, url:event.url}]).filter(link => link.url).map(link => {
-    const item = element('li')
-    const anchor = element('a', sourceNames.get(link.id) || 'Pozvánka pořadatele')
-    anchor.href = link.url
-    item.append(anchor)
-    return item
-  })
-  get('event-links').replaceChildren(...links)
+  const readingButton = get('open-reading')
+  readingButton.hidden = !event.readerId
+  readingButton.onclick = event.readerId ? () => openReading(event) : null
+  get('event-links').replaceChildren(...inspectionLinks(event))
   showInspection('details')
   focusInspection(title)
 }
@@ -620,6 +687,7 @@ function drawFeed() {
 
 function navigate() {
   const sources = location.hash === '#sources'
+  if (sources && readingView.open) readingView.close()
   get('sources').hidden = !sources
   get('feed').hidden = sources
   get('filters').hidden = sources
@@ -713,7 +781,7 @@ get('close-details').onclick = backToDay
 get('close-day').onclick = () => closeDetails(true)
 get('panel-empty').prepend(icon('inspect'))
 document.addEventListener('keydown', event => {
-  if (event.key !== 'Escape') return
+  if (event.key !== 'Escape' || readingView.open) return
   if (!get('details').hidden) backToDay()
   else if (selectedDay) closeDetails(true)
 })
@@ -899,8 +967,8 @@ function drawSources() {
   get('source-references').replaceChildren(...references)
 }
 
-function readJson(path) {
-  return fetch(path, {cache:'no-cache'}).then(response => {
+function readJson(path, signal) {
+  return fetch(path, {cache:'no-cache', signal}).then(response => {
     if (!response.ok) throw new Error(path)
     return response.json()
   })

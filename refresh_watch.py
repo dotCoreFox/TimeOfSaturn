@@ -11,6 +11,7 @@ from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
 
+from build_readers import write_readers
 from refresh import PRAGUE, value
 
 SITE = Path(__file__).parent / "site"
@@ -510,7 +511,7 @@ def olomouc_cards(source, page):
         yield row
 
 
-OLOMOUC_DETAIL_FIELDS = ("description", "detailText", "venue", "price", "organizerUrl", "detailCheckedAt")
+OLOMOUC_DETAIL_FIELDS = ("description", "detailText", "venue", "price", "organizerUrl", "detailCheckedAt", "endTime")
 
 
 def olomouc_detail(row, stamp):
@@ -529,6 +530,12 @@ def olomouc_detail(row, stamp):
     venue = value(header.select_one("p"))
     if venue:
         row["venue"] = venue
+    when = value(header.select_one(".pt-2"))
+    times = re.search(r"(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})", when)
+    if times and len(NUMERIC.findall(when)) == 1 and clock(times[1]) == row["time"]:
+        end_time = clock(times[2])
+        if end_time > row["time"]:
+            row["endTime"] = end_time
     for anchor in header.select("a.btn--img-arrow-right[href]"):
         link = absolute(row["url"], anchor["href"])
         if link and urlsplit(link).hostname != "tourism.olomouc.eu":
@@ -633,6 +640,7 @@ def main():
     temporary = FILE.with_suffix(".tmp")
     temporary.write_text(json.dumps({"sources": states}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temporary.replace(FILE)
+    write_readers(SITE, states)
 
 
 if __name__ == "__main__":

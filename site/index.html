@@ -142,6 +142,7 @@
           <p id="event-description"></p>
           <p id="event-context" hidden></p>
           <p id="event-admission" hidden></p>
+          <button id="open-reading" type="button" aria-haspopup="dialog" hidden>Přečíst pozvánku</button>
           <ul id="event-links"></ul>
         </section>
         <section id="day-panel" aria-labelledby="day-panel-title" hidden>
@@ -186,5 +187,18 @@
     </section>
   </section>
 </main>
+<dialog id="reading-view" aria-labelledby="reading-title">
+  <header class="reading-header">
+    <h2 id="reading-title"></h2>
+    <form method="dialog"><button type="submit" autofocus>Zavřít</button></form>
+  </header>
+  <div class="reading-body">
+    <p id="reading-meta" class="muted"></p>
+    <p id="reading-status" class="muted" role="status"></p>
+    <div id="reading-content"></div>
+    <ul id="reading-links"></ul>
+    <p id="reading-checked" class="muted"></p>
+  </div>
+</dialog>
 </body>
 </html>
