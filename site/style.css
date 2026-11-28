@@ -310,44 +310,17 @@ select, input[type="search"], input[type="date"] {
 #event-links { padding-inline-start: 1.1rem; }
 #open-reading { border-color: var(--ice); }
 #reading-view {
-  position: fixed;
-  inset: 0 0 0 auto;
-  margin: 0;
-  width: min(66vw, 56rem);
-  height: 100dvh;
-  max-width: none;
-  max-height: none;
-  padding: 0;
-  border: 0;
-  border-inline-start: 1px solid var(--line);
-  color: var(--text);
-  background: var(--bg);
+  margin-block-start: .65rem;
+  padding-inline-start: .75rem;
+  border-inline-start: 2px solid var(--line);
 }
-#reading-view[open] { display: grid; grid-template-rows: auto minmax(0, 1fr); }
-#reading-view::backdrop { background: rgb(8 10 16 / .58); }
-html:has(#reading-view[open]) { overflow: hidden; scrollbar-gutter: stable; }
-.reading-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: .75rem;
-  padding: .85rem clamp(1rem, 3vw, 2rem);
-  border-bottom: 1px solid var(--line);
-  background: var(--bar);
-}
-.reading-body { overflow: auto; overscroll-behavior: contain; padding: .85rem clamp(1rem, 3vw, 2rem) 2rem; }
-.reading-body > * { max-width: 66ch; }
-.reading-body p { margin: 0 0 .85rem; }
-.reading-body ul { padding-inline-start: 1.15rem; }
-#reading-content { font-size: 1rem; line-height: 1.65; white-space: pre-line; }
-#reading-meta, #reading-checked { font-size: .85rem; }
-#reading-content h3 { margin-block: 1rem .3rem; }
-#reading-content ul { margin-block: 0 1rem; }
-#reading-content ul li + li { margin-block-start: .25rem; }
-@media (max-width: 48rem) {
-  #reading-view { width: 100%; border-inline-start: 0; }
-  html:has(#reading-view[open]) { scrollbar-gutter: auto; }
-}
+#reading-view p { margin: 0 0 .55rem; }
+#reading-status, #reading-checked { font-size: .79rem; }
+#reading-view p:empty { display: none; }
+#reading-content { line-height: 1.6; white-space: pre-line; }
+#reading-content h3 { margin-block: .75rem .2rem; }
+#reading-content ul { margin-block: 0 .65rem; padding-inline-start: 1.15rem; }
+#reading-content li + li { margin-block-start: .2rem; }
 #open-day-view { margin-block-end: .65rem; }
 #day-panel-list { display: grid; gap: .75rem; }
 .day-group { display: grid; gap: .23rem; }
