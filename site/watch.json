@@ -2593,8 +2593,8 @@
           "addedAt": "2026-11-28T00:03:37+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "jic": {
@@ -2709,8 +2709,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "kumst": {
@@ -2861,8 +2861,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "nicom": {
@@ -2989,8 +2989,8 @@
         }
       ],
       "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
-      "error": false
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
+      "error": true
     },
     "sono": {
       "events": [
@@ -3927,14 +3927,14 @@
           "addedAt": "2026-11-27T22:36:15+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "light-move": {
       "events": [],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "torchlight": {
@@ -3958,8 +3958,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "up-helly-aa": {
@@ -3983,8 +3983,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "amsterdam-light": {
@@ -4009,8 +4009,8 @@
           "addedAt": "2026-11-27T22:31:59+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "fablab": {
@@ -4350,8 +4350,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "gopas": {
@@ -4437,14 +4437,14 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "wianki": {
       "events": [],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "pisklata": {
@@ -4488,8 +4488,8 @@
           "addedAt": "2026-11-27T23:16:42+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "bad-reputation": {
@@ -4930,8 +4930,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "predator": {
@@ -5027,8 +5027,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "spartan-cz": {
@@ -5070,8 +5070,8 @@
           "addedAt": "2026-11-27T23:12:20+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "spartan-sk": {
@@ -5187,8 +5187,8 @@
           "addedAt": "2026-11-27T23:12:23+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "naucmese": {
@@ -5878,8 +5878,8 @@
           "addedAt": "2026-11-27T23:15:06+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     },
     "olomouc-tourism": {
@@ -6655,9 +6655,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/den-pro-detskou-knihu-animaci/",
           "description": "Dojdi i ty v kostýmu své oblíbené animované postavy.",
-          "endTime": "12:00",
           "organizerUrl": "https://kmol.cz/akce/den-pro-detskou-knihu-animaci/",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "12:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6674,9 +6674,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-354/",
           "description": "",
-          "endTime": "09:15",
           "organizerUrl": "https://brusleni.olomouc.eu",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "09:15",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6712,9 +6712,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/velka-vanocni-dilna-pro-deti/",
           "description": "Přijďte se naladit na adventní čas a vytvořit si vlastní vánoční dekorace. Děti si během workshopu vyzkouší několik výtvarných technik ve dvou kreativních zónách.…",
-          "endTime": "12:00",
           "organizerUrl": "https://artrubikon.com/udalosti/velka-vanocni-dilna-pro-deti",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "12:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6731,9 +6731,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-31/",
           "description": "Zažijte jedinečnou atmosféru adventu v secesní perle Olomouce! Vila Primavesi, národní kulturní památka a bývalé rodinné sídlo významných mecenášů umění, se i letos otevře…",
-          "endTime": "17:00",
           "organizerUrl": "https://www.vilaprimavesi.cz/prohlidky",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "17:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6819,9 +6819,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ozivla-historie-vily-primavesi-divadelni-prohlidka/",
           "description": "Divadelní prohlídka plná humoru, emocí a secesní atmosféry Přijďte se setkat s Gustavem Klimtem, Antonem Hanakem, Josefem Hoffmannem a rodinou Primavesi přímo v jejich…",
-          "endTime": "21:00",
           "organizerUrl": "https://www.vilaprimavesi.cz/ozivla-historie-vily-primavesi/",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "21:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6870,9 +6870,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-355/",
           "description": "",
-          "endTime": "09:30",
           "organizerUrl": "https://brusleni.olomouc.eu",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "09:30",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6889,9 +6889,9 @@
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-32/",
           "description": "Zažijte jedinečnou atmosféru adventu v secesní perle Olomouce! Vila Primavesi, národní kulturní památka a bývalé rodinné sídlo významných mecenášů umění, se i letos otevře…",
-          "endTime": "16:00",
           "organizerUrl": "https://www.vilaprimavesi.cz/prohlidky",
           "detailCheckedAt": "2026-11-28T01:23:11+01:00",
+          "endTime": "16:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6949,13 +6949,16 @@
           "date": "2026-11-29",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "pobočka Kotelna",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/historicky-krouzek/",
-          "description": "",
+          "description": "Setkávání nad záhadami historie pro děti od 9 do 13 let.",
+          "endTime": "18:00",
+          "organizerUrl": "https://kmol.cz/akce/historicky-krouzek/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -6981,13 +6984,16 @@
           "date": "2026-11-30",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Minikino Čekárna",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/kreativni-burza-vol-2/",
-          "description": "",
+          "description": "Srdečně zveme na pondělí 30. listopadu od 10:00 do 15:00 hodin kulturní aktéry působící v oblasti neformálního uměleckého a kreativního vzdělávání na společné setkání…",
+          "endTime": "12:00",
+          "organizerUrl": "https://cekarnaolomouc.cz/produkt/kreativni-burza-vol-2/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7050,13 +7056,16 @@
           "date": "2026-11-30",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "CENTRAL",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/masakr-elsinor-ondrej-novotny-your-silence-will-not-protect-you/",
-          "description": "",
+          "description": "Skleněná klec, obrysy obviněného, spisy prokurátorů, paragrafy, tvrdý jazyk ctihodného soudu. Strach před bariérou větší než za ní. Tikkun olam je náprava světa. Vladimír…",
+          "endTime": "21:00",
+          "organizerUrl": "https://muo.cz/program/masakr-elsinor-ondrej-novotny-your-silence-will-not-protect-you/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7066,13 +7075,15 @@
           "date": "2026-11-30",
           "time": "20:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Bounty Rock Cafe",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/ben-poole-uk/",
-          "description": "",
+          "description": "Kytarista a zpěvák Ben Poole je novým příslibem britské bluesové školy, jeden z nejlepších, jaký se v Evropě v posledních letech objevil. Dokonce ani…",
+          "endTime": "23:00",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7082,14 +7093,16 @@
           "date": "2026-12-01",
           "time": "08:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, oddělení pro děti a mládež",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/knihostromek/",
-          "description": "",
+          "description": "Vyrob ozdobu na náš stromeček a získej odměnu!",
           "endDate": "2026-12-29",
+          "organizerUrl": "https://kmol.cz/akce/knihostromek/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7099,13 +7112,15 @@
           "date": "2026-12-01",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Vlastivědné muzeum v Olomouci",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanoce-v-muzeu-ozdobte-s-nami-stromek/",
-          "description": "",
+          "description": "Vánoční muzejní výzdobu letos můžete sami dotvořit! U vstupu vás přivítají živé stromky se slaměnými a skleněnými ozdobami, sušeným ovocem a červenými mašlemi.",
+          "endTime": "12:00",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7132,13 +7147,16 @@
           "date": "2026-12-01",
           "time": "14:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, pobočka Neředín",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasska-dilna/",
-          "description": "",
+          "description": "Přijďte si vyrobit vlastního Mikuláše, andílka nebo pořádného čertíka a proměnit obyčejnou toaletní ruličku v malou vánoční postavičku.",
+          "endTime": "16:00",
+          "organizerUrl": "https://kmol.cz/akce/mikulasska-dilna/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7148,13 +7166,16 @@
           "date": "2026-12-01",
           "time": "16:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, edukační centrum",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-vence/",
           "description": "",
+          "endTime": "18:00",
+          "organizerUrl": "https://kmol.cz/akce/vanocni-vence/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7183,14 +7204,16 @@
           "date": "2026-12-01",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Vila Primavesi, Univerzitní 7, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-33/",
-          "description": "",
+          "description": "Zažijte jedinečnou atmosféru adventu v secesní perle Olomouce! Vila Primavesi, národní kulturní památka a bývalé rodinné sídlo významných mecenášů umění, se i letos otevře…",
           "endDate": "2026-12-03",
+          "organizerUrl": "https://www.vilaprimavesi.cz/prohlidky",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7200,13 +7223,16 @@
           "date": "2026-12-01",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Telegraph Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/o-soucasnem-umeni-a-jeho-aktivitach-na-slovensku/",
-          "description": "",
+          "description": "Přednáškový cyklus Telegraph Gallery přináší setkání se sběrateli současného umění, kurátory i dalšími odborníky, kteří se podílejí na fungování současné umělecké scény a sdílejí…",
+          "endTime": "19:00",
+          "organizerUrl": "https://telegraph.cz/o-soucasnem-umeni-jeho-aktivitach-na-slovensku",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7216,13 +7242,16 @@
           "date": "2026-12-01",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/propaganda-divadlo-moci-v-ranem-novoveku-pocatky-a-principy-propagandy/",
-          "description": "",
+          "description": "Jak propaganda působí a kde má své kořeny? Od nejstarších obrazů a symbolů moci se vydáme ke zrodu moderní propagandy, v němž sehrály zásadní…",
+          "endTime": "20:00",
+          "organizerUrl": "https://muo.cz/program/propaganda-divadlo-moci-v-ranem-novoveku-pocatky-a-principy-propagandy/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7248,13 +7277,16 @@
           "date": "2026-12-01",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcibiskupský palác Olomouc, Wurmova 562/9",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-beneficni-koncert-krasa-v-tonech-zakleta/",
-          "description": "",
+          "description": "Srdečně Vás zveme na druhý koncert 3. ročníku cyklu „Krása v tónech zakletá“. Skladby Bedřicha Smetany, Bohuslava Martinů a Antonína Dvořáka zazní v podání…",
+          "endTime": "21:00",
+          "organizerUrl": "https://www.smsticket.cz/vstupenky/77834-adventni-beneficni-koncert-krasa-v-tonech-zakleta-arcibiskupsky-palac-olomouc?utm_campaign=smsticket-prodejni-odkaz",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7264,13 +7296,16 @@
           "date": "2026-12-01",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Výstaviště Flora Olomouc - pavilon A",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/marie-rottrova-vanocni-galakoncert-2/",
-          "description": "",
+          "description": "Marie Rottrová s hostem Petrem Němcem za doprovodu kapely Septet Plus Orchestra společně vystoupí v úterý 1. prosince v Pavilonu A Výstaviště Flora v…",
+          "endTime": "22:00",
+          "organizerUrl": "https://akce.flora-ol.cz/marie-rottrova-vanocni-galakoncert-1",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7280,13 +7315,16 @@
           "date": "2026-12-01",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "CENTRAL",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/milost-3/",
-          "description": "",
+          "description": "Drama | Itálie | 2025 | 131 min. | režie: Paolo Sorrentino | hrají: Toni Servillo, Anna Ferzetti, Orlando Cinque, Massimo Venturiello, Milvia Marigliano,…",
+          "endTime": "21:00",
+          "organizerUrl": "https://muo.cz/program/milost/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7314,14 +7352,16 @@
           "date": "2026-12-02",
           "time": "09:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Galerie RUBIKON, 1.máje 24, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vystava-vanocni-salon-2/",
-          "description": "",
+          "description": "Vánoční salon Galerie Rubikon nabídne pestrý výběr výtvarného umění a autorské tvorby napříč různými uměleckými obory. Představí díla řady autorů, jejichž tvorba se vyznačuje…",
           "endDate": "2027-01-16",
+          "organizerUrl": "https://www.galerierubikon.cz/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7331,13 +7371,16 @@
           "date": "2026-12-02",
           "time": "09:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vedome-videni-umelecky-del-3/",
-          "description": "",
+          "description": "Poslední setkání ze série workshopů pro seniory propojující umění, vědomé vnímání a péči o zrak v jedinečném prostředí Arcidiecézního muzea. Účastníci se mezi vystavenými…",
+          "endTime": "11:00",
+          "organizerUrl": "https://muo.cz/program/vedome-videni-umelecky-del-3/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7347,13 +7390,16 @@
           "date": "2026-12-02",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, pobočka Kotelna",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/s-knizkou-do-zivota-broucci/",
-          "description": "",
+          "description": "Další setkání nejmenších dětí s jejich doprovodem.",
+          "endTime": "11:00",
+          "organizerUrl": "https://kmol.cz/akce/s-knizkou-do-zivota-broucci/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7380,13 +7426,16 @@
           "date": "2026-12-02",
           "time": "17:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Červený kostel",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-networking-pro-kreativce-a-pratele-kreativni-olomouce/",
-          "description": "",
+          "description": "Zveme všechny kulturní a kreativní profesionály i příznivce Kreativní Olomouce na neformální vánoční setkání. Vytvoříme prostor pro vzájemné setkání, sdílení i navazování nových…",
+          "endTime": "19:00",
+          "organizerUrl": "https://www.vkol.cz/udalosti-a-akce/vanocni-networking-pro-kreativce-a-pratele-kreativni-olomouce",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7448,13 +7497,16 @@
           "date": "2026-12-02",
           "time": "20:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Jazz Tibet Club",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/femislam-2026-mistrovstvi-zen-ve-slam-poetry/",
-          "description": "",
+          "description": "Jedenáctý ročník mistrovství žen ve slam poetry! Soupisku tvoří jen šampionky, které letos vyhrály minimálně tři silně obsazené turnaje. TYČ – loňská femikrálovna obhajující…",
+          "endTime": "22:00",
+          "organizerUrl": "https://jazztibet.cz/program/femislam-2026-mistrovstvi-zen-ve-slam-poetry",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7480,13 +7532,16 @@
           "date": "2026-12-02",
           "time": "20:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "CENTRAL",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/letni-kapela-2/",
-          "description": "",
+          "description": "Prosincová vystoupení se stala přirozenou tečkou za koncertním rokem Letní kapely, a i letos se v předvánočním čase vrátí do oblíbeného CENTRALU. Kapela soustředěná…",
+          "endTime": "22:00",
+          "organizerUrl": "https://muo.cz/program/letni-kapela-2/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7496,13 +7551,16 @@
           "date": "2026-12-03",
           "time": "14:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Knihovna města Olomouce, oddělení pro děti a mládež",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-stromecek/",
           "description": "",
+          "endTime": "17:00",
+          "organizerUrl": "https://kmol.cz/akce/vanocni-stromecek/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7512,13 +7570,16 @@
           "date": "2026-12-03",
           "time": "15:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Červený kostel",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/odpoledne-s-pletenim-44/",
-          "description": "",
+          "description": "Odpoledne s pletením v Červeném kostele nabízí prostor pro všechny, kteří rádi tvoří, chtějí se naučit něco nového nebo si jen užít příjemné chvíle…",
+          "endTime": "19:00",
+          "organizerUrl": "https://www.vkol.cz/udalosti-a-akce/odpoledne-s-pletenim-44",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7528,7 +7589,7 @@
           "date": "2026-12-03",
           "time": "16:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Umělecké centrum Univerzity Palackého v Olomouci - Konvikt",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
@@ -7536,6 +7597,8 @@
           "url": "https://tourism.olomouc.eu/akce/paf-olomouc-3/",
           "description": "",
           "endDate": "2026-12-06",
+          "organizerUrl": "https://pifpaf.cz",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7545,14 +7608,16 @@
           "date": "2026-12-03",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Studio G21",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/natural-perspectives-jana-machackova-oey-jana-vyborna-turunen/",
-          "description": "",
+          "description": "Výstava Natural Perspectives představuje tvorbu dvou českých umělkyň, které žijí a působí ve finskem Tampere. Jejich společným tématem je vztah člověka k přírodě, ke…",
           "endDate": "2026-12-22",
+          "organizerUrl": "https://finskasezona.olomouc.eu/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7562,13 +7627,16 @@
           "date": "2026-12-03",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Cafe Gallery JOLA, Denisova 272 /8, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vernisaz-art-salon-olomouc-2026/",
-          "description": "",
+          "description": "Srdečně Vás zveme ve čtvrtek 3.12. 2026 od 18.00 hod. na Benefiční výtvarný salón „Art salón Olomouc 2026“. Vystavující: Dočekalová Silvie, Kubová Pavla, Chmelař…",
+          "endTime": "19:30",
+          "organizerUrl": "https://www.cafegallery.cz",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7594,14 +7662,16 @@
           "date": "2026-12-04",
           "time": "08:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Střední škola polytechnická Olomouc (Technologická hala)",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/olohrani-5/",
-          "description": "",
+          "description": "Olohraní je jedinečná víkendová deskoherní akce pro milovníky deskových her i pro ty, kteří s deskovkami teprve začínají! Během tří dnů si můžete vyzkoušet…",
           "endDate": "2026-12-06",
+          "organizerUrl": "https://www.olohrani.cz",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7611,14 +7681,16 @@
           "date": "2026-12-04",
           "time": "09:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Červený kostel",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/paf-olomouc-2026-ve-vkol/",
-          "description": "",
+          "description": "Vědecká knihovna v Olomouci je hrdým partnerem PAF Olomouc 2026 – 25. přehlídky filmové animace a současného umění. Červený kostel je jedním z míst,…",
           "endDate": "2026-12-05",
+          "organizerUrl": "https://www.vkol.cz/udalosti-a-akce/paf-olomouc-2026-ve-vkol",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7628,13 +7700,16 @@
           "date": "2026-12-04",
           "time": "14:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Vila Primavesi, Univerzitní 7, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-prohlidky-ve-vile-primavesi-34/",
-          "description": "",
+          "description": "Zažijte jedinečnou atmosféru adventu v secesní perle Olomouce! Vila Primavesi, národní kulturní památka a bývalé rodinné sídlo významných mecenášů umění, se i letos otevře…",
+          "endTime": "18:00",
+          "organizerUrl": "https://www.vilaprimavesi.cz/prohlidky",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7677,13 +7752,16 @@
           "date": "2026-12-04",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Vila Primavesi, Univerzitní 7, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Výstavy",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vila-primavesi-domov-videnske-herecky-eugenie-primavesi-4/",
-          "description": "",
+          "description": "Jedná se o prohlídku historických prostor vily s důrazem na osobnost a život Eugenie Primavesi, herečky a významné kulturní osobnosti Olomouce z počátku 20.…",
+          "endTime": "19:00",
+          "organizerUrl": "https://www.vilaprimavesi.cz/prohlidka-eugenie-primavesi/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7693,13 +7771,15 @@
           "date": "2026-12-04",
           "time": "18:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Galerie Šantovka Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-3/",
-          "description": "",
+          "description": "Přijďte se naladit na vánoční atmosféru a užít si to nejlepší ze světové populární hudby v podání symfonického orchestru, sborů a sólistů.",
+          "endTime": "20:00",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7709,13 +7789,16 @@
           "date": "2026-12-04",
           "time": "18:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/lea-vitkova-zve-na-mikulasskou-nadilku/",
-          "description": "",
+          "description": "Účinkují Lea Vítková, Jiří Přibyl, Lucie Kaucká.",
+          "endTime": "20:30",
+          "organizerUrl": "https://muo.cz/program/lea-vitkova-zve-na-mikulasskou-nadilku/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7741,13 +7824,16 @@
           "date": "2026-12-04",
           "time": "19:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Sál Reduta, Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Hudba",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/vanocni-koncert-barytonisty-adama-plachetky/",
-          "description": "",
+          "description": "Olomouc nabídne v předvánočním čase koncert barytonisty Adama Plachetky, jednoho z nejvýraznějších českých operních pěvců současnosti. Koncert se uskuteční 4. prosince 2026 na…",
+          "endTime": "21:00",
+          "organizerUrl": "https://goout.net/cs/vanocni-koncert-barytonisty-adama-plachetky/szmabiy/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7773,13 +7859,16 @@
           "date": "2026-12-05",
           "time": "08:30",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Zimní stadion Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Sport",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/brusleni-verejnosti-356/",
           "description": "",
+          "endTime": "09:30",
+          "organizerUrl": "https://brusleni.olomouc.eu",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7789,13 +7878,16 @@
           "date": "2026-12-05",
           "time": "10:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mini-design-and-art-trh/",
-          "description": "",
+          "description": "KOMORNÍ PŘEHLÍDKA AUTORSKÉ TVORBY, DESIGNU A LOKÁLNÍCH ZNAČEK",
+          "endTime": "18:00",
+          "organizerUrl": "https://muo.cz/program/mini-design-and-art-trh/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7805,13 +7897,16 @@
           "date": "2026-12-05",
           "time": "10:15",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "Arcidiecézní muzeum Olomouc",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/adventni-putovani/",
-          "description": "",
+          "description": "Přijďte si užít jedinečnou atmosféru adventního putování, které vás provede cennou sbírkou olomouckých biskupů. Prostřednictvím vystavených děl si budeme vypravovat příběhy,…",
+          "endTime": "12:00",
+          "organizerUrl": "https://muo.cz/program/adventni-putovani-2/",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -7821,14 +7916,16 @@
           "date": "2026-12-05",
           "time": "11:00",
           "city": "Olomouc",
-          "venue": "",
+          "venue": "ART Rubikon zs.s., Dobnerova 1375/24a",
           "country": "CZ",
           "scope": "cz",
           "type": "Ostatní",
           "topics": [],
           "url": "https://tourism.olomouc.eu/akce/mikulasske-kostkovani-v-artu-staveni-lego-ve-stylu-minecraft-winter-a-frozen/",
-          "description": "",
+          "description": "Přijďte si užít dopoledne plné tvoření z kostek a nechte se vtáhnout do světa fantazie! Na oblíbeném podzimním Kostkování vás čekají dvě originální stavěcí…",
           "endDate": "2026-12-18",
+          "organizerUrl": "https://artrubikon.com/udalosti/mikulasske-kostkovani-v-artu-staveni-lego-ve-stylu-minecraft-winter-a-frozen",
+          "detailCheckedAt": "2026-11-28T01:38:22+01:00",
           "addedAt": "2026-11-28T00:30:44+01:00"
         },
         {
@@ -10520,8 +10617,8 @@
           "addedAt": "2026-11-28T00:30:44+01:00"
         }
       ],
-      "lastSuccess": "2026-11-28T01:23:11+01:00",
-      "lastAttempt": "2026-11-28T01:23:11+01:00",
+      "lastSuccess": "2026-11-28T01:38:22+01:00",
+      "lastAttempt": "2026-11-28T01:38:22+01:00",
       "error": false
     }
   }
