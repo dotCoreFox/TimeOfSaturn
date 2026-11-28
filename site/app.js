@@ -122,7 +122,7 @@ function enrich(event) {
     (topics.has('debaty') && !topics.has('kino'))
   ))
   const readerId = event.id && /^[a-z0-9-]+$/.test(event.id) &&
-    (event.detailText || event.admission || (event.detailCheckedAt && event.description)) ? event.id : ''
+    (event.hasReadingExtras || event.detailText || event.admission || (event.detailCheckedAt && event.description)) ? event.id : ''
   return {...event, type, topics:[...topics], scope, featured, readerId}
 }
 
@@ -165,7 +165,10 @@ function groupOccurrences(rows) {
       if (!descriptionFor(duplicate) && descriptionFor(event)) duplicate.description = descriptionFor(event)
       if (!duplicate.detailText) duplicate.detailText = event.detailText
       if (!duplicate.admission) duplicate.admission = event.admission
-      if (!duplicate.readerId) duplicate.readerId = event.readerId
+      if (!duplicate.readerId || event.hasReadingExtras) {
+        duplicate.readerId = event.readerId
+        duplicate.hasReadingExtras = event.hasReadingExtras
+      }
       duplicate.topics = [...new Set([...duplicate.topics, ...event.topics])]
       if (!duplicate.venue) duplicate.venue = event.venue
       if (!duplicate.time) duplicate.time = event.time
@@ -327,7 +330,30 @@ function showReadingText(event, reading = {}) {
     list.append(...reading.programme.map(item => element('li', item)))
     content.append(element('h3', 'Program'), list)
   }
+  if (reading.facts?.length) {
+    const list = element('ul')
+    for (const [label, text] of reading.facts) {
+      const item = element('li')
+      item.append(element('strong', label), document.createTextNode(' · ' + text))
+      list.append(item)
+    }
+    content.append(element('h3', 'Praktické informace'), list)
+  }
   if (admission) content.append(element('h3', 'Účast'), element('p', admission))
+  const links = (reading.links || []).filter(link => /^https:\/\//i.test(link.url))
+  if (links.length) {
+    const list = element('ul')
+    for (const link of links) {
+      const item = element('li')
+      const anchor = element('a', link.name)
+      anchor.href = link.url
+      anchor.target = '_blank'
+      anchor.rel = 'noopener noreferrer'
+      item.append(anchor)
+      list.append(item)
+    }
+    content.append(element('h3', 'Vstupenky online'), list)
+  }
   if (event.time && endTime) content.append(element('p', 'Čas podle pozvánky ' + event.time + '–' + endTime, 'muted'))
   const checked = reading.checkedAt
   get('reading-checked').textContent = checked ? 'Podklady ověřeny ' +
@@ -382,7 +408,7 @@ function details(event, trigger) {
     document.createTextNode([topicNames[eventCategory(event)] || event.type, event.city].filter(Boolean).join(' · ')))
   get('event-meta').textContent = eventMeta(event)
   const intro = get('event-description')
-  intro.hidden = Boolean(event.readerId && !(event.detailText || event.admission))
+  intro.hidden = Boolean(event.readerId && !(event.hasReadingExtras || event.detailText || event.admission))
   intro.textContent = intro.hidden ? '' : descriptionFor(event) || 'Zdroj k akci neposkytl použitelný popis.'
   for (const [id, text] of [['event-context', event.detailText], ['event-admission', event.admission]]) {
     get(id).textContent = text || ''

@@ -11,7 +11,6 @@ from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
 
-from build_readers import write_readers
 from refresh import PRAGUE, value
 
 SITE = Path(__file__).parent / "site"
@@ -129,19 +128,64 @@ def czech_span(text):
     return rows
 
 
+BRNO_FACT_LABELS = {
+    "delka": "Délka",
+    "doba trvani": "Délka",
+    "zacatek": "Místo srazu",
+    "misto srazu": "Místo srazu",
+    "sraz": "Místo srazu",
+    "trasa": "Trasa",
+    "cena": "Vstupné",
+    "vstupne": "Vstupné",
+    "registrace": "Registrace",
+    "rezervace": "Rezervace",
+}
+
+
+def brno_reading(page, row):
+    paragraphs = [value(node) for node in page.select(".b-content__annot p, .b-content__annot li")]
+    ticket = page.select_one(".b-card:has(.icon-svg--ticket) .b-card__row.font-family-a")
+    ticket_text = [value(node) for node in ticket.select("p, li")] if ticket else []
+    facts = {}
+    intro = ""
+    for text in paragraphs + ticket_text:
+        label, sep, data = text.partition(":")
+        field = BRNO_FACT_LABELS.get(normalized(label.strip()))
+        if field and sep and data.strip():
+            facts.setdefault(field, readable(data, 320))
+        elif text and not intro and text in paragraphs:
+            intro = text
+    if intro:
+        words = intro.split()
+        row["description"] = readable(" ".join(words[:24]) + ("…" if len(words) > 24 else ""))
+    if facts:
+        row["readingFacts"] = list(facts.items())
+    links = []
+    for anchor in ticket.select("a[href]") if ticket else []:
+        url = absolute(row["url"], anchor["href"])
+        if urlsplit(url).hostname != "vstupenky.ticbrno.cz" or any(link["url"] == url for link in links):
+            continue
+        name = {"aj": "Anglická prohlídka", "nj": "Německá prohlídka"}.get(normalized(value(anchor)), "Vstupenky online")
+        links.append({"name": name, "url": url})
+    if links:
+        row["readingLinks"] = links
+
+
 def brno_detail(source, row):
     try:
         page = fetch(row["url"])
         organizer = page.select_one(".b-card__row a.btn[href]")
         if organizer and value(organizer) == "Zjistěte více":
             row["organizerUrl"] = absolute(row["url"], organizer["href"])
+        brno_reading(page, row)
         for script in page.select('script[type="application/ld+json"]'):
             data = json.loads(script.string or "{}")
             if not isinstance(data, dict) or data.get("@type") != "Event":
                 continue
             venue = page.select_one(".b-card__row .font-bold")
             row["venue"] = (next(venue.stripped_strings, "") if venue else "") or data.get("location", {}).get("name", "")
-            row["description"] = readable(data.get("description", ""))
+            if not row["description"]:
+                row["description"] = readable(data.get("description", ""))
             row["cancelled"] = data.get("eventStatus", "").endswith("EventCancelled")
             start = data.get("startDate", "")
             if start[:10] == row["date"] and start[11:16] not in {"00:00", ""}:
@@ -640,7 +684,6 @@ def main():
     temporary = FILE.with_suffix(".tmp")
     temporary.write_text(json.dumps({"sources": states}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temporary.replace(FILE)
-    write_readers(SITE, states)
 
 
 if __name__ == "__main__":

@@ -40,10 +40,11 @@ jobs:
             git commit -m 'Aktualizovat program a zdroje'
             git push || (git pull --rebase && git push)
           fi
+      - run: python build_readers.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: site
+          path: public
   publish:
     needs: refresh
     runs-on: ubuntu-latest
